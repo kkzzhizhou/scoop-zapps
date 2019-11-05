@@ -4,6 +4,7 @@
     "license": "unlicensed",
     "version": "1.7.1",
     "url": "https://kolbi.cz/SetUserFTA.zip",
+    "bin": "setuserfta.exe",
     "hash": "d551295c779bdb3750ddba8e781c21a3dd42a55578f818e9c789b2ba1b4dcf47",
     "extract_dir": "setuserfta"
 }
