@@ -7,5 +7,6 @@
             "360netrepair.exe",
             "360断网急救箱"
         ]
-    ]
+    ],
+    "bin": "360netrepair.exe",
 }
