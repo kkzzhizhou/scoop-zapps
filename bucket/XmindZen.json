@@ -1,0 +1,12 @@
+{
+    "version": "9.2.0.45631",
+    "url": "https://downloads.sourceforge.net/project/zapps/xmindzen.zip",
+    "hash": "85c7d81fc1b698baaf2b94999defe5d61b3001ea6e00025c7ef3e3d018858c61",
+    "shortcuts": [
+        [
+            "Xmind ZEN.exe",
+            "Xmind ZEN"
+        ]
+    ],
+    "bin": "Xmind ZEN.exe"
+}
