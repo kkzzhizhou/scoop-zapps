@@ -1,0 +1,6 @@
+{
+    "version": "2.0.0.1011",
+    "url": "https://github.com/kkzzhizhou/scoop-zapp/archive/master.zip",
+    "extract_dir": "cowsay-psh-master",
+    "bin": "cowsay.ps1"
+}
