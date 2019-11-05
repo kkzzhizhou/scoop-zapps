@@ -1,5 +1,10 @@
 {
     "version": "2.0.0.1011",
     "url": "https://github.com/kkzzhizhou/GreenApp/raw/master/360netrepair/master.zip",
-    "hash": "c8198081a1eaca5268473db9bbf79755709de7bba554b8a16c400b47ef33e07d"
+    "hash": "c8198081a1eaca5268473db9bbf79755709de7bba554b8a16c400b47ef33e07d",
+    "shortcuts": [
+        [
+            "360netrepair.exe"
+        ]
+    ], 
 }
