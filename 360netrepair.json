@@ -1,6 +1,9 @@
 {
     "version": "2.0.0.1011",
     "url": "https://github.com/kkzzhizhou/GreenApp/raw/master/360netrepair/master.zip",
-    "extract_dir": "360netrepair",
-    "bin": "360NetRepair.exe"
+    "shortcuts": [
+        [
+            "360NetRepair.exe"
+        ]
+    ]
 }
