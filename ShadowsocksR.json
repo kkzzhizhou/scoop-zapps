@@ -3,7 +3,7 @@
     "license": "GPL-3.0-only",
     "version": "4.9.2",
     "url": "https://github.com/shadowsocksrr/shadowsocksr-csharp/releases/download/4.9.2/ShadowsocksR-win-4.9.2.zip",
-    "hash": "7ebc565b6f0e13ae9fcc4a2dc88f4e58c88d42d63067eeb4e69f96846cab58c9",
+    "hash": "e3f6860aeff0f45db52f74c0060a657d59c2436ccfcba3ed534e1e01ad5212d3",
     "bin": "ShadowsocksR.exe",
     "shortcuts": [
         [
