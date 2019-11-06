@@ -1,0 +1,22 @@
+{
+    "homepage": "https://im.qq.com/",
+    "description": "QQ是腾讯QQ的简称，是于Internet的即时通信（IM）软件。",
+    "version": "9.2.0",
+    "extract_dir": "Files",
+    "license": {
+        "identifier": "EULA"
+    },
+    "depends": [
+        "vcredist2010",
+        "vcredist2019",
+        "txssosetup"
+    ],
+    "url": "https://qd.myapp.com/myapp/qqteam/pcqq/PCQQ2019.exe#/dl.7z",
+    "shortcuts": [
+        [
+            "bin\\QQ.exe",
+            "腾讯QQ"
+        ]
+    ],
+    "notes": "We don't persist your QQ data, they are still storaged in '%APPDATA%\\Tencent\\QQ'."
+}
