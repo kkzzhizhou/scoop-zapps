@@ -6,6 +6,10 @@
         "identifier": "EULA"
     },
     "url": "http://59526039.ucloudcdnglobal.com/Twomon_PC_Program_Win_2.0.67.0.exe#/dl.exe",
+    "depends": [
+        "vcredist2005",
+        "vcredist2012"
+    ],
     "installer": {
         "script": [
             "Invoke-ExternalCommand \"$dir\\dl.exe\" -ArgumentList @('/S','/v/qn') -RunAs | Out-Null",
@@ -15,14 +19,7 @@
     "uninstaller": {
         "script": [
             "$uninstaller = (Get-Item Env:windir).Value+'\\installer\\SandboxieInstall64.exe'",
-            "Invoke-ExternalCommand \"$uninstaller\" -ArgumentList @('/remove /S') -RunAs | Out-Null"
+            "Invoke-ExternalCommand \"$uninstaller\" -ArgumentList @('/uninstall') -RunAs | Out-Null"
         ]
-    },
-    "checkver": {
-        "url": "https://support.bluestacks.com/hc/en-us/articles/360021469391-Release-Notes",
-        "regex": "BlueStacks ([\\d.]+) Release Notes"
-    },
-    "autoupdate": {
-        "url": "https://cloud.bluestacks.com/get_offline_download?os_arch=x64#/dl.exe"
     }
 }
