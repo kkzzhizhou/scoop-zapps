@@ -13,8 +13,8 @@
     ],
     "installer": {
         "script": [
-            "Invoke-ExternalCommand uniextract.exe -ArgumentList @(\"$dir\\dl.exe\",\"$dir\",'silent') | Out-Null",
-            "Invoke-ExternalCommand msiexec.exe -ArgumentList @('/i', \"$dir\\Twomon` PC` Program.msi\", '/qn') | Out-Null"
+            "Invoke-ExternalCommand uniextract.exe -ArgumentList @(\"$dir\\dl.exe\",\"$dir\",'/silent') | Out-Null",
+            "Invoke-ExternalCommand msiexec.exe -ArgumentList @('/i', \"$dir\\Twomon` PC` Program.msi\", '/qb') | Out-Null"
         ]
     },
     "uninstaller": {
