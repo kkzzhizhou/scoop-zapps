@@ -16,6 +16,6 @@
     },
     "persist": [
         "Storage",
-        "Global\\Template"
+        "Global"
     ]
 }
