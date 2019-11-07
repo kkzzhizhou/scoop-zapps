@@ -20,5 +20,12 @@
                 ]
             }
         }
-    }
+    },
+    "bin": "uTools.exe",
+    "shortcuts": [
+        [
+            "uTools.exe",
+            "uTools"
+        ]
+    ]
 }
