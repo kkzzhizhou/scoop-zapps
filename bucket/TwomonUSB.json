@@ -18,6 +18,6 @@
         ]
     },
     "uninstaller": {
-        "script": "Invoke-ExternalCommand msiexec -ArgumentList @('/x',\"$dir\\Twomon PC Program.exe\",'/qn') | Out-Null"
+        "script": "Invoke-ExternalCommand msiexec -ArgumentList @('/x',\"$dir\\Twomon\\ PC\\ Program.exe\",'/qn') | Out-Null"
     }
 }
