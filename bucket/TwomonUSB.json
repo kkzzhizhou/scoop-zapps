@@ -1,0 +1,28 @@
+{
+    "homepage": "http://www.easynlight.com/en/twomonusb/",
+    "description": "you can create stable dual monitors with easy USB connection.",
+    "version": "2.0.67.0",
+    "license": {
+        "identifier": "EULA"
+    },
+    "url": "http://59526039.ucloudcdnglobal.com/Twomon_PC_Program_Win_2.0.67.0.exe#/dl.exe",
+    "installer": {
+        "script": [
+            "Invoke-ExternalCommand \"$dir\\dl.exe\" -ArgumentList @('/S','/v/qn') -RunAs | Out-Null",
+            "Remove-Item \"$dir\\dl.exe\" -Force -Recurse"
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "$uninstaller = (Get-Item Env:windir).Value+'\\installer\\SandboxieInstall64.exe'",
+            "Invoke-ExternalCommand \"$uninstaller\" -ArgumentList @('/remove /S') -RunAs | Out-Null"
+        ]
+    },
+    "checkver": {
+        "url": "https://support.bluestacks.com/hc/en-us/articles/360021469391-Release-Notes",
+        "regex": "BlueStacks ([\\d.]+) Release Notes"
+    },
+    "autoupdate": {
+        "url": "https://cloud.bluestacks.com/get_offline_download?os_arch=x64#/dl.exe"
+    }
+}
