@@ -13,7 +13,7 @@
     ],
     "installer": {
         "script": [
-            "uniextract.exe /silent \"$dir\\dl.exe\" \"$dir\" | Out-Null",
+            "uniextract.exe /silent \"$dir\\dl.exe\" \"$dir\"",
             "Rename-Item \"$dir\\Twomon` PC` Program.msi\" 'setup.msi'",
             "Invoke-ExternalCommand msiexec.exe -ArgumentList @('/i', \"$dir\\setup.msi\", '/qb') -RunAs | Out-Null"
         ]
