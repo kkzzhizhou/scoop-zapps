@@ -7,7 +7,6 @@
         "file": "dl.exe",
         "args": [
             "$dir",
-            "-data` $dir\\userdata",
             "-silent"
         ]
     },
@@ -16,6 +15,6 @@
         "args": "/S"
     },
     "persist": [
-        "userdata"
+        "Storage"
     ]
 }
