@@ -8,7 +8,8 @@
         "args": [
             "$dir",
             "-silent"
-        ]
+        ],
+        "scripts": "Remove-Item \"$env:PUBLIC\\Desktop\\Foxmail.lnk\""
     },
     "uninstaller": {
         "file": "uninst.exe",
