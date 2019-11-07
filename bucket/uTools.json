@@ -2,7 +2,7 @@
     "homepage": "https://u.tools/",
     "description": "你的生产力工具集",
     "version": "0.8.3-beta",
-    "extract_dir": "`$$PLUGINSDIR",
+    "extract_dir": "`$PLUGINSDIR",
     "url": "http://dldir1.qq.com/qqfile/crm/qidian/QiDian3.2.0.14620.exe#/dl.7z",
     "architecture": {
         "64bit": {
