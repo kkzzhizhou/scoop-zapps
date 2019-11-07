@@ -1,0 +1,20 @@
+{
+    "homepage": "https://www.foxmail.com/",
+    "description": "你的邮件，现在有了新看法。",
+    "version": "7.2.14",
+    "url": "http://www.foxmail.com/win/download#/dl.exe",
+    "installer": {
+        "args": [
+            "$dir",
+            "-data` $dir\\userdata",
+            "-silent"
+        ]
+    },
+    "uninstaller": {
+        "file": "uninst.exe",
+        "args": "/S"
+    },
+    "persist": [
+        "userdata"
+    ]
+}
