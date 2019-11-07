@@ -19,6 +19,6 @@
         ]
     },
     "uninstaller": {
-        "script": "Invoke-ExternalCommand msiexec.exe -ArgumentList @('/x', \"$dir\\setup.msi\", '/qb') | Out-Null"
+        "script": "Invoke-ExternalCommand msiexec.exe -ArgumentList @('/x', \"$dir\\setup.msi\", '/qn') | Out-Null"
     }
 }
