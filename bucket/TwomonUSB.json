@@ -13,7 +13,7 @@
     ],
     "installer": {
         "script": [
-            "Invoke-ExternalCommand uniextract.exe -ArgumentList @('/silent',\"$dir\\dl.exe\",\"$dir\") | Out-Null",
+            "Invoke-ExternalCommand uniextract.exe -ArgumentList @(\"$dir\\dl.exe\",\"$dir\",'/silent') | Out-Null",
             "Invoke-ExternalCommand \"$dir\\Twomon PC Program.exe\" -ArgumentList @('/s','/v/qn') | Out-Null"
         ]
     },
