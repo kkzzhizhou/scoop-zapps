@@ -10,21 +10,17 @@
     "hash": "DB796ABE8FEC3FEB8202041F274D75DA1258CE25BCFCE6F289FE904E7A49166B",
     "installer": {
         "script": [
-            "Invoke-ExternalCommand \"$dir\\dl.exe\" -ArgumentList @('/lang=2052 /install /S /D=$dir') -RunAs | Out-Null",
+            "Invoke-ExternalCommand \"$dir\\dl.exe\" -ArgumentList @('/lang=2052','/install','/S',\"/D=$dir\") -RunAs | Out-Null",
             "Remove-Item \"$dir\\dl.exe\" -Force -Recurse"
         ]
     },
     "uninstaller": {
         "script": [
             "$uninstaller = (Get-Item Env:windir).Value+'\\installer\\SandboxieInstall64.exe'",
-            "Invoke-ExternalCommand \"$uninstaller\" -ArgumentList @('/remove /S') -RunAs | Out-Null"
+            "Invoke-ExternalCommand \"$uninstaller\" -ArgumentList @('/remove','/S') -RunAs | Out-Null"
         ]
     },
-    "checkver": {
-        "url": "https://support.bluestacks.com/hc/en-us/articles/360021469391-Release-Notes",
-        "regex": "BlueStacks ([\\d.]+) Release Notes"
-    },
     "autoupdate": {
-        "url": "https://cloud.bluestacks.com/get_offline_download?os_arch=x64#/dl.exe"
+        "url": "https://www.sandboxie.com/SandboxieInstall.exe"
     }
 }
