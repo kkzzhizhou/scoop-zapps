@@ -18,7 +18,7 @@
     },
     "uninstaller": {
         "script": [
-            "$uninstaller = (Get-Item Env:windir).Value+'\\installer\\SandboxieInstall64.exe'",
+            "$uninstaller = (Get-Item Env:windir).Value+'\\installer\\3a48f94.exe'",
             "Invoke-ExternalCommand \"$uninstaller\" -ArgumentList @('/uninstall') -RunAs | Out-Null"
         ]
     }
