@@ -4,6 +4,7 @@
     "version": "7.2.14",
     "url": "http://www.foxmail.com/win/download#/dl.exe",
     "installer": {
+        "file": "dl.exe",
         "args": [
             "$dir",
             "-data` $dir\\userdata",
