@@ -12,9 +12,9 @@
         "sudo"
     ],
     "installer": {
-        "script": "Invoke-ExternalCommand sudo  -ArgumentList @('msiexec',\"$dir\\dl.exe\", '/s','/q/n') | Out-Null"
+        "script": "Invoke-ExternalCommand \"$dir\\dl.exe\" -ArgumentList @('/s','/q/n') | Out-Null"
     },
     "uninstaller": {
-        "script": "Invoke-ExternalCommand sudo  -ArgumentList @('msiexec',\"$dir\\dl.exe\", '/r','/s','/q/n') | Out-Null"
+        "script": "Invoke-ExternalCommand \"$dir\\dl.exe\" -ArgumentList @('/r','/s','/q/n') | Out-Null"
     }
 }
