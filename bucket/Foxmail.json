@@ -15,6 +15,7 @@
         "args": "/S"
     },
     "persist": [
-        "Storage"
+        "Storage",
+        "Global\\Template"
     ]
 }
