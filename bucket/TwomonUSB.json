@@ -15,10 +15,10 @@
         "script": [
             "Invoke-ExternalCommand uniextract.exe -ArgumentList @(\"$dir\\dl.exe\",\"$dir\",'/silent') | Out-Null",
             "Rename-Item \"$dir\\Twomon` PC` Program.msi\" 'setup.msi'",
-            "Invoke-ExternalCommand msiexec -ArgumentList @('/i', \"$dir\\setup.msi_\", '/qn') | Out-Null"
+            "Invoke-ExternalCommand msiexec -ArgumentList @('/i', \"$dir\\setup.msi\", '/qn') | Out-Null"
         ]
     },
     "uninstaller": {
-        "script": "Invoke-ExternalCommand msiexec -ArgumentList @('/x', \"$dir\\setup.msi_\", '/qn') | Out-Null"
+        "script": "Invoke-ExternalCommand msiexec -ArgumentList @('/x', \"$dir\\setup.msi\", '/qn') | Out-Null"
     }
 }
