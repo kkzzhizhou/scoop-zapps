@@ -14,7 +14,7 @@
     "installer": {
         "script": [
             "Invoke-ExternalCommand uniextract.exe -ArgumentList @(\"$dir\\dl.exe\",\"$dir\",'/silent') | Out-Null",
-            "Invoke-ExternalCommand msiexec -ArgumentList @('/i',\"$dir\\Twomon PC Program.exe\",'/qn') | Out-Null"
+            "Invoke-ExternalCommand msiexec -ArgumentList @('/i',\"$dir\\Twomon\\ PC\\ Program.exe\",'/qn') | Out-Null"
         ]
     },
     "uninstaller": {
