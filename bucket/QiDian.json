@@ -8,8 +8,7 @@
     },
     "depends": [
         "vcredist2010",
-        "vcredist2019",
-        "txssosetup"
+        "vcredist2019"
     ],
     "url": "http://dldir1.qq.com/qqfile/crm/qidian/QiDian3.2.0.14620.exe#/dl.7z",
     "shortcuts": [
