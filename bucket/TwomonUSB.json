@@ -5,16 +5,19 @@
     "license": {
         "identifier": "EULA"
     },
-    "url": "http://59526039.ucloudcdnglobal.com/Twomon_PC_Program_Win_2.0.67.0.exe#/dl.7z",
+    "url": "http://59526039.ucloudcdnglobal.com/Twomon_PC_Program_Win_2.0.67.0.exe#/dl.exe",
     "depends": [
         "vcredist2005",
         "vcredist2012",
-        "sudo"
+        "uniextract"
     ],
     "installer": {
-        "script": "Invoke-ExternalCommand \"$dir\\dl.exe\" -ArgumentList @('/s','/v/qn') | Out-Null"
+        "script": [
+            "Invoke-ExternalCommand uniextract.exe -ArgumentList @('/silent',\"$dir\\dl.exe\",\"$dir\") | Out-Null",
+            "Invoke-ExternalCommand \"$dir\\Twomon PC Program.exe\" -ArgumentList @('/s','/v/qn') | Out-Null"
+        ]
     },
     "uninstaller": {
-        "script": "Invoke-ExternalCommand \"$dir\\dl.exe\" -ArgumentList @('/r','/s','/v/qn') | Out-Null"
+        "script": "Invoke-ExternalCommand \"$dir\\Twomon PC Program.exe\" -ArgumentList @('/r','/s','/v/qn') | Out-Null"
     }
 }
