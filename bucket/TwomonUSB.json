@@ -14,10 +14,11 @@
     "installer": {
         "script": [
             "Invoke-ExternalCommand uniextract.exe -ArgumentList @(\"$dir\\dl.exe\",\"$dir\",'/silent') | Out-Null",
-            "Invoke-ExternalCommand msiexec -ArgumentList @('/i',\"$dir\\Twomon\\ PC\\ Program.exe\",'/qn') | Out-Null"
+            "Rename-Item 'Twomon PC Program.msi' 'setup.msi'",
+            "Invoke-ExternalCommand msiexec -ArgumentList @('/i',\"$dir\\setup.msi\",'/qn') | Out-Null"
         ]
     },
     "uninstaller": {
-        "script": "Invoke-ExternalCommand msiexec -ArgumentList @('/x',\"$dir\\Twomon\\ PC\\ Program.exe\",'/qn') | Out-Null"
+        "script": "Invoke-ExternalCommand msiexec -ArgumentList @('/x',\"$dir\\setup.msi\",'/qn') | Out-Null"
     }
 }
