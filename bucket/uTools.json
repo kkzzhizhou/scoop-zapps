@@ -2,14 +2,23 @@
     "homepage": "https://u.tools/",
     "description": "你的生产力工具集",
     "version": "0.8.3-beta",
-    "extract_dir": "`$PLUGINSDIR",
     "url": "http://dldir1.qq.com/qqfile/crm/qidian/QiDian3.2.0.14620.exe#/dl.7z",
     "architecture": {
         "64bit": {
-            "url": "https://resource.u-tools.cn/currentversion/uTools-0.8.3-beta.exe#/dl.7z"
+            "installer": {
+                "script": [
+                    "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
+                    "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninstall*\" -Force -Recurse"
+                ]
+            }
         },
         "32bit": {
-            "url": "https://resource.u-tools.cn/currentversion/uTools-0.8.3-beta-ia32.exe#/dl.7z"
+            "installer": {
+                "script": [
+                    "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-32.7z\" \"$dir\"",
+                    "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninstall*\" -Force -Recurse"
+                ]
+            }
         }
-    }
+    },
 }
