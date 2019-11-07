@@ -16,6 +16,7 @@
     },
     "persist": [
         "Storage",
-        "Global"
+        "Global",
+        "FMStorage.list"
     ]
 }
