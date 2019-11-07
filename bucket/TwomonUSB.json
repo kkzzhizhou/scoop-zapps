@@ -8,18 +8,16 @@
     "url": "http://59526039.ucloudcdnglobal.com/Twomon_PC_Program_Win_2.0.67.0.exe#/dl.exe",
     "depends": [
         "vcredist2005",
-        "vcredist2012"
+        "vcredist2012",
+        "uniextract2"
     ],
     "installer": {
         "script": [
-            "Invoke-ExternalCommand \"$dir\\dl.exe\" -ArgumentList @('/S','/v/qn') -RunAs | Out-Null",
-            "Remove-Item \"$dir\\dl.exe\" -Force -Recurse"
+            "Invoke-ExternalCommand uniextract -ArgumentList @(\"$dir\\dl.exe\",\"$dir\",'/silent') -RunAs | Out-Null",
+            "Invoke-ExternalCommand \"$dir\\'Twomon PC Program.exe'\" -ArgumentList @('/qn') -RunAs | Out-Null"
         ]
     },
     "uninstaller": {
-        "script": [
-            "$uninstaller = (Get-Item Env:windir).Value+'\\installer\\3a48f94.exe'",
-            "Invoke-ExternalCommand \"$uninstaller\" -ArgumentList @('/uninstall') -RunAs | Out-Null"
-        ]
+        "script": "Invoke-ExternalCommand msiexec -ArgumentList @('/x', \"$dir\\'Twomon PC Program.exe'\", '/qn') | Out-Null"
     }
 }
