@@ -12,9 +12,9 @@
         "sudo"
     ],
     "installer": {
-        "script": "Invoke-ExternalCommand \"$dir\\dl.exe\" -ArgumentList @('/s','/q/n') | Out-Null"
+        "script": "Invoke-ExternalCommand \"$dir\\dl.exe\" -ArgumentList @('/s','/v/qn') | Out-Null"
     },
     "uninstaller": {
-        "script": "Invoke-ExternalCommand \"$dir\\dl.exe\" -ArgumentList @('/r','/s','/q/n') | Out-Null"
+        "script": "Invoke-ExternalCommand \"$dir\\dl.exe\" -ArgumentList @('/r','/s','/v/qn') | Out-Null"
     }
 }
