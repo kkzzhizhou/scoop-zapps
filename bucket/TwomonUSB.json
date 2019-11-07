@@ -9,7 +9,7 @@
     "depends": [
         "vcredist2005",
         "vcredist2012",
-        "uniextract"
+        "uniextract2"
     ],
     "installer": {
         "script": [
