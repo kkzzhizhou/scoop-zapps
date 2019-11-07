@@ -15,7 +15,8 @@
         "script": [
             "Invoke-ExternalCommand uniextract.exe -ArgumentList @(\"$dir\\dl.exe\",\"$dir\",'/silent')  | Out-Null",
             "Rename-Item \"$dir\\Twomon` PC` Program.msi\" 'setup.msi'",
-            "Invoke-ExternalCommand msiexec.exe -ArgumentList @('/i', \"$dir\\setup.msi\", '/qb') | Out-Null"
+            "Invoke-ExternalCommand msiexec.exe -ArgumentList @('/i', \"$dir\\setup.msi\", '/qb') | Out-Null",
+            "Remove-Item \"~\\Desktop\\Twomon` PC` Program.lnk\" -Force -Recurse"
         ]
     },
     "uninstaller": {
