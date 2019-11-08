@@ -18,11 +18,5 @@
             "/NORESTART"
         ]
     },
-    "bin": "InnoExtractor.exe",
-    "shortcuts": [
-        [
-            "InnoExtractor.exe",
-            "InnoExtractor"
-        ]
-    ]
+    "bin": "InnoExtractor.exe"
 }
