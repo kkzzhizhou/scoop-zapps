@@ -11,6 +11,7 @@
             "/NORESTART"
         ]
     },
+    "post_install": "Remove-Item \"$env:PUBLIC\\Desktop\\InnoExtractor.lnk\"",
     "uninstaller": {
         "file": "unins000.exe",
         "args": [
