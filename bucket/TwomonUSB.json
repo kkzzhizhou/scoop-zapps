@@ -6,20 +6,20 @@
         "identifier": "EULA"
     },
     "url": "http://59526039.ucloudcdnglobal.com/Twomon_PC_Program_Win_2.0.67.0.exe#/dl.exe",
-    "depends": [
-        "vcredist2005",
-        "vcredist2012",
-        "uniextract2"
-    ],
     "installer": {
-        "script": [
-            "Invoke-ExternalCommand uniextract.exe -ArgumentList @(\"$dir\\dl.exe\",\"$dir\",'/silent')  | Out-Null",
-            "Rename-Item \"$dir\\Twomon` PC` Program.msi\" 'setup.msi'",
-            "Invoke-ExternalCommand msiexec.exe -ArgumentList @('/i', \"$dir\\setup.msi\", '/qb') | Out-Null",
-            "Remove-Item \"$env:PUBLIC\\Desktop\\Twomon` PC` Program.lnk\""
-        ]
+        "file": "dl.exe",
+        "args": [
+            "/s",
+            "/v/qn"
+        ],
+        "keep": "true"
     },
     "uninstaller": {
-        "script": "Invoke-ExternalCommand msiexec.exe -ArgumentList @('/x', \"$dir\\setup.msi\", '/qb') | Out-Null"
+        "file": "dl.exe",
+        "args": [
+            "/x",
+            "/s",
+            "/v/qn"
+        ]
     }
 }
