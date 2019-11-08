@@ -17,7 +17,11 @@
                 ]
             },
             "uninstaller": {
-                "script": "# Invoke-ExternalCommand $dir\\dl.exe -ArgumentList @('/s','/v\"/qn REMOVE=ALL\"') | Out-Null"
+                "file": "dl.exe",
+                "args": [
+                    "/s",
+                    "/v\"/qn REMOVE=ALL\""
+                ]
             }
         }
     }
