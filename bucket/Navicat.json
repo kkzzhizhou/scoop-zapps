@@ -1,5 +1,5 @@
 {
     "version":  "12.0.22",
     "url":  "https://downloads.sourceforge.net/project/zapps/Navicat.zip",
-    "shortcuts": [["Navicat Premium 12/navicat.exe", "Navicat"]]
+    "shortcuts": [["navicat.exe", "Navicat"]]
 }
