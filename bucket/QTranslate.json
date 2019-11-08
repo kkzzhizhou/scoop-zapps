@@ -1,0 +1,8 @@
+{
+    "homepage": "https://quest-app.appspot.com/",
+    "description": "QTranslate is a free translator for Windows.",
+    "version": "6.7.3",
+    "url": "https://qtranslate2.appspot.com/QTranslate.6.7.3.zip",
+    "bin": [ "QTranslate.exe" ],
+    "shortcuts": [["QTranslate.exe", "QTranslate"]]
+}
