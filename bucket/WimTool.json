@@ -1,6 +1,5 @@
 {
     "version":  "1.30.2011.501",
     "url": "https://downloads.sourceforge.net/project/zapps/WimTool.zip",
-    "bin": ["WinCMD.EXE","WinCMD-X64.EXE","WimTool.EXE"],
-    "shortcuts": [["WimTool.EXE", "WimTool"]]
+    "shortcuts": [["WimTool.exe", "WimTool"]]
 }
