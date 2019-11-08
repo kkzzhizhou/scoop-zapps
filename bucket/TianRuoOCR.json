@@ -1,0 +1,17 @@
+{
+    "homepage": "https://github.com/drduan/tianruoocr",
+    "description": "天若OCR开源版本",
+    "version": "9.0e",
+    "url": "https://github.com/AnyListen/tianruoocr/releases/download/V5.0.0/OCR.V5.0.0.zip#dl.zip",
+    "bin": "stickies.exe",
+    "depends": [
+        "vcredist2008"
+    ],
+    "hash": "F6B912B8E4166314DC032C7C16EE2CEC981D41592ABD03A3B42D30C2102E13A8",
+    "shortcuts": [
+        [
+            "stickies.exe",
+            "stickies"
+        ]
+    ]
+}
