@@ -13,7 +13,7 @@
             "/v/qn"
         ],
         "keep": "true",
-        "scripts" : "Remove-Item \"$env:PUBLIC\\Desktop\\Twomon` PC` Program.lnk\""
+        "scripts" : ""
     },
     "uninstaller": {
         "file": "dl.exe",
