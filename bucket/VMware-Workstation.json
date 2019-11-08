@@ -2,10 +2,6 @@
     "version": "15.5.0-14665864",
     "description": "VMware Workstation Pro is the industry standard for running multiple operating systems on a single Linux or Windows PC.",
     "homepage": "https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html",
-    "depends": [
-        "vcredist2008",
-        "uniextract2"
-    ],
     "architecture": {
         "64bit": {
             "url": "https://download3.vmware.com/software/wkst/file/VMware-workstation-full-15.5.0-14665864.exe#/setup.exe",
