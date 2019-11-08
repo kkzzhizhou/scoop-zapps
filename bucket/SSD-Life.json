@@ -3,6 +3,6 @@
     "description": "Control your SSD lifetime",
     "version": "2.5.82",
     "url": "https://ssd-life.com/SSDLifePortablePro.zip",
-    "bin": "autorunsc64.exe",
+    "bin": "ssdlife.exe",
     "shortcuts": [["ssdlife.exe", "SSD Life"]]
 }
