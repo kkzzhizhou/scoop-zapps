@@ -12,9 +12,9 @@
             "/s",
             "/v/qn"
         ],
-        "keep": "true"
+        "keep": "true",
+        "scripts" : "Remove-Item \"$env:PUBLIC\\Desktop\\Twomon` PC` Program.lnk\""
     },
-    "post_install": "Remove-Item \"$env:PUBLIC\\Desktop\\Twomon` PC` Program.lnk\"",
     "uninstaller": {
         "file": "dl.exe",
         "args": [
