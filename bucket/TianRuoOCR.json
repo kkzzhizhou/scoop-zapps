@@ -4,9 +4,6 @@
     "version": "9.0e",
     "url": "https://github.com/AnyListen/tianruoocr/releases/download/V5.0.0/OCR.V5.0.0.zip#dl.zip",
     "bin": "天若OCR.exe",
-    "depends": [
-        "vcredist2008"
-    ],
     "shortcuts": [
         [
             "天若OCR.exe",
