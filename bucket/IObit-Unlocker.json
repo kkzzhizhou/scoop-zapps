@@ -2,5 +2,10 @@
     "homepage": "https://www.iobit.com/en/iobit-unlocker.php",
     "version": "1.1.2",
     "url": "http://update.iobit.com/dl/unlocker-setup.exe",
-    "innosetup": true
+    "shortcuts": [
+        [
+            "IObitUnlocker.exe",
+            "IObit Unlocker"
+        ]
+    ]
 }
