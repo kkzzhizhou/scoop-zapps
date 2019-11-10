@@ -18,6 +18,5 @@
             "/VERYSILENT",
             "/NORESTART"
         ]
-    },
-    "bin": "PDFXCview.exe"
+    }
 }
