@@ -1,0 +1,8 @@
+{
+    "homepage": "https://www.jam-software.com/",
+    "description": "TreeSize Free tells you where precious disk space has gone. ",
+    "version": "4.4",
+    "url": "https://downloads.jam-software.de/treesize_free/TreeSizeFree-Portable.zip",
+    "bin": "TreeSizeFree.exe",
+    "shortcuts": [["TreeSizeFree.exe", "TreeSize Free"]]
+}
