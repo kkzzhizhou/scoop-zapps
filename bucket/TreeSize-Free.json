@@ -4,5 +4,6 @@
     "version": "4.4",
     "url": "https://downloads.jam-software.de/treesize_free/TreeSizeFree-Portable.zip",
     "bin": "TreeSizeFree.exe",
-    "shortcuts": [["TreeSizeFree.exe", "TreeSize Free"]]
+    "shortcuts": [["TreeSizeFree.exe", "TreeSize Free"]],
+    "innosetup": true
 }
