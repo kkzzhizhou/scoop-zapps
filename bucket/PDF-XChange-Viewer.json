@@ -1,0 +1,23 @@
+{
+    "homepage": "https://www.tracker-software.com/product/pdf-xchange-viewer",
+    "version": "2.5.322.10",
+    "description": "The smallest, fastest, most feature-rich PDF reader/viewer available.",
+    "url": "https://www.tracker-software.com/product/pdf-xchange-viewer/download?fileid=446",
+    "installer": {
+        "file": "PDFXVwer.exe",
+        "args": [
+            "/VERYSILENT",
+            "/DIR=\"$dir\"",
+            "/NORESTART"
+        ]
+    },
+    "post_install": "Remove-Item \"$env:PUBLIC\\Desktop\\InnoExtractor.lnk\"",
+    "uninstaller": {
+        "file": "unins000.exe",
+        "args": [
+            "/VERYSILENT",
+            "/NORESTART"
+        ]
+    },
+    "bin": "InnoExtractor.exe"
+}
