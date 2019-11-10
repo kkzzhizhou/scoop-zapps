@@ -1,0 +1,11 @@
+{
+    "homepage": "https://www.ludashi.com/",
+    "version": "5.1019.1095.1011",
+    "url": "https://cdn-file-ssl.ludashi.com/pc/appstore/ludashi/ludashisetup.exe#dl.7z",
+    "shortcuts": [
+        [
+            "ComputerZ_CN.exe",
+            "鲁大师"
+        ]
+    ]
+}
