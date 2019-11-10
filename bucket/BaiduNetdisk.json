@@ -6,8 +6,6 @@
     "bin": "BaiduNetdisk.exe",
     "post_install": [
         "Remove-Item \"$dir\\`$PLUGINSDIR\" -Recurse",
-        "Move-Item $dir\\`$TEMP\\autoDiagnose.dll $dir",
-        "Move-Item $dir\\`$TEMP\\kernel.dll $dir",
         "Remove-Item \"$dir\\`$TEMP\" -Recurse"
     ],
     "shortcuts": [
