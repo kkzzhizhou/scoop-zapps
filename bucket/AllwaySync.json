@@ -4,10 +4,10 @@
     "version": "19.1.5",
     "url": "https://allwaysync.com/content/download/allwaysync-x64.exe",
     "innosetup": true,
-    "bin": "syncappw.exe",
+    "bin": "bin/syncappw.exe",
     "shortcuts": [
         [
-            "syncappw.exe",
+            "bin/syncappw.exe",
             "AllwaySync"
         ]
     ]
