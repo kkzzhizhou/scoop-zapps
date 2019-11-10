@@ -11,7 +11,7 @@
             "/NORESTART"
         ]
     },
-    "post_install": "Remove-Item \"$env:PUBLIC\\Desktop\\InnoExtractor.lnk\"",
+    "post_install": "Remove-Item \"$env:PUBLIC\\Desktop\\PDF-Viewer.lnk\"",
     "uninstaller": {
         "file": "unins000.exe",
         "args": [
@@ -19,5 +19,5 @@
             "/NORESTART"
         ]
     },
-    "bin": "InnoExtractor.exe"
+    "bin": "PDFXCview.exe"
 }
