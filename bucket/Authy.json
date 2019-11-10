@@ -1,15 +1,41 @@
 {
     "homepage": "https://authy.com/",
-    "description": "Enable 2FA for your favorite sites",
-    "version": "1.5.0",
+    "version": "1.7.0",
     "architecture": {
         "64bit": {
-            "url": "https://s3.amazonaws.com/authy-electron-repository-production/authy/stable/1.5.0/win32/x32/Authy%20Desktop%20Setup%201.5.0.exe#/dl.7z"
-        },
-        "32bit": {
-            "installer": {
-                "url": "https://s3.amazonaws.com/authy-electron-repository-production/authy/stable/1.5.0/win32/x64/Authy%20Desktop%20Setup%201.5.0.exe#/dl.7z"
+            "url": "https://s3.amazonaws.com/authy-electron-repository-production/authy/stable/1.7.0/win32/x64/authy-electron-1.7.0-full.nupkg#/dl.7z",
+            "hash": "sha1:b8db90abeb6b2dc70e85341d8830c29fec351c0b"
+        }
+    },
+    "extract_dir": "lib\\net45",
+    "bin": [
+        [
+            "Authy Desktop.exe",
+            "authy"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "Authy Desktop.exe",
+            "Authy Desktop"
+        ]
+    ],
+    "checkver": {
+        "url": "https://s3.amazonaws.com/authy-electron-repository-production/_squirrel/authy/stable/x64/RELEASES",
+        "re": "authy-electron-([\\d.]+)-full.nupkg",
+        "reverse": true
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://s3.amazonaws.com/authy-electron-repository-production/authy/stable/$version/win32/x64/authy-electron-$version-full.nupkg#/dl.7z",
+                "hash": {
+                    "url": "https://s3.amazonaws.com/authy-electron-repository-production/_squirrel/authy/stable/x64/RELEASES"
+                }
             }
         }
+    },
+    "uninstaller": {
+        "script": "Remove-Item -LiteralPath \"$env:APPDATA\\Authy Desktop\" -Force -Recurse -ErrorAction SilentlyContinue"
     }
 }
