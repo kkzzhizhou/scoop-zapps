@@ -1,0 +1,14 @@
+{
+    "homepage": "http://127.0.0.1:43110/17SWVnHoujG92yYGSZvCzPgZEpGVfRF8wi",
+    "description": "Bat To Exe Converter grants easy BAT script to EXE file conversions and is completely suitable even for the novice user.",
+    "version": "3.2.0.0",
+    "url": "http://files2.majorgeeks.com/a50a845099a8b7df54e54df1463cde1c498abcdc/system/Bat_To_Exe_Converter_(Installer).exe",
+    "innosetup": true,
+    "bin": "Bat_To_Exe_Converter,1.exe",
+    "shortcuts": [
+        [
+            "Bat_To_Exe_Converter,1.exe",
+            "Bat To Exe Converter"
+        ]
+    ]
+}
