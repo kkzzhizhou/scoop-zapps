@@ -1,9 +1,9 @@
 {
     "homepage": "https://www.iobit.com/en/iobit-unlocker.php",
     "version": "1.1.2",
-    "url": "http://update.iobit.com/dl/unlocker-setup.exe#/setup.exe",
+    "url": "http://update.iobit.com/dl/unlocker-setup.exe#/dl.exe",
     "installer": {
-        "file": "setup.exe",
+        "file": "dl.exe",
         "args": [
             "/VERYSILENT",
             "/DIR=\"$dir\"",
