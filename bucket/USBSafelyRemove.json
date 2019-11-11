@@ -10,7 +10,7 @@
             "/NORESTART"
         ]
     },
-    "post_install": "Remove-Item \"$env:PUBLIC\\Desktop\\USB` Safely` Remove.lnk\"",
+    "post_install": "Remove-Item \"$env:USERPROFILE\\Desktop\\USB` Safely` Remove.lnk\"",
     "uninstaller": {
         "file": "unins000.exe",
         "args": [
