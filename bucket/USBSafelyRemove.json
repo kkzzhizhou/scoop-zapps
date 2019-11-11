@@ -1,0 +1,21 @@
+{
+    "homepage": "https://safelyremove.com/index.htm",
+    "version": "6.1.5.1274",
+    "url": "https://safelyremove.com/assets/exe/usbsafelyremovesetup_6-1-5.exe#/setup.exe",
+    "installer": {
+        "file": "setup.exe",
+        "args": [
+            "/VERYSILENT",
+            "/DIR=\"$dir\"",
+            "/NORESTART"
+        ]
+    },
+    "post_install": "Remove-Item \"$env:PUBLIC\\Desktop\\USB` Safely` Remove.lnk\"",
+    "uninstaller": {
+        "file": "unins000.exe",
+        "args": [
+            "/VERYSILENT",
+            "/NORESTART"
+        ]
+    }
+}
