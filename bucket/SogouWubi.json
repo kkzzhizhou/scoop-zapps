@@ -1,21 +1,11 @@
 {
-    "version": "3.1.0",
-    "homepage": "https://www.resilio.com/individuals/",
-    "url": "https://download-cdn.resilio.com/stable/windows64/Resilio-Sync_x64.exe#dl.exe",
+    "version": "3.1.0.1751",
+    "homepage": "https://wubi.sogou.com/",
+    "url": "https://downloads.sourceforge.net/project/zapps/SogouWubi.7z",
     "installer": {
-        "file": "dl.exe",
-        "args": [
-            "/PERFORMINSTALL",
-            "/S"
-        ],
-        "keep": "true"
+        "scripts": ""
     },
     "uninstaller": {
-        "file": "dl.exe",
-        "args": [
-            "/UNINSTALL",
-            "/S",
-            "/REMSETTINGS"
-        ]
+        "scripts": ""
     }
 }
