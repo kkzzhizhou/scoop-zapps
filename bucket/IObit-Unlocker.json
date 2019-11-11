@@ -17,11 +17,5 @@
             "/VERYSILENT",
             "/NORESTART"
         ]
-    },
-    "shortcuts": [
-        [
-            "IObitUnlocker.exe",
-            "IObit Unlocker"
-        ]
-    ]
+    }
 }
