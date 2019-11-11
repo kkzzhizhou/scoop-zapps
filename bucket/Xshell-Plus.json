@@ -1,0 +1,33 @@
+{
+    "version": "6.0.0149/0143",
+    "url": "https://downloads.sourceforge.net/project/zapps/Xshell-Plus.zip",
+    "shortcuts": [
+        [
+            "Xftp.exe",
+            "Xftp"
+        ],
+        [
+            "Xshell.exe",
+            "Xshell"
+        ]
+    ],
+    "post_install": [
+        "if (Test-Path \"$dir\\xshell-plus-install.reg\") {",
+        "  $codepath = \"$dir\\Code.exe\".Replace('\\', '\\\\')",
+        "  $content = Get-Content \"$dir\\xshell-plus-install.reg\"",
+        "  $content = $content.Replace('$code', $codepath)",
+        "  if ($global) {",
+        "    $content = $content.Replace('HKEY_CURRENT_USER', 'HKEY_LOCAL_MACHINE')",
+        "  }",
+        "  $content | Set-Content -Path \"$dir\\xshell-plus-install.reg\"",
+        "}",
+        "if (Test-Path \"$dir\\xshell-plus-uninstall.reg\") {",
+        "  $content = Get-Content \"$dir\\xshell-plus-uninstall.reg\"",
+        "  if ($global) {",
+        "    $content = $content.Replace('HKEY_CURRENT_USER', 'HKEY_LOCAL_MACHINE')",
+        "  }",
+        "  $content | Set-Content -Path \"$dir\\xshell-plus-uninstall.reg\"",
+        "}",
+        "regedit /s $dir\\xshell-plus-install.reg"
+    ]
+}
