@@ -1,7 +1,23 @@
 {
     "homepage": "https://www.iobit.com/en/iobit-unlocker.php",
     "version": "1.1.2",
-    "url": "http://update.iobit.com/dl/unlocker-setup.exe",
+    "url": "http://update.iobit.com/dl/unlocker-setup.exe#setup.exe",
+    "installer": {
+        "file": "setup.exe",
+        "args": [
+            "/VERYSILENT",
+            "/DIR=\"$dir\"",
+            "/NORESTART"
+        ]
+    },
+    "post_install": "Remove-Item \"$env:PUBLIC\\Desktop\\IObit` Unlocker.lnk\"",
+    "uninstaller": {
+        "file": "unins000.exe",
+        "args": [
+            "/VERYSILENT",
+            "/NORESTART"
+        ]
+    },
     "shortcuts": [
         [
             "IObitUnlocker.exe",
