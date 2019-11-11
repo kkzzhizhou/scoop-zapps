@@ -13,9 +13,9 @@
     ],
     "post_install": [
         "if (Test-Path \"$dir\\xshell-plus-install.reg\") {",
-        "  $codepath = \"$dir\\Code.exe\".Replace('\\', '\\\\')",
+        "  $apppath = \"$dir\\\".Replace('\\', '\\\\')",
         "  $content = Get-Content \"$dir\\xshell-plus-install.reg\"",
-        "  $content = $content.Replace('$code', $codepath)",
+        "  $content = $content.Replace('$path', $apppath)",
         "  if ($global) {",
         "    $content = $content.Replace('HKEY_CURRENT_USER', 'HKEY_LOCAL_MACHINE')",
         "  }",
