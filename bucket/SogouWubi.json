@@ -3,9 +3,9 @@
     "homepage": "https://wubi.sogou.com/",
     "url": "https://downloads.sourceforge.net/project/zapps/SogouWubi.7z",
     "installer": {
-        "scripts": ""
+        "script": ""
     },
     "uninstaller": {
-        "scripts": ""
+        "script": ""
     }
 }
