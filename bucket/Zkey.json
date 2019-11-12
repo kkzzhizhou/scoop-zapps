@@ -1,0 +1,10 @@
+{
+    "version": "1.0.0.0",
+    "url": "https://downloads.sourceforge.net/project/zapps/Zkey.7z",
+    "shortcuts": [
+        [
+            "ZKey.exe",
+            "ZKey"
+        ]
+    ]
+}
