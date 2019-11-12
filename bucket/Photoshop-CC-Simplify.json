@@ -6,11 +6,20 @@
             "hash": "A097CFB002ED5ECEED1DDA9BFE36136BE7378230F2E73A371E537E715AE36FA6",
             "extract_dir": "Adobe Photoshop CC (64 Bit)",
             "installer": {
-                "script": "Start-Process -Wait $dir\\QuickInstall.exe i"
+                "script": [
+                    "Start-Process -Wait $dir\\QuickInstall.exe i"
+                ]
             },
+            "post_install": "Remove-Item \"$env:USERPROFILE\\Desktop\\Adobe` Photoshop` CC (64` Bit).lnk\"",
             "uninstaller": {
                 "script": "Start-Process -Wait $dir\\QuickInstall.exe u"
-            }
+            },
+            "shortcuts": [
+                [
+                    "Adobe Photoshop CC (64 Bit)\\Photoshop.exe",
+                    "Photoshop CC"
+                ]
+            ]
         },
         "32bit": {
             "url": "https://downloads.sourceforge.net/project/zapps/Photoshop-CC-x86.7z",
