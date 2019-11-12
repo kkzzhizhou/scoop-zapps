@@ -10,7 +10,10 @@
             "/NORESTART"
         ]
     },
-    "post_install": "Remove-Item \"$env:USERPROFILE\\Desktop\\USB` Safely` Remove.lnk\"",
+    "post_install": [
+        "Remove-Item \"$env:USERPROFILE\\Desktop\\USB` Safely` Remove.lnk\"",
+        "New-ItemProperty -Path HKCU:\\Software\\SafelyRemove -Name LicKey -PropertyType String -Value Q1IHAQgAVFJBTiBIQUkAAGQAPqkAAAAABQB2PTYuMTr2vYVreG5YxVOCnE+6gbXigQ5GXYe2rkcaYIK8wknu23GHo835Mko="
+    ],
     "uninstaller": {
         "file": "unins000.exe",
         "args": [
