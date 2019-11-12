@@ -14,5 +14,6 @@
         "args": [
             "/S"
         ]
-    }
+    },
+    "note": "The uninstall of SogouWubi need reboot"
 }
