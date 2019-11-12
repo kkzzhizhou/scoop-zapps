@@ -1,7 +1,7 @@
 {
     "version": "3.1.0.1751",
     "homepage": "https://wubi.sogou.com/",
-    "url": "http://cdn2.ime.sogou.com/dl/index/1510799567/sogou_wubi_31a.exe#!dl.exe",
+    "url": "http://cdn2.ime.sogou.com/dl/index/1510799567/sogou_wubi_31a.exe#/dl.exe",
     "installer": {
         "file": "dl.exe",
         "args": [
