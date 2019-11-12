@@ -1,17 +1,17 @@
 {
     "version": "1.0.0.0",
     "url": "https://downloads.sourceforge.net/project/zapps/azw3-to-mobi.7z",
-    "bin": "HefuGen.exe",
+    "bin": "azw3_to_mobi.exe",
     "depends": [
         "kindlegen",
         "kindleunpack"
     ],
     "post_install": [
-        "if (Test-Path \"$dir\\HefuGen-add-context.reg\") {",
-        "  $apppath = \"$dir\\HefuGen.exe\".Replace('\\', '\\\\')",
-        "  $content = Get-Content \"$dir\\HefuGen-add-context.reg\"",
+        "if (Test-Path \"$dir\\add-context.reg\") {",
+        "  $apppath = \"$dir\\azw3_to_mobi.exe\".Replace('\\', '\\\\')",
+        "  $content = Get-Content \"$dir\\add-context.reg\"",
         "  $content = $content.Replace('$path', $apppath)",
-        "  $content | Set-Content -Path \"$dir\\HefuGen-add-context.reg\"",
+        "  $content | Set-Content -Path \"$dir\\add-context.reg\"",
         "}",
         "regedit /s $dir\\add-context.reg"
     ],
