@@ -9,7 +9,6 @@
             "/D=$dir"
         ]
     },
-    "post_install": "Remove-Item \"$env:PUBLIC\\Desktop\\Twomon` PC` Program.lnk\"",
     "uninstaller": {
         "file": "$dir\\3.1.0.1751\\uninstall.exe",
         "args": [
