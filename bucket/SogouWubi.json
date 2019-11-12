@@ -10,11 +10,8 @@
         ]
     },
     "uninstaller": {
-        "file": "3.1.0.1751\\uninstall.exe",
-        "args": [
-            "/S"
-        ],
         "script": [
+            "$dir\\3.1.0.1751\\uninstall.exe /S",
             "Start-Sleep -Seconds 5",
             "Get-WmiObject Win32_Process -Filter \"name='SogouWBImeLoader.exe'\" | Invoke-WmiMethod -Name Terminate | Out-Null",
             "sudo Remove-Item C:\\Windows\\SysWOW64\\IME\\SogouWB -Recurse",
