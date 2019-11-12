@@ -4,7 +4,7 @@
         "64bit": {
             "url": "https://downloads.sourceforge.net/project/zapps/Photoshop-CC-x64.7z",
             "hash": "A097CFB002ED5ECEED1DDA9BFE36136BE7378230F2E73A371E537E715AE36FA6",
-            "extract_dir": "Adobe Photoshop CC"
+            "extract_dir": "Adobe Photoshop CC (64 Bit)"
         },
         "32bit": {
             "url": "https://downloads.sourceforge.net/project/zapps/Photoshop-CC-x86.7z",
