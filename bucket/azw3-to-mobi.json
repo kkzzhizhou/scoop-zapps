@@ -8,7 +8,7 @@
     ],
     "post_install": [
         "if (Test-Path \"$dir\\add-context.reg\") {",
-        "  $apppath = \"$dir\\azw3_to_mobi.exe\".Replace('\\', '\\\\')",
+        "  $apppath = \"$dir\\azw3_to_mobi.bat\".Replace('\\', '\\\\')",
         "  $content = Get-Content \"$dir\\add-context.reg\"",
         "  $content = $content.Replace('$path', $apppath)",
         "  $content | Set-Content -Path \"$dir\\add-context.reg\"",
