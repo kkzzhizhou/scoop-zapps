@@ -12,7 +12,6 @@
     "uninstaller": {
         "script": [
             "Invoke-ExternalCommand $dir\\$version\\uninstall.exe -ArgumentList @('/S') -RunAs | Out-Null",
-            "Start-Sleep -Seconds 5",
             "Get-WmiObject Win32_Process -Filter \"name='SogouWBImeLoader.exe'\" | Invoke-WmiMethod -Name Terminate | Out-Null",
             "sudo Remove-Item C:\\Windows\\SysWOW64\\IME\\SogouWB -Recurse",
             "sudo Remove-Item -Path HKLM:\\SOFTWARE\\WOW6432Node\\SogouWBInput -Recurse",
