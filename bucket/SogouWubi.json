@@ -16,6 +16,7 @@
         ],
         "script": [
             "Get-WmiObject Win32_Process -Filter \"name='SogouWBImeLoader.exe'\" | Invoke-WmiMethod -Name Terminate | Out-Null",
+            "Get-WmiObject Win32_Process -Filter \"name='SogouWBImeBroker.exe'\" | Invoke-WmiMethod -Name Terminate | Out-Null",
             "Remove-Item C:\\Windows\\SysWOW64\\IME\\SogouWB -Recurse",
             "Remove-Item -Path HKLM:\\SOFTWARE\\WOW6432Node\\SogouWBInput -Recurse",
             "Remove-Item $env:SystemRoot\\System32\\SogouWB.ime",
