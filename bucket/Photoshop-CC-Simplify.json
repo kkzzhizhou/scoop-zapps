@@ -13,13 +13,7 @@
             "post_install": "Remove-Item \"$env:PUBLIC\\Desktop\\Adobe` Photoshop` CC (64` Bit).lnk\"",
             "uninstaller": {
                 "script": "Start-Process -Wait $dir\\QuickInstall.exe u"
-            },
-            "shortcuts": [
-                [
-                    "Adobe Photoshop CC (64 Bit)\\Photoshop.exe",
-                    "Photoshop CC"
-                ]
-            ]
+            }
         },
         "32bit": {
             "url": "https://downloads.sourceforge.net/project/zapps/Photoshop-CC-x86.7z",
