@@ -13,12 +13,12 @@
         "script": [
             "Invoke-ExternalCommand $dir\\$version\\uninstall.exe -ArgumentList @('/S') -RunAs | Out-Null",
             "Get-WmiObject Win32_Process -Filter \"name='SogouWBImeLoader.exe'\" | Invoke-WmiMethod -Name Terminate | Out-Null",
-            "sudo Remove-Item C:\\Windows\\SysWOW64\\IME\\SogouWB -Recurse",
-            "sudo Remove-Item -Path HKLM:\\SOFTWARE\\WOW6432Node\\SogouWBInput -Recurse",
-            "sudo Remove-Item $env:SystemRoot\\System32\\SogouWB.ime",
-            "sudo Remove-Item $env:SystemRoot\\System32\\SogouWBTSF.ime",
-            "sudo Remove-Item $env:SystemRoot\\SysWOW64\\SogouWB.ime",
-            "sudo Remove-Item $env:SystemRoot\\SysWOW64\\SogouWBTSF.ime"
+            "Remove-Item C:\\Windows\\SysWOW64\\IME\\SogouWB -Recurse",
+            "Remove-Item -Path HKLM:\\SOFTWARE\\WOW6432Node\\SogouWBInput -Recurse",
+            "Remove-Item $env:SystemRoot\\System32\\SogouWB.ime",
+            "Remove-Item $env:SystemRoot\\System32\\SogouWBTSF.ime",
+            "Remove-Item $env:SystemRoot\\SysWOW64\\SogouWB.ime",
+            "Remove-Item $env:SystemRoot\\SysWOW64\\SogouWBTSF.ime"
         ]
     }
 }
