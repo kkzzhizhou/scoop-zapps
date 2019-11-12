@@ -2,6 +2,7 @@
     "homepage": "https://www.disktool.cn/",
     "version": "8.12.175481",
     "url": "http://www2.aomeisoftware.com/download/pacn/PAGreen.zip",
+    "extract_dir": "PA_Green",
     "shortcuts": [
         [
             "PartAssist.exe",
