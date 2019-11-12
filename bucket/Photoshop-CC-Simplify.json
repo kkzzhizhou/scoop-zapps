@@ -10,7 +10,7 @@
                     "Start-Process -Wait $dir\\QuickInstall.exe i"
                 ]
             },
-            "post_install": "Remove-Item \"$env:USERPROFILE\\Desktop\\Adobe` Photoshop` CC (64` Bit).lnk\"",
+            "post_install": "Remove-Item \"$env:PUBLIC\\Desktop\\Adobe` Photoshop` CC (64` Bit).lnk\"",
             "uninstaller": {
                 "script": "Start-Process -Wait $dir\\QuickInstall.exe u"
             },
