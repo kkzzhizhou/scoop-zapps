@@ -12,7 +12,10 @@
         "https://downloads.sourceforge.net/project/zapps/TXSSOSetup.exe#/txsso.7z"
     ],
     "installer": {
-        "script": "Expand-7zipArchive \"$dir\\txsso.7z\" \"$dir\\bin\""
+        "script": [
+            "RemoveItem \"$dir\\InstTXSSO.exe\"",
+            "Move-Item $dir\\TXSSO $dir\\bin"
+        ]
     },
     "shortcuts": [
         [
