@@ -3,11 +3,11 @@
     "url": "https://downloads.sourceforge.net/project/zapps/HefuGen.7z",
     "bin": "HefuGen.exe",
     "post_install": [
-        "if (Test-Path \"$dir\\HefuGen-add-context.reg\") {",
+        "if (Test-Path \"$dir\\add-context.reg\") {",
         "  $apppath = \"$dir\\HefuGen.exe\".Replace('\\', '\\\\')",
-        "  $content = Get-Content \"$dir\\HefuGen-add-context.reg\"",
+        "  $content = Get-Content \"$dir\\add-context.reg\"",
         "  $content = $content.Replace('$path', $apppath)",
-        "  $content | Set-Content -Path \"$dir\\HefuGen-add-context.reg\"",
+        "  $content | Set-Content -Path \"$dir\\add-context.reg\"",
         "}",
         "regedit /s $dir\\add-context.reg"
     ],
