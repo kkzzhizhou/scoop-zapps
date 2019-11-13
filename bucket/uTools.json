@@ -34,9 +34,6 @@
             "32bit": {
                 "url": "https://resource.u-tools.cn/currentversion/uTools-$version-ia32.exe"
             }
-        },
-        "hash": {
-            "url": "$url.sha512"
         }
     },
     "bin": "uTools.exe",
