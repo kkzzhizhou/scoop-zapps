@@ -1,12 +1,11 @@
 {
     "version": "2.0.0.1011",
-    "url": "https://downloads.sourceforge.net/project/zapps/R-StudioPortable.exe#/dl.7z",
-    "hash": "D4547BF54A4884AA2AF70067AE0B83D24D839DB5CC7D83B4C8C3AF23CEEEB596",
-    "extract_dir": "R-StudioPortable",
+    "url": "https://downloads.sourceforge.net/project/zapps/360netrepair.zip",
+    "hash": "B67CD4C679FFB5B79DB06FE49496656805935E8644F6AE316CC2D874B82470D7",
     "shortcuts": [
         [
-            "RStudioPortable.exe",
-            "R-Studio 网络版"
+            "360netrepair.exe",
+            "360?????"
         ]
     ]
 }

@@ -1,11 +1,12 @@
 {
     "homepage": "https://www.r-studio.com/zhcn/data-recovery-software/",
     "version": "8.12.175481",
-    "url": "https://cdn-file-ssl.ludashi.com/pc/appstore/ludashi/ludashisetup.exe#dl.7z",
+    "url": "https://downloads.sourceforge.net/project/zapps/R-StudioPortable.exe#/dl.7z",
+    "extract_dir": "R-StudioPortable",
     "shortcuts": [
         [
-            "ComputerZ_CN.exe",
-            "鲁大师"
+            "RStudioPortable.exe",
+            "R-Studio 网络版"
         ]
     ]
 }
