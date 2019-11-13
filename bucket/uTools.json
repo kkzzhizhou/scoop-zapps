@@ -34,6 +34,10 @@
             "32bit": {
                 "url": "https://resource.u-tools.cn/currentversion/uTools-$version-ia32.exe"
             }
+        },
+        "hash": {
+            "url": "https://resource.u-tools.cn/currentversion/latest.yml",
+            "hash": "sha512: ([\\d.]+)"
         }
     },
     "bin": "uTools.exe",
