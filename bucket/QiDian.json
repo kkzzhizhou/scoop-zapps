@@ -13,7 +13,7 @@
     ],
     "installer": {
         "script": [
-            "Remove-Item \"$dir\\$PLUGINSDIR\" -Recurse",
+            "Remove-Item \"$dir\\`$PLUGINSDIR\" -Recurse",
             "Remove-Item \"$dir\\InstTXSSO.exe\"",
             "Move-Item $dir\\TXSSO $dir\\bin"
         ]
