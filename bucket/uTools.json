@@ -1,22 +1,14 @@
 {
     "homepage": "https://u.tools/",
     "description": "你的生产力工具集",
-    "version": "0.8.3-beta",
+    "version": "0.8.6-beta",
     "architecture": {
         "64bit": {
-            "url": "https://resource.u-tools.cn/currentversion/uTools-0.8.3-beta.exe#/dl.7z",
+            "url": "https://resource.u-tools.cn/currentversion/uTools-0.8.6-beta.exe#dl.7z",
+            "hash": "fb6ebb27cf92d417d72282220f7e17f4426d25675032f07d1ea9e5bdafa52e26",
             "installer": {
                 "script": [
                     "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
-                    "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninstall*\" -Force -Recurse"
-                ]
-            }
-        },
-        "32bit": {
-            "installer": {
-                "url": "https://resource.u-tools.cn/currentversion/uTools-0.8.3-beta-ia32.exe#/dl.7z",
-                "script": [
-                    "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-32.7z\" \"$dir\"",
                     "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninstall*\" -Force -Recurse"
                 ]
             }
@@ -30,9 +22,6 @@
         "architecture": {
             "64bit": {
                 "url": "https://resource.u-tools.cn/currentversion/uTools-$version.exe#dl.7z"
-            },
-            "32bit": {
-                "url": "https://resource.u-tools.cn/currentversion/uTools-$version-ia32.exe#dl.7z"
             }
         },
         "hash": {
