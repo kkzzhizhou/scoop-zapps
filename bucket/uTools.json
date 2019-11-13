@@ -2,9 +2,9 @@
     "homepage": "https://u.tools/",
     "description": "你的生产力工具集",
     "version": "0.8.3-beta",
-    "url": "https://resource.u-tools.cn/currentversion/uTools-0.8.3-beta.exe#/dl.7z",
     "architecture": {
         "64bit": {
+            "url": "https://resource.u-tools.cn/currentversion/uTools-0.8.3-beta.exe#/dl.7z",
             "installer": {
                 "script": [
                     "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
@@ -14,6 +14,7 @@
         },
         "32bit": {
             "installer": {
+                "url": "https://resource.u-tools.cn/currentversion/uTools-0.8.3-beta-ia32.exe#/dl.7z",
                 "script": [
                     "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-32.7z\" \"$dir\"",
                     "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninstall*\" -Force -Recurse"
@@ -22,8 +23,8 @@
         }
     },
     "checkver": {
-        "url": "https://u.tools/download.html",
-        "regex": "版本号: ([\\d.]+)"
+        "url": "https://resource.u-tools.cn/currentversion/latest.yml",
+        "regex": "version: ([\\d.]+.*)"
     },
     "autoupdate": {
         "architecture": {
@@ -35,7 +36,7 @@
             }
         },
         "hash": {
-            "url": "$url.sha256"
+            "url": "$url.sha512"
         }
     },
     "bin": "uTools.exe",
