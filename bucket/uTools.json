@@ -21,6 +21,23 @@
             }
         }
     },
+    "checkver": {
+        "url": "https://u.tools/download.html",
+        "regex": "版本号: ([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://resource.u-tools.cn/currentversion/uTools-$version.exe"
+            },
+            "32bit": {
+                "url": "https://resource.u-tools.cn/currentversion/uTools-$version-ia32.exe"
+            }
+        },
+        "hash": {
+            "url": "$url.sha256"
+        }
+    },
     "bin": "uTools.exe",
     "shortcuts": [
         [
