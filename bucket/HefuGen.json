@@ -1,5 +1,5 @@
 {
-    "version": "1.0.0.0",
+    "version": "1.0.0.4",
     "url": "https://downloads.sourceforge.net/project/zapps/HefuGen.7z",
     "bin": "HefuGen.exe",
     "post_install": [
