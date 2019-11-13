@@ -15,6 +15,7 @@
         "script": [
             "Remove-Item \"$dir\\`$PLUGINSDIR\" -Recurse",
             "Remove-Item \"$dir\\InstTXSSO.exe\"",
+            "Remove-Item \"$dir\\QiDianUninst.exe\"",
             "Move-Item $dir\\TXSSO $dir\\bin"
         ]
     },
