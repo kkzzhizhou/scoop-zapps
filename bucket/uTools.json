@@ -1,11 +1,11 @@
 {
     "homepage": "https://u.tools/",
     "description": "你的生产力工具集",
-    "version": "0.8.6-beta",
+    "version": "0.8.7-beta",
     "architecture": {
         "64bit": {
-            "url": "https://resource.u-tools.cn/currentversion/uTools-0.8.6-beta.exe#dl.7z",
-            "hash": "fb6ebb27cf92d417d72282220f7e17f4426d25675032f07d1ea9e5bdafa52e26",
+            "url": "https://resource.u-tools.cn/currentversion/uTools-0.8.7-beta.exe#dl.7z",
+            "hash": "b13880ff270823bb40d202a3d7d86ebb39ab6f2e4c7aee62589fda9e456882b3",
             "installer": {
                 "script": [
                     "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
