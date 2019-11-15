@@ -21,7 +21,8 @@
             "uninstaller":{
                 "script": [
                     "sudo regsvr32.exe /u /s $dir\\7-zip.dll",
-                    "sudo regedit /s $dir\\unassoc.reg"
+                    "sudo regedit /s $dir\\unassoc.reg",
+                    "ie4uinit.exe -show"
                 ]
             }
         },
@@ -39,7 +40,8 @@
              "uninstaller":{
                 "script": [
                     "sudo regsvr32.exe /u /s $dir\\7-zip.dll",
-                    "sudo regedit /s $dir\\unassoc.reg"
+                    "sudo regedit /s $dir\\unassoc.reg",
+                    "ie4uinit.exe -show"
                 ]
             }
         }
@@ -53,7 +55,8 @@
         "    $content = $content -Replace '\\$Path', $path",
         "    Set-Content \"$dir\\assoc.reg\" $content -Encoding ASCII",
         "}",
-        "sudo regedit /s $dir\\assoc.reg"
+        "sudo regedit /s $dir\\assoc.reg",
+        "ie4uinit.exe -show"
      ],
     "bin": "7z.exe",
     "checkver": {
