@@ -60,8 +60,7 @@
         "    $content = Get-Content \"$dir\\replace-windows-notepad.reg\"",
         "    $content = $content -Replace '\\$notepad3', $notepad3",
         "    Set-Content \"$dir\\replace-windows-notepad.reg\" $content -Encoding ASCII",
-        "}",
-        "regedit /s $dir\\replace-windows-notepad.reg"
+        "}"
     ],
     "checkver": {
         "github": "https://github.com/rizonesoft/Notepad3",
