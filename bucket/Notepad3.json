@@ -4,14 +4,10 @@
     "homepage": "https://www.rizonesoft.com/downloads/notepad3/",
     "license": "BSD-3-Clause",
     "url": [
-        "https://github.com/rizonesoft/Notepad3/releases/download/RELEASE_5.19.815.2595/Notepad3_5.19.815.2595.zip",
-        "https://raw.githubusercontent.com/lukesampson/scoop-extras/master/scripts/notepad3/replace-windows-notepad.reg",
-        "https://raw.githubusercontent.com/lukesampson/scoop-extras/master/scripts/notepad3/restore-windows-notepad.reg"
+        "https://github.com/rizonesoft/Notepad3/releases/download/RELEASE_5.19.815.2595/Notepad3_5.19.815.2595.zip"
     ],
     "hash": [
-        "f837f7f054f9b681dd9d79d61661c04d3f2ed580b959a0ae3606cc6800b37958",
-        "d39d59e7b26d903a8e91bad545cbfd082a0508d1ed4d3eb4dad8c8ebb87fbd07",
-        "0e294608620e2d84bdf99f9a65de547b7b26431294708d6d0a7d9b42633c74a2"
+        "f837f7f054f9b681dd9d79d61661c04d3f2ed580b959a0ae3606cc6800b37958"
     ],
     "bin": [
         "Notepad3.exe",
@@ -35,10 +31,17 @@
     "architecture": {
         "64bit": {
             "installer": {
-                "script": "Expand-ZipArchive \"$dir\\Notepad3_${version}_x64.zip\""
+                "script": [
+                    "Expand-ZipArchive \"$dir\\Notepad3_${version}_x64.zip\"",
+                    "sudo New-ItemProperty -Path HKLM:Software\\Microsoft\\Windows NT\\CurrentVersion\\Image` File` Execution` Options\\notepad.exe -Name Debugger -PropertyType String -Value $dir\\Notepad3.exe"
+
+                ]
             },
             "uninstall": {
-                "script":"regedit /s $dir\\restore-windows-notepad.reg"
+                "script": [
+                    "regedit /s $dir\\restore-windows-notepad.reg",
+                    "sudo Remove-Item HKLM:Software\\Microsoft\\Windows NT\\CurrentVersion\\Image` File` Execution` Options\\notepad.exe -Force"
+                ]
             }
         },
         "32bit": {
