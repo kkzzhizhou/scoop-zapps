@@ -10,24 +10,45 @@
         "64bit": {
             "url": [
                 "https://7-zip.org/a/7z1900-x64.msi",
-                "https://raw.githubusercontent.com/lukesampson/scoop-extras/master/scripts/install-context.reg"
+                "https://raw.githubusercontent.com/kkzzhizhou/scoop-zapps/master/script/7-zip/assoc.reg",
+                "https://raw.githubusercontent.com/kkzzhizhou/scoop-zapps/master/script/7-zip/unassoc.reg"
             ],
             "hash": [
                 "a7803233eedb6a4b59b3024ccf9292a6fffb94507dc998aa67c5b745d197a5dc",
-                "a7803233eedb6a4b59b3024ccf9292a6fffb94507dc998aa67c5b745d197a5dc"
-            ]
+                "7CC4ADF04BBCA7E739962249B47E48C476BEAFBE92D6C587FB5E8D1D2A74EA77",
+                "53655B37A35A38D4662C815F5AE6C4037CE699A5D63CBCAB36D5033B43898965"
+            ],
+            "uninstaller":{
+                "script": [
+                    "sudo regsvr32.exe /u /s $dir\\7-zip.dll",
+                    "sudo regedit /s $dir\\unassoc.reg"
+                ]
+            }
         },
         "32bit": {
-            "url": "https://7-zip.org/a/7z1900.msi",
-            "hash": "b49d55a52bc0eab14947c8982c413d9be141c337da1368a24aa0484cbb5e89cd"
+            "url": [
+                "https://7-zip.org/a/7z1900.msi",
+                "https://raw.githubusercontent.com/kkzzhizhou/scoop-zapps/master/script/7-zip/assoc.reg",
+                "https://raw.githubusercontent.com/kkzzhizhou/scoop-zapps/master/script/7-zip/unassoc.reg"
+            ],
+            "hash": [
+                "b49d55a52bc0eab14947c8982c413d9be141c337da1368a24aa0484cbb5e89cd",
+                "7CC4ADF04BBCA7E739962249B47E48C476BEAFBE92D6C587FB5E8D1D2A74EA77",
+                "53655B37A35A38D4662C815F5AE6C4037CE699A5D63CBCAB36D5033B43898965"
+            ]
         }
     },
     "extract_dir": "Files/7-Zip",
     "post-install": [ 
-        "echo hello ",
-        "echo hello"
+        "sudo regsvr32.exe /i /s $dir\\7-zip.dll",
+        "if (Test-Path(\"$dir\\assoc.reg\")) {",
+        "    $path = \"$dir\" -Replace '\\\\', '\\\\'",
+        "    $content = Get-Content \"$dir\\assoc.reg\"",
+        "    $content = $content -Replace '\\$Path', $path",
+        "    Set-Content \"$dir\\assoc.reg\" $content -Encoding ASCII",
+        "}",
+        "sudo regedit /s $dir\\assoc.reg"
      ],
-
     "bin": "7z.exe",
     "checkver": {
         "url": "https://www.7-zip.org/download.html",

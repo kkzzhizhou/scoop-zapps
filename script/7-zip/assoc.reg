@@ -7,7 +7,7 @@ Windows Registry Editor Version 5.00
 @="001 Archive"
 
 [HKEY_CLASSES_ROOT\7-Zip.001\DefaultIcon]
-@="C:\\Program Files\\7-Zip\\7z.dll,9"
+@="$Path\\7z.dll,9"
 
 [HKEY_CLASSES_ROOT\7-Zip.001\shell]
 @=""
@@ -16,7 +16,7 @@ Windows Registry Editor Version 5.00
 @=""
 
 [HKEY_CLASSES_ROOT\7-Zip.001\shell\open\command]
-@="\"C:\\Program Files\\7-Zip\\7zFM.exe\" \"%1\""
+@="\"$Path\\7zFM.exe\" \"%1\""
 
 [HKEY_CLASSES_ROOT\.7z]
 @="7-Zip.7z"
@@ -25,7 +25,7 @@ Windows Registry Editor Version 5.00
 @="7z Archive"
 
 [HKEY_CLASSES_ROOT\7-Zip.7z\DefaultIcon]
-@="C:\\Program Files\\7-Zip\\7z.dll,0"
+@="$Path\\7z.dll,0"
 
 [HKEY_CLASSES_ROOT\7-Zip.7z\shell]
 @=""
@@ -34,7 +34,7 @@ Windows Registry Editor Version 5.00
 @=""
 
 [HKEY_CLASSES_ROOT\7-Zip.7z\shell\open\command]
-@="\"C:\\Program Files\\7-Zip\\7zFM.exe\" \"%1\""
+@="\"$Path\\7zFM.exe\" \"%1\""
 
 [HKEY_CLASSES_ROOT\.arj]
 @="7-Zip.arj"
@@ -43,7 +43,7 @@ Windows Registry Editor Version 5.00
 @="arj Archive"
 
 [HKEY_CLASSES_ROOT\7-Zip.arj\DefaultIcon]
-@="C:\\Program Files\\7-Zip\\7z.dll,4"
+@="$Path\\7z.dll,4"
 
 [HKEY_CLASSES_ROOT\7-Zip.arj\shell]
 @=""
@@ -52,7 +52,7 @@ Windows Registry Editor Version 5.00
 @=""
 
 [HKEY_CLASSES_ROOT\7-Zip.arj\shell\open\command]
-@="\"C:\\Program Files\\7-Zip\\7zFM.exe\" \"%1\""
+@="\"$Path\\7zFM.exe\" \"%1\""
 
 [HKEY_CLASSES_ROOT\.bz2]
 @="7-Zip.bz2"
@@ -61,7 +61,7 @@ Windows Registry Editor Version 5.00
 @="bz2 Archive"
 
 [HKEY_CLASSES_ROOT\7-Zip.bz2\DefaultIcon]
-@="C:\\Program Files\\7-Zip\\7z.dll,2"
+@="$Path\\7z.dll,2"
 
 [HKEY_CLASSES_ROOT\7-Zip.bz2\shell]
 @=""
@@ -70,7 +70,7 @@ Windows Registry Editor Version 5.00
 @=""
 
 [HKEY_CLASSES_ROOT\7-Zip.bz2\shell\open\command]
-@="\"C:\\Program Files\\7-Zip\\7zFM.exe\" \"%1\""
+@="\"$Path\\7zFM.exe\" \"%1\""
 
 [HKEY_CLASSES_ROOT\.bzip2]
 @="7-Zip.bzip2"
@@ -79,7 +79,7 @@ Windows Registry Editor Version 5.00
 @="bzip2 Archive"
 
 [HKEY_CLASSES_ROOT\7-Zip.bzip2\DefaultIcon]
-@="C:\\Program Files\\7-Zip\\7z.dll,2"
+@="$Path\\7z.dll,2"
 
 [HKEY_CLASSES_ROOT\7-Zip.bzip2\shell]
 @=""
@@ -88,25 +88,25 @@ Windows Registry Editor Version 5.00
 @=""
 
 [HKEY_CLASSES_ROOT\7-Zip.bzip2\shell\open\command]
-@="\"C:\\Program Files\\7-Zip\\7zFM.exe\" \"%1\""
+@="\"$Path\\7zFM.exe\" \"%1\""
 
-[HKEY_CLASSES_ROOT\.cab]
-@="7-Zip.cab"
+;[HKEY_CLASSES_ROOT\.cab]
+;@="7-Zip.cab"
 
-[HKEY_CLASSES_ROOT\7-Zip.cab]
-@="cab Archive"
+;[HKEY_CLASSES_ROOT\7-Zip.cab]
+;@="cab Archive"
 
-[HKEY_CLASSES_ROOT\7-Zip.cab\DefaultIcon]
-@="C:\\Program Files\\7-Zip\\7z.dll,7"
+;[HKEY_CLASSES_ROOT\7-Zip.cab\DefaultIcon]
+;@="$Path\\7z.dll,7"
 
-[HKEY_CLASSES_ROOT\7-Zip.cab\shell]
-@=""
+;[HKEY_CLASSES_ROOT\7-Zip.cab\shell]
+;@=""
 
-[HKEY_CLASSES_ROOT\7-Zip.cab\shell\open]
-@=""
+;[HKEY_CLASSES_ROOT\7-Zip.cab\shell\open]
+;@=""
 
-[HKEY_CLASSES_ROOT\7-Zip.cab\shell\open\command]
-@="\"C:\\Program Files\\7-Zip\\7zFM.exe\" \"%1\""
+;[HKEY_CLASSES_ROOT\7-Zip.cab\shell\open\command]
+;@="\"$Path\\7zFM.exe\" \"%1\""
 
 [HKEY_CLASSES_ROOT\.cpio]
 @="7-Zip.cpio"
@@ -115,7 +115,7 @@ Windows Registry Editor Version 5.00
 @="cpio Archive"
 
 [HKEY_CLASSES_ROOT\7-Zip.cpio\DefaultIcon]
-@="C:\\Program Files\\7-Zip\\7z.dll,12"
+@="$Path\\7z.dll,12"
 
 [HKEY_CLASSES_ROOT\7-Zip.cpio\shell]
 @=""
@@ -124,7 +124,7 @@ Windows Registry Editor Version 5.00
 @=""
 
 [HKEY_CLASSES_ROOT\7-Zip.cpio\shell\open\command]
-@="\"C:\\Program Files\\7-Zip\\7zFM.exe\" \"%1\""
+@="\"$Path\\7zFM.exe\" \"%1\""
 
 [HKEY_CLASSES_ROOT\.deb]
 @="7-Zip.deb"
@@ -133,7 +133,7 @@ Windows Registry Editor Version 5.00
 @="deb Archive"
 
 [HKEY_CLASSES_ROOT\7-Zip.deb\DefaultIcon]
-@="C:\\Program Files\\7-Zip\\7z.dll,11"
+@="$Path\\7z.dll,11"
 
 [HKEY_CLASSES_ROOT\7-Zip.deb\shell]
 @=""
@@ -142,7 +142,7 @@ Windows Registry Editor Version 5.00
 @=""
 
 [HKEY_CLASSES_ROOT\7-Zip.deb\shell\open\command]
-@="\"C:\\Program Files\\7-Zip\\7zFM.exe\" \"%1\""
+@="\"$Path\\7zFM.exe\" \"%1\""
 
 [HKEY_CLASSES_ROOT\.dmg]
 @="7-Zip.dmg"
@@ -151,7 +151,7 @@ Windows Registry Editor Version 5.00
 @="dmg Archive"
 
 [HKEY_CLASSES_ROOT\7-Zip.dmg\DefaultIcon]
-@="C:\\Program Files\\7-Zip\\7z.dll,17"
+@="$Path\\7z.dll,17"
 
 [HKEY_CLASSES_ROOT\7-Zip.dmg\shell]
 @=""
@@ -160,7 +160,7 @@ Windows Registry Editor Version 5.00
 @=""
 
 [HKEY_CLASSES_ROOT\7-Zip.dmg\shell\open\command]
-@="\"C:\\Program Files\\7-Zip\\7zFM.exe\" \"%1\""
+@="\"$Path\\7zFM.exe\" \"%1\""
 
 [HKEY_CLASSES_ROOT\.fat]
 @="7-Zip.fat"
@@ -169,7 +169,7 @@ Windows Registry Editor Version 5.00
 @="fat Archive"
 
 [HKEY_CLASSES_ROOT\7-Zip.fat\DefaultIcon]
-@="C:\\Program Files\\7-Zip\\7z.dll,21"
+@="$Path\\7z.dll,21"
 
 [HKEY_CLASSES_ROOT\7-Zip.fat\shell]
 @=""
@@ -178,7 +178,7 @@ Windows Registry Editor Version 5.00
 @=""
 
 [HKEY_CLASSES_ROOT\7-Zip.fat\shell\open\command]
-@="\"C:\\Program Files\\7-Zip\\7zFM.exe\" \"%1\""
+@="\"$Path\\7zFM.exe\" \"%1\""
 
 [HKEY_CLASSES_ROOT\.gz]
 @="7-Zip.gz"
@@ -187,7 +187,7 @@ Windows Registry Editor Version 5.00
 @="gz Archive"
 
 [HKEY_CLASSES_ROOT\7-Zip.gz\DefaultIcon]
-@="C:\\Program Files\\7-Zip\\7z.dll,14"
+@="$Path\\7z.dll,14"
 
 [HKEY_CLASSES_ROOT\7-Zip.gz\shell]
 @=""
@@ -196,7 +196,7 @@ Windows Registry Editor Version 5.00
 @=""
 
 [HKEY_CLASSES_ROOT\7-Zip.gz\shell\open\command]
-@="\"C:\\Program Files\\7-Zip\\7zFM.exe\" \"%1\""
+@="\"$Path\\7zFM.exe\" \"%1\""
 
 [HKEY_CLASSES_ROOT\.gzip]
 @="7-Zip.gzip"
@@ -205,7 +205,7 @@ Windows Registry Editor Version 5.00
 @="gzip Archive"
 
 [HKEY_CLASSES_ROOT\7-Zip.gzip\DefaultIcon]
-@="C:\\Program Files\\7-Zip\\7z.dll,14"
+@="$Path\\7z.dll,14"
 
 [HKEY_CLASSES_ROOT\7-Zip.gzip\shell]
 @=""
@@ -214,7 +214,7 @@ Windows Registry Editor Version 5.00
 @=""
 
 [HKEY_CLASSES_ROOT\7-Zip.gzip\shell\open\command]
-@="\"C:\\Program Files\\7-Zip\\7zFM.exe\" \"%1\""
+@="\"$Path\\7zFM.exe\" \"%1\""
 
 [HKEY_CLASSES_ROOT\.hfs]
 @="7-Zip.hfs"
@@ -223,7 +223,7 @@ Windows Registry Editor Version 5.00
 @="hfs Archive"
 
 [HKEY_CLASSES_ROOT\7-Zip.hfs\DefaultIcon]
-@="C:\\Program Files\\7-Zip\\7z.dll,18"
+@="$Path\\7z.dll,18"
 
 [HKEY_CLASSES_ROOT\7-Zip.hfs\shell]
 @=""
@@ -232,25 +232,25 @@ Windows Registry Editor Version 5.00
 @=""
 
 [HKEY_CLASSES_ROOT\7-Zip.hfs\shell\open\command]
-@="\"C:\\Program Files\\7-Zip\\7zFM.exe\" \"%1\""
+@="\"$Path\\7zFM.exe\" \"%1\""
 
-[HKEY_CLASSES_ROOT\.iso]
-@="7-Zip.iso"
+;[HKEY_CLASSES_ROOT\.iso]
+;@="7-Zip.iso"
 
-[HKEY_CLASSES_ROOT\7-Zip.iso]
-@="iso Archive"
+;[HKEY_CLASSES_ROOT\7-Zip.iso]
+;@="iso Archive"
 
-[HKEY_CLASSES_ROOT\7-Zip.iso\DefaultIcon]
-@="C:\\Program Files\\7-Zip\\7z.dll,8"
+;[HKEY_CLASSES_ROOT\7-Zip.iso\DefaultIcon]
+;@="$Path\\7z.dll,8"
 
-[HKEY_CLASSES_ROOT\7-Zip.iso\shell]
-@=""
+;[HKEY_CLASSES_ROOT\7-Zip.iso\shell]
+;@=""
 
-[HKEY_CLASSES_ROOT\7-Zip.iso\shell\open]
-@=""
+;[HKEY_CLASSES_ROOT\7-Zip.iso\shell\open]
+;@=""
 
-[HKEY_CLASSES_ROOT\7-Zip.iso\shell\open\command]
-@="\"C:\\Program Files\\7-Zip\\7zFM.exe\" \"%1\""
+;[HKEY_CLASSES_ROOT\7-Zip.iso\shell\open\command]
+;@="\"$Path\\7zFM.exe\" \"%1\""
 
 [HKEY_CLASSES_ROOT\.lha]
 @="7-Zip.lha"
@@ -259,7 +259,7 @@ Windows Registry Editor Version 5.00
 @="lha Archive"
 
 [HKEY_CLASSES_ROOT\7-Zip.lha\DefaultIcon]
-@="C:\\Program Files\\7-Zip\\7z.dll,6"
+@="$Path\\7z.dll,6"
 
 [HKEY_CLASSES_ROOT\7-Zip.lha\shell]
 @=""
@@ -268,7 +268,7 @@ Windows Registry Editor Version 5.00
 @=""
 
 [HKEY_CLASSES_ROOT\7-Zip.lha\shell\open\command]
-@="\"C:\\Program Files\\7-Zip\\7zFM.exe\" \"%1\""
+@="\"$Path\\7zFM.exe\" \"%1\""
 
 [HKEY_CLASSES_ROOT\.lzh]
 @="7-Zip.lzh"
@@ -277,7 +277,7 @@ Windows Registry Editor Version 5.00
 @="lzh Archive"
 
 [HKEY_CLASSES_ROOT\7-Zip.lzh\DefaultIcon]
-@="C:\\Program Files\\7-Zip\\7z.dll,6"
+@="$Path\\7z.dll,6"
 
 [HKEY_CLASSES_ROOT\7-Zip.lzh\shell]
 @=""
@@ -286,7 +286,7 @@ Windows Registry Editor Version 5.00
 @=""
 
 [HKEY_CLASSES_ROOT\7-Zip.lzh\shell\open\command]
-@="\"C:\\Program Files\\7-Zip\\7zFM.exe\" \"%1\""
+@="\"$Path\\7zFM.exe\" \"%1\""
 
 [HKEY_CLASSES_ROOT\.lzma]
 @="7-Zip.lzma"
@@ -295,7 +295,7 @@ Windows Registry Editor Version 5.00
 @="lzma Archive"
 
 [HKEY_CLASSES_ROOT\7-Zip.lzma\DefaultIcon]
-@="C:\\Program Files\\7-Zip\\7z.dll,16"
+@="$Path\\7z.dll,16"
 
 [HKEY_CLASSES_ROOT\7-Zip.lzma\shell]
 @=""
@@ -304,7 +304,7 @@ Windows Registry Editor Version 5.00
 @=""
 
 [HKEY_CLASSES_ROOT\7-Zip.lzma\shell\open\command]
-@="\"C:\\Program Files\\7-Zip\\7zFM.exe\" \"%1\""
+@="\"$Path\\7zFM.exe\" \"%1\""
 
 [HKEY_CLASSES_ROOT\.ntfs]
 @="7-Zip.ntfs"
@@ -313,7 +313,7 @@ Windows Registry Editor Version 5.00
 @="ntfs Archive"
 
 [HKEY_CLASSES_ROOT\7-Zip.ntfs\DefaultIcon]
-@="C:\\Program Files\\7-Zip\\7z.dll,22"
+@="$Path\\7z.dll,22"
 
 [HKEY_CLASSES_ROOT\7-Zip.ntfs\shell]
 @=""
@@ -322,7 +322,7 @@ Windows Registry Editor Version 5.00
 @=""
 
 [HKEY_CLASSES_ROOT\7-Zip.ntfs\shell\open\command]
-@="\"C:\\Program Files\\7-Zip\\7zFM.exe\" \"%1\""
+@="\"$Path\\7zFM.exe\" \"%1\""
 
 [HKEY_CLASSES_ROOT\.rar]
 @="7-Zip.rar"
@@ -331,7 +331,7 @@ Windows Registry Editor Version 5.00
 @="rar Archive"
 
 [HKEY_CLASSES_ROOT\7-Zip.rar\DefaultIcon]
-@="C:\\Program Files\\7-Zip\\7z.dll,3"
+@="$Path\\7z.dll,3"
 
 [HKEY_CLASSES_ROOT\7-Zip.rar\shell]
 @=""
@@ -340,7 +340,7 @@ Windows Registry Editor Version 5.00
 @=""
 
 [HKEY_CLASSES_ROOT\7-Zip.rar\shell\open\command]
-@="\"C:\\Program Files\\7-Zip\\7zFM.exe\" \"%1\""
+@="\"$Path\\7zFM.exe\" \"%1\""
 
 [HKEY_CLASSES_ROOT\.rpm]
 @="7-Zip.rpm"
@@ -349,7 +349,7 @@ Windows Registry Editor Version 5.00
 @="rpm Archive"
 
 [HKEY_CLASSES_ROOT\7-Zip.rpm\DefaultIcon]
-@="C:\\Program Files\\7-Zip\\7z.dll,10"
+@="$Path\\7z.dll,10"
 
 [HKEY_CLASSES_ROOT\7-Zip.rpm\shell]
 @=""
@@ -358,7 +358,7 @@ Windows Registry Editor Version 5.00
 @=""
 
 [HKEY_CLASSES_ROOT\7-Zip.rpm\shell\open\command]
-@="\"C:\\Program Files\\7-Zip\\7zFM.exe\" \"%1\""
+@="\"$Path\\7zFM.exe\" \"%1\""
 
 [HKEY_CLASSES_ROOT\.squashfs]
 @="7-Zip.squashfs"
@@ -367,7 +367,7 @@ Windows Registry Editor Version 5.00
 @="squashfs Archive"
 
 [HKEY_CLASSES_ROOT\7-Zip.squashfs\DefaultIcon]
-@="C:\\Program Files\\7-Zip\\7z.dll,24"
+@="$Path\\7z.dll,24"
 
 [HKEY_CLASSES_ROOT\7-Zip.squashfs\shell]
 @=""
@@ -376,7 +376,7 @@ Windows Registry Editor Version 5.00
 @=""
 
 [HKEY_CLASSES_ROOT\7-Zip.squashfs\shell\open\command]
-@="\"C:\\Program Files\\7-Zip\\7zFM.exe\" \"%1\""
+@="\"$Path\\7zFM.exe\" \"%1\""
 
 [HKEY_CLASSES_ROOT\.swm]
 @="7-Zip.swm"
@@ -385,7 +385,7 @@ Windows Registry Editor Version 5.00
 @="swm Archive"
 
 [HKEY_CLASSES_ROOT\7-Zip.swm\DefaultIcon]
-@="C:\\Program Files\\7-Zip\\7z.dll,15"
+@="$Path\\7z.dll,15"
 
 [HKEY_CLASSES_ROOT\7-Zip.swm\shell]
 @=""
@@ -394,7 +394,7 @@ Windows Registry Editor Version 5.00
 @=""
 
 [HKEY_CLASSES_ROOT\7-Zip.swm\shell\open\command]
-@="\"C:\\Program Files\\7-Zip\\7zFM.exe\" \"%1\""
+@="\"$Path\\7zFM.exe\" \"%1\""
 
 [HKEY_CLASSES_ROOT\.tar]
 @="7-Zip.tar"
@@ -403,7 +403,7 @@ Windows Registry Editor Version 5.00
 @="tar Archive"
 
 [HKEY_CLASSES_ROOT\7-Zip.tar\DefaultIcon]
-@="C:\\Program Files\\7-Zip\\7z.dll,13"
+@="$Path\\7z.dll,13"
 
 [HKEY_CLASSES_ROOT\7-Zip.tar\shell]
 @=""
@@ -412,7 +412,7 @@ Windows Registry Editor Version 5.00
 @=""
 
 [HKEY_CLASSES_ROOT\7-Zip.tar\shell\open\command]
-@="\"C:\\Program Files\\7-Zip\\7zFM.exe\" \"%1\""
+@="\"$Path\\7zFM.exe\" \"%1\""
 
 [HKEY_CLASSES_ROOT\.taz]
 @="7-Zip.taz"
@@ -421,7 +421,7 @@ Windows Registry Editor Version 5.00
 @="taz Archive"
 
 [HKEY_CLASSES_ROOT\7-Zip.taz\DefaultIcon]
-@="C:\\Program Files\\7-Zip\\7z.dll,5"
+@="$Path\\7z.dll,5"
 
 [HKEY_CLASSES_ROOT\7-Zip.taz\shell]
 @=""
@@ -430,7 +430,7 @@ Windows Registry Editor Version 5.00
 @=""
 
 [HKEY_CLASSES_ROOT\7-Zip.taz\shell\open\command]
-@="\"C:\\Program Files\\7-Zip\\7zFM.exe\" \"%1\""
+@="\"$Path\\7zFM.exe\" \"%1\""
 
 [HKEY_CLASSES_ROOT\.tbz]
 @="7-Zip.tbz"
@@ -439,7 +439,7 @@ Windows Registry Editor Version 5.00
 @="tbz Archive"
 
 [HKEY_CLASSES_ROOT\7-Zip.tbz\DefaultIcon]
-@="C:\\Program Files\\7-Zip\\7z.dll,2"
+@="$Path\\7z.dll,2"
 
 [HKEY_CLASSES_ROOT\7-Zip.tbz\shell]
 @=""
@@ -448,7 +448,7 @@ Windows Registry Editor Version 5.00
 @=""
 
 [HKEY_CLASSES_ROOT\7-Zip.tbz\shell\open\command]
-@="\"C:\\Program Files\\7-Zip\\7zFM.exe\" \"%1\""
+@="\"$Path\\7zFM.exe\" \"%1\""
 
 [HKEY_CLASSES_ROOT\.tbz2]
 @="7-Zip.tbz2"
@@ -457,7 +457,7 @@ Windows Registry Editor Version 5.00
 @="tbz2 Archive"
 
 [HKEY_CLASSES_ROOT\7-Zip.tbz2\DefaultIcon]
-@="C:\\Program Files\\7-Zip\\7z.dll,2"
+@="$Path\\7z.dll,2"
 
 [HKEY_CLASSES_ROOT\7-Zip.tbz2\shell]
 @=""
@@ -466,7 +466,7 @@ Windows Registry Editor Version 5.00
 @=""
 
 [HKEY_CLASSES_ROOT\7-Zip.tbz2\shell\open\command]
-@="\"C:\\Program Files\\7-Zip\\7zFM.exe\" \"%1\""
+@="\"$Path\\7zFM.exe\" \"%1\""
 
 [HKEY_CLASSES_ROOT\.tgz]
 @="7-Zip.tgz"
@@ -475,7 +475,7 @@ Windows Registry Editor Version 5.00
 @="tgz Archive"
 
 [HKEY_CLASSES_ROOT\7-Zip.tgz\DefaultIcon]
-@="C:\\Program Files\\7-Zip\\7z.dll,14"
+@="$Path\\7z.dll,14"
 
 [HKEY_CLASSES_ROOT\7-Zip.tgz\shell]
 @=""
@@ -484,7 +484,7 @@ Windows Registry Editor Version 5.00
 @=""
 
 [HKEY_CLASSES_ROOT\7-Zip.tgz\shell\open\command]
-@="\"C:\\Program Files\\7-Zip\\7zFM.exe\" \"%1\""
+@="\"$Path\\7zFM.exe\" \"%1\""
 
 [HKEY_CLASSES_ROOT\.tpz]
 @="7-Zip.tpz"
@@ -493,7 +493,7 @@ Windows Registry Editor Version 5.00
 @="tpz Archive"
 
 [HKEY_CLASSES_ROOT\7-Zip.tpz\DefaultIcon]
-@="C:\\Program Files\\7-Zip\\7z.dll,14"
+@="$Path\\7z.dll,14"
 
 [HKEY_CLASSES_ROOT\7-Zip.tpz\shell]
 @=""
@@ -502,7 +502,7 @@ Windows Registry Editor Version 5.00
 @=""
 
 [HKEY_CLASSES_ROOT\7-Zip.tpz\shell\open\command]
-@="\"C:\\Program Files\\7-Zip\\7zFM.exe\" \"%1\""
+@="\"$Path\\7zFM.exe\" \"%1\""
 
 [HKEY_CLASSES_ROOT\.txz]
 @="7-Zip.txz"
@@ -511,7 +511,7 @@ Windows Registry Editor Version 5.00
 @="txz Archive"
 
 [HKEY_CLASSES_ROOT\7-Zip.txz\DefaultIcon]
-@="C:\\Program Files\\7-Zip\\7z.dll,23"
+@="$Path\\7z.dll,23"
 
 [HKEY_CLASSES_ROOT\7-Zip.txz\shell]
 @=""
@@ -520,25 +520,25 @@ Windows Registry Editor Version 5.00
 @=""
 
 [HKEY_CLASSES_ROOT\7-Zip.txz\shell\open\command]
-@="\"C:\\Program Files\\7-Zip\\7zFM.exe\" \"%1\""
+@="\"$Path\\7zFM.exe\" \"%1\""
 
-[HKEY_CLASSES_ROOT\.vhd]
-@="7-Zip.vhd"
+;[HKEY_CLASSES_ROOT\.vhd]
+;@="7-Zip.vhd"
 
-[HKEY_CLASSES_ROOT\7-Zip.vhd]
-@="vhd Archive"
+;[HKEY_CLASSES_ROOT\7-Zip.vhd]
+;@="vhd Archive"
 
-[HKEY_CLASSES_ROOT\7-Zip.vhd\DefaultIcon]
-@="C:\\Program Files\\7-Zip\\7z.dll,20"
+;[HKEY_CLASSES_ROOT\7-Zip.vhd\DefaultIcon]
+;@="$Path\\7z.dll,20"
 
-[HKEY_CLASSES_ROOT\7-Zip.vhd\shell]
-@=""
+;[HKEY_CLASSES_ROOT\7-Zip.vhd\shell]
+;@=""
 
-[HKEY_CLASSES_ROOT\7-Zip.vhd\shell\open]
-@=""
+;[HKEY_CLASSES_ROOT\7-Zip.vhd\shell\open]
+;@=""
 
-[HKEY_CLASSES_ROOT\7-Zip.vhd\shell\open\command]
-@="\"C:\\Program Files\\7-Zip\\7zFM.exe\" \"%1\""
+;[HKEY_CLASSES_ROOT\7-Zip.vhd\shell\open\command]
+;@="\"$Path\\7zFM.exe\" \"%1\""
 
 [HKEY_CLASSES_ROOT\.wim]
 @="7-Zip.wim"
@@ -547,7 +547,7 @@ Windows Registry Editor Version 5.00
 @="wim Archive"
 
 [HKEY_CLASSES_ROOT\7-Zip.wim\DefaultIcon]
-@="C:\\Program Files\\7-Zip\\7z.dll,15"
+@="$Path\\7z.dll,15"
 
 [HKEY_CLASSES_ROOT\7-Zip.wim\shell]
 @=""
@@ -556,7 +556,7 @@ Windows Registry Editor Version 5.00
 @=""
 
 [HKEY_CLASSES_ROOT\7-Zip.wim\shell\open\command]
-@="\"C:\\Program Files\\7-Zip\\7zFM.exe\" \"%1\""
+@="\"$Path\\7zFM.exe\" \"%1\""
 
 [HKEY_CLASSES_ROOT\.xar]
 @="7-Zip.xar"
@@ -565,7 +565,7 @@ Windows Registry Editor Version 5.00
 @="xar Archive"
 
 [HKEY_CLASSES_ROOT\7-Zip.xar\DefaultIcon]
-@="C:\\Program Files\\7-Zip\\7z.dll,19"
+@="$Path\\7z.dll,19"
 
 [HKEY_CLASSES_ROOT\7-Zip.xar\shell]
 @=""
@@ -574,7 +574,7 @@ Windows Registry Editor Version 5.00
 @=""
 
 [HKEY_CLASSES_ROOT\7-Zip.xar\shell\open\command]
-@="\"C:\\Program Files\\7-Zip\\7zFM.exe\" \"%1\""
+@="\"$Path\\7zFM.exe\" \"%1\""
 
 [HKEY_CLASSES_ROOT\.xz]
 @="7-Zip.xz"
@@ -583,7 +583,7 @@ Windows Registry Editor Version 5.00
 @="xz Archive"
 
 [HKEY_CLASSES_ROOT\7-Zip.xz\DefaultIcon]
-@="C:\\Program Files\\7-Zip\\7z.dll,23"
+@="$Path\\7z.dll,23"
 
 [HKEY_CLASSES_ROOT\7-Zip.xz\shell]
 @=""
@@ -592,7 +592,7 @@ Windows Registry Editor Version 5.00
 @=""
 
 [HKEY_CLASSES_ROOT\7-Zip.xz\shell\open\command]
-@="\"C:\\Program Files\\7-Zip\\7zFM.exe\" \"%1\""
+@="\"$Path\\7zFM.exe\" \"%1\""
 
 [HKEY_CLASSES_ROOT\.z]
 @="7-Zip.z"
@@ -601,7 +601,7 @@ Windows Registry Editor Version 5.00
 @="z Archive"
 
 [HKEY_CLASSES_ROOT\7-Zip.z\DefaultIcon]
-@="C:\\Program Files\\7-Zip\\7z.dll,5"
+@="$Path\\7z.dll,5"
 
 [HKEY_CLASSES_ROOT\7-Zip.z\shell]
 @=""
@@ -610,7 +610,7 @@ Windows Registry Editor Version 5.00
 @=""
 
 [HKEY_CLASSES_ROOT\7-Zip.z\shell\open\command]
-@="\"C:\\Program Files\\7-Zip\\7zFM.exe\" \"%1\""
+@="\"$Path\\7zFM.exe\" \"%1\""
 
 [HKEY_CLASSES_ROOT\.zip]
 @="7-Zip.zip"
@@ -619,7 +619,7 @@ Windows Registry Editor Version 5.00
 @="zip Archive"
 
 [HKEY_CLASSES_ROOT\7-Zip.zip\DefaultIcon]
-@="C:\\Program Files\\7-Zip\\7z.dll,1"
+@="$Path\\7z.dll,1"
 
 [HKEY_CLASSES_ROOT\7-Zip.zip\shell]
 @=""
@@ -628,4 +628,4 @@ Windows Registry Editor Version 5.00
 @=""
 
 [HKEY_CLASSES_ROOT\7-Zip.zip\shell\open\command]
-@="\"C:\\Program Files\\7-Zip\\7zFM.exe\" \"%1\""
+@="\"$Path\\7zFM.exe\" \"%1\""
