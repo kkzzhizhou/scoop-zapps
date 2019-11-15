@@ -34,7 +34,7 @@
                 "script": [
                     "Expand-ZipArchive \"$dir\\Notepad3_${version}_x64.zip\"",
                     "sudo New-Item 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\notepad.exe'",
-                    "sudo New-ItemProperty 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\notepad.exe' -Name Debugger -PropertyType String -Value '\"$dir\\Notepad3.exe\" /z'"
+                    "sudo New-ItemProperty 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\notepad.exe' -Name Debugger -PropertyType String -Value '$dir\\Notepad3.exe /z'"
 
                 ]
             },
