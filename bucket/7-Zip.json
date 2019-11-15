@@ -35,11 +35,17 @@
                 "b49d55a52bc0eab14947c8982c413d9be141c337da1368a24aa0484cbb5e89cd",
                 "7CC4ADF04BBCA7E739962249B47E48C476BEAFBE92D6C587FB5E8D1D2A74EA77",
                 "53655B37A35A38D4662C815F5AE6C4037CE699A5D63CBCAB36D5033B43898965"
-            ]
+            ],
+             "uninstaller":{
+                "script": [
+                    "sudo regsvr32.exe /u /s $dir\\7-zip.dll",
+                    "sudo regedit /s $dir\\unassoc.reg"
+                ]
+            }
         }
     },
     "extract_dir": "Files/7-Zip",
-    "post-install": [ 
+    "post_install": [ 
         "sudo regsvr32.exe /i /s $dir\\7-zip.dll",
         "if (Test-Path(\"$dir\\assoc.reg\")) {",
         "    $path = \"$dir\" -Replace '\\\\', '\\\\'",
