@@ -33,14 +33,13 @@
             "installer": {
                 "script": [
                     "Expand-ZipArchive \"$dir\\Notepad3_${version}_x64.zip\"",
-                    "sudo New-ItemProperty -Path HKLM:Software\\Microsoft\\Windows` NT\\CurrentVersion\\Image` File` Execution` Options\\notepad.exe -Name Debugger -PropertyType String -Value $dir\\Notepad3.exe"
+                    "sudo New-ItemProperty -Path 'HKLM:Software\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\notepad.exe' -Name Debugger -PropertyType String -Value '\"$dir\\Notepad3.exe\" /z'"
 
                 ]
             },
             "uninstall": {
                 "script": [
-                    "regedit /s $dir\\restore-windows-notepad.reg",
-                    "sudo Remove-Item HKLM:Software\\Microsoft\\Windows` NT\\CurrentVersion\\Image` File` Execution` Options\\notepad.exe -Force"
+                    "sudo Remove-Item 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\notepad.exe'"
                 ]
             }
         },
@@ -49,7 +48,9 @@
                 "script": "Expand-ZipArchive \"$dir\\Notepad3_${version}_x86.zip\""
             },
             "uninstall": {
-                "script":"regedit /s $dir\\restore-windows-notepad.reg"
+                "script": [
+                    "sudo Remove-Item 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\notepad.exe'"
+                ]
             }
         }
     },
