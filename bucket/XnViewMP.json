@@ -3,6 +3,7 @@
     "description": "Photo viewer, image resizer & batch converter.",
     "version": "0.94",
     "license": "Freeware|Proprietary",
+    "depends": "setuserfta",
     "architecture": {
         "64bit": {
             "url": [
@@ -12,12 +13,15 @@
             ],
             "hash": [
                 "d89ce19291d66d2c0cc06b0e99c12f327a799d538c359bd5ab1794e6d3bc5c5c",
-                "2C6788DADBF28292EAD95B2434486C1D734FB4AC0302D1BC016A2C2815B0013C",
-                "35C3101D2A1E521413C3B84744F9E9A8F207C1B15C0067DA59E65AF575DCE6B7"
+                "15C8A0568DFF1E5571F75BF7DCC3595A50CE1F2211D3AA5E4EB242D170AF03AA",
+                "00566E8A68D1BDF0F073C44722FA2DAA28E7F8FE158C5305CA69CA485F273B16"
             ],
             "uninstaller":{
                 "script": [
                     "sudo regedit /s $dir\\unassoc.reg",
+                    "sudo setuserfta .jpg AppX43hnxtbyyps62jhe9sqpdzxn1790zetc",
+                    "sudo setuserfta .png AppX43hnxtbyyps62jhe9sqpdzxn1790zetc",
+                    "sudo setuserfta .bmp AppX43hnxtbyyps62jhe9sqpdzxn1790zetc",
                     "ie4uinit.exe -show"
                 ]
             }
@@ -30,8 +34,8 @@
             ],
             "hash": [
                 "45a48338fda2522adf9ebc2790d0420f0de640a1d3f0c9fbd31bf786a1e38119",
-                "2C6788DADBF28292EAD95B2434486C1D734FB4AC0302D1BC016A2C2815B0013C",
-                "35C3101D2A1E521413C3B84744F9E9A8F207C1B15C0067DA59E65AF575DCE6B7"
+                "15C8A0568DFF1E5571F75BF7DCC3595A50CE1F2211D3AA5E4EB242D170AF03AA",
+                "00566E8A68D1BDF0F073C44722FA2DAA28E7F8FE158C5305CA69CA485F273B16"
             ],
             "uninstaller":{
                 "script": [
@@ -60,6 +64,14 @@
         "    $content = $content -Replace '\\$Path', $path",
         "    Set-Content \"$dir\\assoc.reg\" $content -Encoding ASCII",
         "}",
+        "sudo setuserfta .jpg XnViewMP.jpg",
+        "sudo setuserfta .png XnViewMP.png",
+        "sudo setuserfta .bmp XnViewMP.bmp",
+        "sudo setuserfta .webp XnViewMP.webp",
+        "sudo setuserfta .gif XnViewMP.gif",
+        "sudo setuserfta .icns XnViewMP.icns",
+        "sudo setuserfta .ico XnViewMP.ico",
+        "sudo setuserfta .psd XnViewMP.psd",
         "sudo regedit /s $dir\\assoc.reg",
         "ie4uinit.exe -show"
      ],
