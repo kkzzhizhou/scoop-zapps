@@ -1,0 +1,77 @@
+{
+    "homepage": "https://www.xnview.com/en/xnviewmp/",
+    "description": "Photo viewer, image resizer & batch converter.",
+    "version": "0.94",
+    "license": "Freeware|Proprietary",
+    "architecture": {
+        "64bit": {
+            "url": [
+                "https://download.xnview.com/XnViewMP-win-x64.zip",
+                "https://raw.githubusercontent.com/kkzzhizhou/scoop-zapps/master/script/xnviewmp/assoc.reg",
+                "https://raw.githubusercontent.com/kkzzhizhou/scoop-zapps/master/script/xnviewmp/unassoc.reg"
+            ],
+            "hash": [
+                "d89ce19291d66d2c0cc06b0e99c12f327a799d538c359bd5ab1794e6d3bc5c5c",
+                "2C6788DADBF28292EAD95B2434486C1D734FB4AC0302D1BC016A2C2815B0013C",
+                "35C3101D2A1E521413C3B84744F9E9A8F207C1B15C0067DA59E65AF575DCE6B7"
+            ],
+            "uninstaller":{
+                "script": [
+                    "sudo regedit /s $dir\\unassoc.reg",
+                    "ie4uinit.exe -show"
+                ]
+            }
+        },
+        "32bit": {
+            "url": [
+                "https://download.xnview.com/XnViewMP-win.zip",
+                "https://raw.githubusercontent.com/kkzzhizhou/scoop-zapps/master/script/xnviewmp/assoc.reg",
+                "https://raw.githubusercontent.com/kkzzhizhou/scoop-zapps/master/script/xnviewmp/unassoc.reg"
+            ],
+            "hash": [
+                "45a48338fda2522adf9ebc2790d0420f0de640a1d3f0c9fbd31bf786a1e38119",
+                "2C6788DADBF28292EAD95B2434486C1D734FB4AC0302D1BC016A2C2815B0013C",
+                "35C3101D2A1E521413C3B84744F9E9A8F207C1B15C0067DA59E65AF575DCE6B7"
+            ],
+            "uninstaller":{
+                "script": [
+                    "sudo regedit /s $dir\\unassoc.reg",
+                    "ie4uinit.exe -show"
+                ]
+            }
+        }
+    },
+    "extract_dir": "XnViewMP",
+    "bin": "xnviewmp.exe",
+    "shortcuts": [
+        [
+            "xnviewmp.exe",
+            "XnViewMP"
+        ]
+    ],
+    "pre_install": [
+        "if (!(Test-Path \"$env:APPDATA\\XnViewMP\\xnview.ini\")) {",
+        "    New-Item -Force -Path \"$env:APPDATA\\XnViewMP\" -Name \"xnview.ini\" -ItemType file | Out-Null}"
+    ],
+    "post_install": [ 
+        "if (Test-Path(\"$dir\\assoc.reg\")) {",
+        "    $path = \"$dir\" -Replace '\\\\', '\\\\'",
+        "    $content = Get-Content \"$dir\\assoc.reg\"",
+        "    $content = $content -Replace '\\$Path', $path",
+        "    Set-Content \"$dir\\assoc.reg\" $content -Encoding ASCII",
+        "}",
+        "sudo regedit /s $dir\\assoc.reg",
+        "ie4uinit.exe -show"
+     ],
+    "checkver": "Download <strong>XnView MP ([\\d.]+)",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://download.xnview.com/XnViewMP-win-x64.zip"
+            },
+            "32bit": {
+                "url": "https://download.xnview.com/XnViewMP-win.zip"
+            }
+        }
+    }
+}
