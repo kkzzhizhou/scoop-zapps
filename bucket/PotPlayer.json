@@ -38,13 +38,13 @@
             "hash": "f0b32aa87911f54fdba35a8182437b4282a5cd28e68ec298990be6f71379fddf",
             "installer": {
                 "script": [
-                    "$dir\\PotPlayerMini.exe /RegisterDef",
+                    "sudo $dir\\PotPlayerMini.exe /RegisterDef",
                     "ie4uinit.exe -show"
                 ]
             },
             "uninstaller": {
                 "script": [
-                    "$dir\\PotPlayerMini.exe /Unregister",
+                    "sudo $dir\\PotPlayerMini.exe /Unregister",
                     "ie4uinit.exe -show"
                 ]
             },
