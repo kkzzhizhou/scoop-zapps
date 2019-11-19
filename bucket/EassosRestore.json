@@ -2,8 +2,24 @@
     "homepage": "https://www.eassos.cn/onekeyrestore/",
     "description": "易数一键还原，是易数科技自主研发的系统备份与还原软件",
     "version": "4.2.2.760",
-    "url": "http://download.eassos.cn/OKRSetup422760.exe",
-    "hash": "434BD163AE351F2174171605792142E7E906979B09EB10AA1A0D7B68D42C0F3B",
+    "architecture": {
+        "64bit": {
+            "url": "http://download.eassos.cn/OKRSetup422760.exe",
+            "hash": "434BD163AE351F2174171605792142E7E906979B09EB10AA1A0D7B68D42C0F3B",
+            "post_install": [
+                "Rename-Item EassosRestore,2.exe EassosRestore.exe",
+                "Remove-Item EassosRestore,1.exe"
+            ]
+        },
+        "32bit": {
+            "url": "http://download.eassos.cn/OKRSetup422760.exe",
+            "hash": "434BD163AE351F2174171605792142E7E906979B09EB10AA1A0D7B68D42C0F3B",
+            "post_install": [
+                "Rename-Item EassosRestore,1.exe EassosRestore.exe",
+                "Remove-Item EassosRestore,2.exe"
+            ]
+        }
+    },
     "innosetup": true,
     "bin": "EassosRestore.exe",
     "shortcuts": [
