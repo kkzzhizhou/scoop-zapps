@@ -6,9 +6,14 @@
         "https://allwaysync.com/content/download/allwaysync-x64.exe",
         "https://downloads.sourceforge.net/project/zapps/allway.sync.x64-patch.zip"
     ],
+    "hash": [
+        "5e6faf4e74759242ed6c92d852123fbcdb019dccd3bf0d2b15f3ef687b245c24",
+        "1718d34c1801a1d7ee8d7a97a1a8e5228e0493bd852f72df6e70ebd0777eb268"
+    ],
     "installer": {
         "script": [
-            "Expand-InnoArchive -Path \"$dir\\allwaysync-x64.exe\""
+            "Expand-InnoArchive -Path \"$dir\\allwaysync-x64.exe\"",
+            "allway.sync.x64-patch.exe /silent /overwrite /backup"
         ]
     },
     "bin": "bin/syncappw.exe",
