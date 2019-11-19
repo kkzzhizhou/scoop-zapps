@@ -1,0 +1,21 @@
+{
+    "homepage": "https://qidian.qq.com/",
+    "description": "跨越组织边界办公协同，与QQ互通；基于QQ专业的IM能力，实现内外一体化无缝沟通协作",
+    "version": "3.2.0.14620",
+    "extract_dir": "Files",
+    "license": {
+        "identifier": "EULA"
+    },
+    "depends": [
+        "vcredist2010",
+        "vcredist2019"
+    ],
+    "url": "http://dldir1.qq.com/qqfile/crm/qidian/QiDian3.2.0.14620.exe#/dl.7z",
+    "shortcuts": [
+        [
+            "bin\\QiDian.exe",
+            "腾讯企点"
+        ]
+    ],
+    "notes": "We don't persist your QiDian data, they are still storaged in '%APPDATA%\\Tencent\\QiDian'."
+}
