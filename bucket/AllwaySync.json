@@ -2,7 +2,10 @@
     "homepage": "https://allwaysync.com/",
     "description": "Allway Sync 使用了创新的同步运算法则同步您在台式机，笔记本，USB 驱动器，远程 FTP/SFTP，WebDAV 服务器，各种在线存储等上的数据。",
     "version": "19.1.5",
-    "url": "https://allwaysync.com/content/download/allwaysync-x64.exe",
+    "url": [
+        "https://allwaysync.com/content/download/allwaysync-x64.exe",
+        "https://downloads.sourceforge.net/project/zapps/allway.sync.x64-patch.zip"
+    ],
     "innosetup": true,
     "bin": "bin/syncappw.exe",
     "shortcuts": [
