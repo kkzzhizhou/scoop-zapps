@@ -12,6 +12,7 @@
             "/NORESTART"
         ]
     },
+    "post_install": "Remove-Item \"$env:PUBLIC\\Desktop\\轻松备份专业版.lnk\"",
     "uninstaller": {
         "file": "unins000.exe",
         "args": [
