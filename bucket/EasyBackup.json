@@ -1,0 +1,22 @@
+{
+    "homepage": "https://www.disktool.cn/backup/backup-software.html",
+    "description": "备份速度超快的免费备份软件",
+    "version": "4.0.2",
+    "url": "http://www2.aomeisoftware.com/download/abcn/EasyBackup.zip",
+    "hash": "1977D476C13CAD3075119FD80F011BE55730C8EE9A20A655FC48AB2660BB9FFF",
+    "installer": {
+        "file": "EasyBackup.exe",
+        "args": [
+            "/VERYSILENT",
+            "/DIR=\"$dir\"",
+            "/NORESTART"
+        ]
+    },
+    "uninstaller": {
+        "file": "unins000.exe",
+        "args": [
+            "/VERYSILENT",
+            "/NORESTART"
+        ]
+    }
+}
