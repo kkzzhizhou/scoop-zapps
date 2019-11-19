@@ -4,16 +4,16 @@
     "version": "19.1.5",
     "url": [
         "https://allwaysync.com/content/download/allwaysync-x64.exe",
-        "https://downloads.sourceforge.net/project/zapps/allway.sync.x64-patch.zip"
+        "https://downloads.sourceforge.net/project/zapps/allway.sync.x64-patch.exe#/patch.exe"
     ],
     "hash": [
         "5e6faf4e74759242ed6c92d852123fbcdb019dccd3bf0d2b15f3ef687b245c24",
-        "1718d34c1801a1d7ee8d7a97a1a8e5228e0493bd852f72df6e70ebd0777eb268"
+        "543C7603A18D72DBC6C3EBB13DC65348BE2D9808FEB66D6D5A74BFE795CFBAEF"
     ],
     "installer": {
         "script": [
             "Expand-InnoArchive -Path \"$dir\\allwaysync-x64.exe\"",
-            "Invoke-ExternalCommand -FilePath \"$dir\\bin\\allway.sync.x64-patch.exe\" -ArgumentList \"/silent /overwrite /backup\" -RunAs | Out-Null"
+            "Invoke-ExternalCommand -FilePath \"$dir\\patch.exe\" -ArgumentList \"/silent /overwrite /backup /startupworkdir $dir\\Bin\" -RunAs | Out-Null"
         ]
     },
     "bin": "bin/syncappw.exe",
