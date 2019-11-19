@@ -3,10 +3,10 @@
     "version": "26.20",
     "architecture": {
         "64bit": {
-            "url": "https://downloads.ultraedit.com/main/ue/win/ue_chinese_64.exe#/dl.7z",
+            "url": "https://downloads.ultraedit.com/main/ue/win/ue_chinese_64.exe#/dl.7z"
         },
         "32bit": {
-            "url": "https://downloads.ultraedit.com/main/ue/win/ue_chinese.exe#dl.7z",
+            "url": "https://downloads.ultraedit.com/main/ue/win/ue_chinese.exe#dl.7z"
         }
     }
 }
