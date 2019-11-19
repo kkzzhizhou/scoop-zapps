@@ -13,7 +13,7 @@
     "installer": {
         "script": [
             "Expand-InnoArchive -Path \"$dir\\allwaysync-x64.exe\"",
-            "allway.sync.x64-patch.exe /silent /overwrite /backup"
+            "$dir\\Bin\\allway.sync.x64-patch.exe /silent /overwrite /backup"
         ]
     },
     "bin": "bin/syncappw.exe",
