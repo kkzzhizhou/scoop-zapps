@@ -4,10 +4,10 @@
     "version": "4.2.2.760",
     "architecture": {
         "64bit": {
-            "url": "http://download.eassos.cn/OKRSetup422760.exe#/setup.exe",
+            "url": "http://download.eassos.cn/OKRSetup422760.exe#/dl.exe",
             "hash": "434BD163AE351F2174171605792142E7E906979B09EB10AA1A0D7B68D42C0F3B",
             "installer": [
-                "Expand-InnoArchive -Path \"$dir\\setup.exe\"",
+                "Expand-InnoArchive -Path \"$dir\\dl.exe\"",
                 "Rename-Item EassosRestore,2.exe EassosRestore.exe",
                 "Remove-Item EassosRestore,1.exe"
             ]
@@ -16,7 +16,7 @@
             "url": "http://download.eassos.cn/OKRSetup422760.exe#/setup.exe",
             "hash": "434BD163AE351F2174171605792142E7E906979B09EB10AA1A0D7B68D42C0F3B",
             "installer": [
-                "Expand-InnoArchive -Path \"$dir\\setup.exe\"",
+                "Expand-InnoArchive -Path \"$dir\\dl.exe\"",
                 "Rename-Item EassosRestore,1.exe EassosRestore.exe",
                 "Remove-Item EassosRestore,2.exe"
             ]
