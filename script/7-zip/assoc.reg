@@ -1,5 +1,40 @@
 Windows Registry Editor Version 5.00
 
+[HKEY_CURRENT_USER\Software\7-zip]
+"Lang"="zh-cn"
+"LargePages"=dword:00000000
+[HKEY_CURRENT_USER\Software\7-zip\FM]
+"FolderShortcuts"=hex:
+"FolderHistory"=hex:00,00
+"PanelPath0"=""
+"FlatViewArc0"=dword:00000000
+"PanelPath1"=""
+"FlatViewArc1"=dword:00000000
+"ListMode"=dword:00000303
+"Position"=hex:cc,00,00,00,85,00,00,00,1e,04,00,00,97,02,00,00,00,00,00,00
+"Panels"=hex:01,00,00,00,00,00,00,00,9f,01,00,00
+"Viewer"=""
+"Editor"=""
+"Diff"=""
+"ShowDots"=dword:00000000
+"ShowSystemMenu"=dword:00000000
+"ShowRealFileIcons"=dword:00000000
+"FullRow"=dword:00000000
+"ShowGrid"=dword:00000000
+"AlternativeSelection"=dword:00000000
+"SingleClick"=dword:00000000
+"Toolbars"=dword:0000000f
+[HKEY_CURRENT_USER\Software\7-zip\FM\Columns]
+"RootFolder"=hex:01,00,00,00,00,00,00,00,01,00,00,00,04,00,00,00,01,00,00,00,\
+  64,00,00,00
+[HKEY_CURRENT_USER\Software\7-zip\Options]
+"CascadedMenu"=dword:00000001
+"MenuIcons"=dword:00000000
+"ContextMenu"=dword:80003f77
+"WorkDirType"=dword:00000000
+"WorkDirPath"=""
+"TempRemovableOnly"=dword:00000001
+
 [HKEY_CLASSES_ROOT\.001]
 @="7-Zip.001"
 
