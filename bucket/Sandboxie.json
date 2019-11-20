@@ -6,8 +6,7 @@
         "identifier": "Freeware",
         "url": "https://www.sandboxie.com/EndUserLicenseAgreement"
     },
-    "url": "https://downloads.sophos.com/inst/MBatP3zI168KenwIVLLUkAZD02MTYw/sandboxie/SandboxieInstall-531-6.exe#/dl.exe",
-    "hash": "DB796ABE8FEC3FEB8202041F274D75DA1258CE25BCFCE6F289FE904E7A49166B",
+    "url": "https://www.sandboxie.com/SandboxieInstall.exe#/dl.exe",
     "installer": {
         "script": [
             "Invoke-ExternalCommand \"$dir\\dl.exe\" -ArgumentList @('/lang=2052','/install','/S',\"/D=$dir\") -RunAs | Out-Null",
