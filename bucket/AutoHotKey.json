@@ -10,7 +10,7 @@
             "hash": "02d8d06690bdf036d8bb022c07dbde5d64ba2f05964dc888d9549f09917ee8ad",
             "installer": {
                 "script": [
-                    "Start-Process '$dir\\autohotkey-installer.exe' -ArgumentList @('/S', '/x64', '/uiAccess=0', '/IsHostApp=1','/D=$dir') -Verb RunAs -Wait | Out-Null"
+                    "Start-Process \"$dir\\autohotkey-installer.exe\" \"/S /x64 /uiAccess=0 /IsHostApp=1 /D=$dir\" -PassThru -NoNewWindow -Verb RunAs | Wait-Process"
                 ],
                 "keep": true
             },
@@ -32,7 +32,7 @@
             "hash": "02d8d06690bdf036d8bb022c07dbde5d64ba2f05964dc888d9549f09917ee8ad",
             "installer": {
                 "script": [
-                    "Start-Process '$dir\\autohotkey-installer.exe' -ArgumentList @('/S', '/U32', '/uiAccess=0', '/IsHostApp=1','/D=$dir') -Verb RunAs -Wait | Out-Null"
+                    "Start-Process \"$dir\\autohotkey-installer.exe\" \"/S /U32 /uiAccess=0 /IsHostApp=1 /D=$dir\" -PassThru -NoNewWindow -Verb RunAs | Wait-Process"
                 ],
                 "keep": true
             },
