@@ -13,9 +13,7 @@
     ],
     "uninstaller": {
         "script": [
-            "Start-Process \"$dir\\unins000.exe\" \"/VERYSILENT /NORESTART\" -PassThru -NoNewWindow | Wait-Process",
-            "taskkill /f /im explorer.exe",
-            "start explorer"
+            "Start-Process \"$dir\\unins000.exe\" \"/VERYSILENT /NORESTART\" -PassThru -NoNewWindow | Wait-Process"
         ]
     }
 }
