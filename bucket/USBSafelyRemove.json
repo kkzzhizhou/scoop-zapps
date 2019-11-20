@@ -3,11 +3,8 @@
     "version": "6.1.5.1274",
     "url": "https://safelyremove.com/assets/exe/usbsafelyremovesetup_6-1-5.exe#/setup.exe",
     "installer": {
-        "file": "setup.exe",
-        "args": [
-            "/VERYSILENT",
-            "/DIR=\"$dir\"",
-            "/NORESTART"
+        "script": [
+            "Invoke-ExternalCommand \"$dir\\setup.exe\" -ArgumentList @('/VERYSILENT','/DIR=\"$dir\"','/NORESTART') -RunAs | Out-Null"
         ]
     },
     "post_install": [
@@ -15,10 +12,8 @@
         "New-ItemProperty -Path HKCU:\\Software\\SafelyRemove -Name LicKey -PropertyType String -Value Q1IHAQgAVFJBTiBIQUkAAGQAPqkAAAAABQB2PTYuMTr2vYVreG5YxVOCnE+6gbXigQ5GXYe2rkcaYIK8wknu23GHo835Mko="
     ],
     "uninstaller": {
-        "file": "unins000.exe",
-        "args": [
-            "/VERYSILENT",
-            "/NORESTART"
+        "script": [
+            "Invoke-ExternalCommand \"$dir\\unins000.exe\" -ArgumentList @('/VERYSILENT','/NORESTART') -RunAs | Out-Null"
         ]
     }
 }

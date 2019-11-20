@@ -4,16 +4,16 @@
     "version": "7.2.14",
     "url": "http://www.foxmail.com/win/download#/dl.exe",
     "installer": {
-        "file": "dl.exe",
-        "args": [
-            "$dir",
-            "-silent"
-        ],
-        "scripts": "Remove-Item \"$env:PUBLIC\\Desktop\\Foxmail.lnk\""
+        "script": [
+            "Invoke-ExternalCommand \"$dir\\dl.exe\" -ArgumentList @('$dir','-silent') -RunAs | Out-Null",
+            "Remove-Item \"$env:PUBLIC\\Desktop\\Foxmail.lnk\""
+        ]
     },
     "uninstaller": {
-        "file": "uninst.exe",
-        "args": "/S"
+        "script": [
+            "Invoke-ExternalCommand \"$dir\\uninst.exe\" -ArgumentList @('/S') -RunAs | Out-Null",
+            "Remove-Item \"$env:PUBLIC\\Desktop\\Foxmail.lnk\""
+        ]
     },
     "pre_install": [
         "$file = 'FMStorage.list'",

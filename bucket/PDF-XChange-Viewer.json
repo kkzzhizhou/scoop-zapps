@@ -4,19 +4,14 @@
     "description": "The smallest, fastest, most feature-rich PDF reader/viewer available.",
     "url": "https://downloads.pdf-xchange.com/PDFXVwer.zip",
     "installer": {
-        "file": "PDFXVwer.exe",
-        "args": [
-            "/VERYSILENT",
-            "/DIR=\"$dir\"",
-            "/NORESTART"
+        "script": [
+            "Invoke-ExternalCommand \"$dir\\PDFXVwer.exe\" -ArgumentList @('/VERYSILENT','/DIR=\"$dir\"','/NORESTART') -RunAs | Out-Null"
         ]
     },
     "post_install": "Remove-Item \"$env:PUBLIC\\Desktop\\PDF-Viewer.lnk\"",
     "uninstaller": {
-        "file": "unins000.exe",
-        "args": [
-            "/VERYSILENT",
-            "/NORESTART"
+        "script": [
+            "Invoke-ExternalCommand \"$dir\\unins000.exe\" -ArgumentList @('/VERYSILENT','/NORESTART') -RunAs | Out-Null"
         ]
     }
 }

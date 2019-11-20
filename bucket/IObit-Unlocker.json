@@ -3,19 +3,14 @@
     "version": "1.1.2",
     "url": "http://update.iobit.com/dl/unlocker-setup.exe",
     "installer": {
-        "file": "unlocker-setup.exe",
-        "args": [
-            "/VERYSILENT",
-            "/DIR=\"$dir\"",
-            "/NORESTART"
+        "script": [
+            "Invoke-ExternalCommand \"$dir\\unlocker-setup.exe\" -ArgumentList @('/VERYSILENT','/DIR=\"$dir\"','/NORESTART') -RunAs | Out-Null"
         ]
     },
     "post_install": "Remove-Item \"$env:PUBLIC\\Desktop\\IObit` Unlocker.lnk\"",
     "uninstaller": {
-        "file": "unins000.exe",
-        "args": [
-            "/VERYSILENT",
-            "/NORESTART"
+        "script": [
+            "Invoke-ExternalCommand \"$dir\\unins000.exe\" -ArgumentList @('/VERYSILENT','/NORESTART') -RunAs | Out-Null"
         ]
     }
 }

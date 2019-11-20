@@ -3,19 +3,14 @@
     "homepage": "https://www.resilio.com/individuals/",
     "url": "https://download-cdn.resilio.com/stable/windows64/Resilio-Sync_x64.exe#dl.exe",
     "installer": {
-        "file": "dl.exe",
-        "args": [
-            "/PERFORMINSTALL",
-            "/S"
+        "script": [
+            "Invoke-ExternalCommand \"$dir\\dl.exe\" -ArgumentList @('/PERFORMINSTALL','/S') -RunAs | Out-Null"
         ],
         "keep": "true"
     },
     "uninstaller": {
-        "file": "dl.exe",
-        "args": [
-            "/UNINSTALL",
-            "/S",
-            "/REMSETTINGS"
+        "script": [
+            "Invoke-ExternalCommand \"$dir\\dl.exe\" -ArgumentList @('/UNINSTALL','/S','/REMSETTINGS') -RunAs | Out-Null"
         ]
     }
 }
