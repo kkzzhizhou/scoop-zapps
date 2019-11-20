@@ -1,5 +1,8 @@
 Windows Registry Editor Version 5.00
 
+[-HKEY_CURRENT_USER\Software\7-zip]
+[-HKEY_CLASSES_ROOT\*\shellex\ContextMenuHandlers\7-Zip]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shellex\ContextMenuHandlers\7-Zip]
 [-HKEY_CLASSES_ROOT\7-Zip.001]
 [-HKEY_CLASSES_ROOT\7-Zip.7z]
 [-HKEY_CLASSES_ROOT\7-Zip.arj]
