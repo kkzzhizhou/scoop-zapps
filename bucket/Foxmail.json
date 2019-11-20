@@ -10,7 +10,7 @@
         "    $CONT = @('')",
         "    Set-Content \"$dir\\$file\" ($CONT -join \"`r`n\") -Encoding Ascii",
         "}"
-    ]
+    ],
     "persist": [
         "Storage",
         "Global",
