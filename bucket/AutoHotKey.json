@@ -16,7 +16,7 @@
             },
             "uninstaller": {
                 "script": [
-                    "Invoke-ExternalCommand \"$dir\\autohotkey-installer.exe\" -ArgumentList @('/Uninstall') -RunAs | Out-Null"
+                    "sudo Invoke-ExternalCommand \"$dir\\autohotkey-installer.exe\" -ArgumentList @('/Uninstall') -RunAs | Out-Null"
                 ]
             },
             "bin": [
@@ -38,7 +38,7 @@
             },
             "uninstaller": {
                 "script": [
-                    "Invoke-ExternalCommand \"$dir\\autohotkey-installer.exe\" -ArgumentList @('/Uninstall') -RunAs | Out-Null"
+                    "sudo Invoke-ExternalCommand \"$dir\\autohotkey-installer.exe\" -ArgumentList @('/Uninstall') -RunAs | Out-Null"
                 ]
             },
             "bin": [
