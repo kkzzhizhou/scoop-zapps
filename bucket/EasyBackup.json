@@ -6,13 +6,13 @@
     "hash": "1977D476C13CAD3075119FD80F011BE55730C8EE9A20A655FC48AB2660BB9FFF",
     "installer": {
         "script": [
-            "Invoke-ExternalCommand \"$dir\\EasyBackup.exe\" -ArgumentList @('/VERYSILENT','/DIR=\"$dir\"','/NORESTART') -RunAs | Out-Null"
+            "Start-Process \"$dir\\EasyBackup.exe\" \"/VERYSILENT /DIR=$dir /NORESTART\" -PassThru -NoNewWindow | Wait-Process"
         ]
     },
     "post_install": "Remove-Item \"$env:PUBLIC\\Desktop\\轻松备份专业版.lnk\"",
     "uninstaller": {
         "script": [
-            "Invoke-ExternalCommand \"$dir\\unins000.exe\" -ArgumentList @('/VERYSILENT','/NORESTART') -RunAs | Out-Null"
+            "Start-Process \"$dir\\unins000.exe\" \"/VERYSILENT /NORESTART\" -PassThru -NoNewWindow | Wait-Process"
         ]
     }
 }
