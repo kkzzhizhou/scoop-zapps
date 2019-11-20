@@ -2,19 +2,7 @@
     "homepage": "https://www.foxmail.com/",
     "description": "你的邮件，现在有了新看法。",
     "version": "7.2.14",
-    "url": "http://www.foxmail.com/win/download#/dl.exe",
-    "installer": {
-        "script": [
-            "sudo Start-Process \"$dir\\dl.exe\" \"$dir -silent\" -PassThru -NoNewWindow | Wait-Process",
-            "Remove-Item \"$env:PUBLIC\\Desktop\\Foxmail.lnk\""
-        ]
-    },
-    "uninstaller": {
-        "script": [
-            "sudo Start-Process \"$dir\\uninst.exe\" \"/S\" -PassThru -NoNewWindow | Wait-Process",
-            "Remove-Item \"$env:PUBLIC\\Desktop\\Foxmail.lnk\""
-        ]
-    },
+    "url": "http://www.foxmail.com/win/download#/dl.7z",
     "pre_install": [
         "$file = 'FMStorage.list'",
         "if (!(Test-Path \"$persist_dir\\$file\")) {",
@@ -22,7 +10,7 @@
         "    $CONT = @('')",
         "    Set-Content \"$dir\\$file\" ($CONT -join \"`r`n\") -Encoding Ascii",
         "}"
-    ],
+    ]
     "persist": [
         "Storage",
         "Global",
