@@ -4,7 +4,7 @@
     "url": "http://update.iobit.com/dl/unlocker-setup.exe",
     "installer": {
         "script": [
-            "Invoke-ExternalCommand \"$dir\\unlocker-setup.exe\" -ArgumentList @('/VERYSILENT','/DIR=\"$dir\"','/NORESTART') -RunAs | Out-Null"
+            "Start-Process \"$dir\\IE_Install.exe\" \"/VERYSILENT /DIR=$dir /NORESTART\" -PassThru -NoNewWindow | Wait-Process"
         ]
     },
     "post_install": "Remove-Item \"$env:PUBLIC\\Desktop\\IObit` Unlocker.lnk\"",
