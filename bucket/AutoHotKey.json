@@ -15,6 +15,17 @@
                 "E6157E1A35B3A50C4D1444EFBBC8DC0F9DF32060432A27A207295273A2186DAF",
                 "48161DB2D14EA582043E40F1CA768FAFB8918927C9E13485F8DA3BBB9259F994"
             ],
+            "post_install": [ 
+                "if (Test-Path(\"$dir\\assoc.reg\")) {",
+                "    $path = \"$dir\" -Replace '\\\\', '\\\\'",
+                "    $content = Get-Content \"$dir\\assoc.reg\"",
+                "    $content = $content -Replace '\\$Path', $path",
+                "    $content = $content -Replace 'AutoHotkey.exe', AutoHotkeyU64.exe",
+                "    Set-Content \"$dir\\assoc.reg\" $content -Encoding ASCII",
+                "}",
+                "sudo regedit /s $dir\\assoc.reg",
+                "ie4uinit.exe -show"
+             ],
             "uninstaller":{
                 "script": [
                     "sudo regedit /s $dir\\unassoc.reg",
@@ -46,6 +57,17 @@
                     "ie4uinit.exe -show"
                 ]
             },
+            "post_install": [ 
+                "if (Test-Path(\"$dir\\assoc.reg\")) {",
+                "    $path = \"$dir\" -Replace '\\\\', '\\\\'",
+                "    $content = Get-Content \"$dir\\assoc.reg\"",
+                "    $content = $content -Replace '\\$Path', $path",
+                "    $content = $content -Replace 'AutoHotkey.exe', AutoHotkeyU32.exe",
+                "    Set-Content \"$dir\\assoc.reg\" $content -Encoding ASCII",
+                "}",
+                "sudo regedit /s $dir\\assoc.reg",
+                "ie4uinit.exe -show"
+             ],
             "bin": [
                 [
                     "autohotkeyu32.exe",
@@ -55,16 +77,6 @@
             ]
         }
     },
-    "post_install": [ 
-        "if (Test-Path(\"$dir\\assoc.reg\")) {",
-        "    $path = \"$dir\" -Replace '\\\\', '\\\\'",
-        "    $content = Get-Content \"$dir\\assoc.reg\"",
-        "    $content = $content -Replace '\\$Path', $path",
-        "    Set-Content \"$dir\\assoc.reg\" $content -Encoding ASCII",
-        "}",
-        "sudo regedit /s $dir\\assoc.reg",
-        "ie4uinit.exe -show"
-     ],
     "checkver": {
         "github": "https://github.com/lexikos/autohotkey_l"
     },
