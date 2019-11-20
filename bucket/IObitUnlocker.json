@@ -8,6 +8,7 @@
         ]
     },
     "post_install": [
+        "Get-WmiObject Win32_Process -Filter \"name='IObitUnlocker.exe'\" | Invoke-WmiMethod -Name Terminate | Out-Null",
         "Remove-Item \"$env:PUBLIC\\Desktop\\IObit` Unlocker.lnk\""
     ],
     "uninstaller": {
