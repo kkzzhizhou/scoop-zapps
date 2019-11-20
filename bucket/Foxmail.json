@@ -5,13 +5,13 @@
     "url": "http://www.foxmail.com/win/download#/dl.exe",
     "installer": {
         "script": [
-            "Invoke-ExternalCommand \"$dir\\dl.exe\" -ArgumentList @('$dir','-silent') -RunAs | Out-Null",
+            "Start-Process \"$dir\\dl.exe\" \"$dir -silent\" -PassThru -NoNewWindow | Wait-Process",
             "Remove-Item \"$env:PUBLIC\\Desktop\\Foxmail.lnk\""
         ]
     },
     "uninstaller": {
         "script": [
-            "Invoke-ExternalCommand \"$dir\\uninst.exe\" -ArgumentList @('/S') -RunAs | Out-Null",
+            "Start-Process \"$dir\\uninst.exe\" \"/S\" -PassThru -NoNewWindow | Wait-Process",
             "Remove-Item \"$env:PUBLIC\\Desktop\\Foxmail.lnk\""
         ]
     },
