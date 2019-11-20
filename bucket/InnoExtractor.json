@@ -5,7 +5,7 @@
     "url": "http://www.havysoft.cl/download/IE_Install.zip",
     "installer": {
         "script": [
-            "Invoke-ExternalCommand \"$dir\\IE_Install.exe\" -ArgumentList @('/VERYSILENT','/DIR=\"$dir\"','/NORESTART') -RunAs | Out-Null"
+            "Start-Process \"$dir\\IE_Install.exe\" \"/VERYSILENT /DIR=$dir /NORESTART\" -PassThru -NoNewWindow | Wait-Process"
         ]
     },
     "post_install": "Remove-Item \"$env:PUBLIC\\Desktop\\InnoExtractor.lnk\"",
