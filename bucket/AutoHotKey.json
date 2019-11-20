@@ -5,8 +5,22 @@
     "license": "GPL-2.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Lexikos/AutoHotkey_L/releases/download/v1.1.31.01/AutoHotkey_1.1.31.01_setup.exe#/dl.7z",
-            "hash": "02d8d06690bdf036d8bb022c07dbde5d64ba2f05964dc888d9549f09917ee8ad",
+            "url": [
+                "https://github.com/Lexikos/AutoHotkey_L/releases/download/v1.1.31.01/AutoHotkey_1.1.31.01_setup.exe#/dl.7z",
+                "https://raw.githubusercontent.com/kkzzhizhou/scoop-zapps/master/script/autohotkey/assoc.reg",
+                "https://raw.githubusercontent.com/kkzzhizhou/scoop-zapps/master/script/autohotkey/unassoc.reg"
+            ],
+            "hash": [
+                "02d8d06690bdf036d8bb022c07dbde5d64ba2f05964dc888d9549f09917ee8ad",
+                "E6157E1A35B3A50C4D1444EFBBC8DC0F9DF32060432A27A207295273A2186DAF",
+                "48161DB2D14EA582043E40F1CA768FAFB8918927C9E13485F8DA3BBB9259F994"
+            ],
+            "uninstaller":{
+                "script": [
+                    "sudo regedit /s $dir\\unassoc.reg",
+                    "ie4uinit.exe -show"
+                ]
+            },
             "bin": [
                 [
                     "autohotkeyu64.exe",
@@ -16,8 +30,22 @@
             ]
         },
         "32bit": {
-            "url": "https://github.com/Lexikos/AutoHotkey_L/releases/download/v1.1.31.01/AutoHotkey_1.1.31.01_setup.exe#/dl.7z",
-            "hash": "02d8d06690bdf036d8bb022c07dbde5d64ba2f05964dc888d9549f09917ee8ad",
+            "url": [
+                "https://github.com/Lexikos/AutoHotkey_L/releases/download/v1.1.31.01/AutoHotkey_1.1.31.01_setup.exe#/dl.7z",
+                "https://raw.githubusercontent.com/kkzzhizhou/scoop-zapps/master/script/autohotkey/assoc.reg",
+                "https://raw.githubusercontent.com/kkzzhizhou/scoop-zapps/master/script/autohotkey/unassoc.reg"
+            ],
+            "hash": [
+                "02d8d06690bdf036d8bb022c07dbde5d64ba2f05964dc888d9549f09917ee8ad",
+                "E6157E1A35B3A50C4D1444EFBBC8DC0F9DF32060432A27A207295273A2186DAF",
+                "48161DB2D14EA582043E40F1CA768FAFB8918927C9E13485F8DA3BBB9259F994"
+            ],
+            "uninstaller":{
+                "script": [
+                    "sudo regedit /s $dir\\unassoc.reg",
+                    "ie4uinit.exe -show"
+                ]
+            },
             "bin": [
                 [
                     "autohotkeyu32.exe",
@@ -27,6 +55,16 @@
             ]
         }
     },
+    "post_install": [ 
+        "if (Test-Path(\"$dir\\assoc.reg\")) {",
+        "    $path = \"$dir\" -Replace '\\\\', '\\\\'",
+        "    $content = Get-Content \"$dir\\assoc.reg\"",
+        "    $content = $content -Replace '\\$Path', $path",
+        "    Set-Content \"$dir\\assoc.reg\" $content -Encoding ASCII",
+        "}",
+        "sudo regedit /s $dir\\assoc.reg",
+        "ie4uinit.exe -show"
+     ],
     "checkver": {
         "github": "https://github.com/lexikos/autohotkey_l"
     },
