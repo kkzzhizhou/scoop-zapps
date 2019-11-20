@@ -18,8 +18,5 @@
             "$uninstaller = (Get-Item Env:windir).Value+'\\installer\\SandboxieInstall64.exe'",
             "Invoke-ExternalCommand \"$uninstaller\" -ArgumentList @('/remove','/S') -RunAs | Out-Null"
         ]
-    },
-    "autoupdate": {
-        "url": "https://www.sandboxie.com/SandboxieInstall.exe"
     }
 }

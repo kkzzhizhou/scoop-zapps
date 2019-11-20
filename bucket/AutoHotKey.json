@@ -9,19 +9,15 @@
             "url": "https://github.com/Lexikos/AutoHotkey_L/releases/download/v1.1.31.01/AutoHotkey_1.1.31.01_setup.exe#/autohotkey-installer.exe",
             "hash": "02d8d06690bdf036d8bb022c07dbde5d64ba2f05964dc888d9549f09917ee8ad",
             "installer": {
-                "file": "autohotkey-installer.exe",
-                "args": [
-                    "/S",
-                    "/x64",
-                    "/uiAccess=0",
-                    "/IsHostApp=1",
-                    "/D=$dir"
+                "script": [
+                    "Invoke-ExternalCommand \"$dir\\autohotkey-installer.exe\" -ArgumentList @('/S','/x64','/uiAccess=0','/IsHostApp=1','/D=$dir') -RunAs | Out-Null"
                 ],
                 "keep": true
             },
             "uninstaller": {
-                "file": "autohotkey-installer.exe",
-                "args": "/Uninstall"
+                "script": [
+                    "Invoke-ExternalCommand \"$dir\\autohotkey-installer.exe\" -ArgumentList @('/Uninstall') -RunAs | Out-Null"
+                ]
             },
             "bin": [
                 [
@@ -43,11 +39,15 @@
                     "/IsHostApp=1",
                     "/D=$dir"
                 ],
+                "script": [
+                    "Invoke-ExternalCommand \"$dir\\autohotkey-installer.exe\" -ArgumentList @('/S','/U32','/uiAccess=0','/IsHostApp=1','/D=$dir') -RunAs | Out-Null"
+                ],
                 "keep": true
             },
             "uninstaller": {
-                "file": "autohotkey-installer.exe",
-                "args": "/Uninstall"
+                "script": [
+                    "Invoke-ExternalCommand \"$dir\\autohotkey-installer.exe\" -ArgumentList @('/Uninstall') -RunAs | Out-Null"
+                ]
             },
             "bin": [
                 [

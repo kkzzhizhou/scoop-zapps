@@ -5,18 +5,13 @@
     "url": "http://download.eassos.cn/OKRSetup422760.exe#/dl.exe",
     "hash": "434BD163AE351F2174171605792142E7E906979B09EB10AA1A0D7B68D42C0F3B",
     "installer": {
-        "file": "dl.exe",
-        "args": [
-            "/VERYSILENT",
-            "/DIR=\"$dir\"",
-            "/NORESTART"
+        "script": [
+            "Invoke-ExternalCommand \"$dir\\dl.exe\" -ArgumentList @('/VERYSILENT','/DIR=\"$dir\"','/NORESTART') -RunAs | Out-Null"
         ]
     },
     "uninstaller": {
-        "file": "unins000.exe",
-        "args": [
-            "/VERYSILENT",
-            "/NORESTART"
+        "script": [
+            "Invoke-ExternalCommand \"$dir\\unins000.exe\" -ArgumentList @('/VERYSILENT','/NORESTART') -RunAs | Out-Null"
         ]
     }
 }
