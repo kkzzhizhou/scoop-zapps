@@ -7,10 +7,12 @@
             "Start-Process \"$dir\\setup.exe\" \"/VERYSILENT /DIR=$dir /NORESTART\" -PassThru -NoNewWindow | Wait-Process"
         ]
     },
-    "post_install": "Remove-Item \"$env:PUBLIC\\Desktop\\IObit` Unlocker.lnk\"",
+    "post_install": [
+        "Remove-Item \"$env:PUBLIC\\Desktop\\IObit` Unlocker.lnk\""
+    ],
     "uninstaller": {
         "script": [
-            "Invoke-ExternalCommand \"$dir\\unins000.exe\" -ArgumentList @('/VERYSILENT','/NORESTART') -RunAs | Out-Null"
+            "Start-Process \"$dir\\setup.exe\" \"/VERYSILENT /NORESTART\" -PassThru -NoNewWindow | Wait-Process"
         ]
     }
 }
