@@ -1,24 +1,12 @@
 {
     "version": "1.1.31.01",
     "description": "The ultimate automation scripting language for Windows.",
-    "license": "GPL-2.0-or-later",
     "homepage": "https://www.autohotkey.com/",
-    "pre_install": " Write-Host 'Installing AutoHotKey with their installer and its own options ( create registry keys removed by uninstaller )' -ForegroundColor Magenta ",
+    "license": "GPL-2.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Lexikos/AutoHotkey_L/releases/download/v1.1.31.01/AutoHotkey_1.1.31.01_setup.exe#/autohotkey-installer.exe",
+            "url": "https://github.com/Lexikos/AutoHotkey_L/releases/download/v1.1.31.01/AutoHotkey_1.1.31.01_setup.exe#/dl.7z",
             "hash": "02d8d06690bdf036d8bb022c07dbde5d64ba2f05964dc888d9549f09917ee8ad",
-            "installer": {
-                "script": [
-                    "sudo \"$dir\\autohotkey-installer.exe\" \"/S /x64 /uiAccess=0 /IsHostApp=1 /D=$dir\""
-                ],
-                "keep": true
-            },
-            "uninstaller": {
-                "script": [
-                    "sudo \"$dir\\autohotkey-installer.exe\" \"/Uninstall\""
-                ]
-            },
             "bin": [
                 [
                     "autohotkeyu64.exe",
@@ -28,19 +16,8 @@
             ]
         },
         "32bit": {
-            "url": "https://github.com/Lexikos/AutoHotkey_L/releases/download/v1.1.31.01/AutoHotkey_1.1.31.01_setup.exe#/autohotkey-installer.exe",
+            "url": "https://github.com/Lexikos/AutoHotkey_L/releases/download/v1.1.31.01/AutoHotkey_1.1.31.01_setup.exe#/dl.7z",
             "hash": "02d8d06690bdf036d8bb022c07dbde5d64ba2f05964dc888d9549f09917ee8ad",
-            "installer": {
-                "script": [
-                    "sudo \"$dir\\autohotkey-installer.exe\" \"/S /U32 /uiAccess=0 /IsHostApp=1 /D=$dir\""
-                ],
-                "keep": true
-            },
-            "uninstaller": {
-                "script": [
-                    "sudo \"$dir\\autohotkey-installer.exe\" \"/Uninstall\""
-                ]
-            },
             "bin": [
                 [
                     "autohotkeyu32.exe",
@@ -56,10 +33,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/Lexikos/AutoHotkey_L/releases/download/v$version/AutoHotkey_$version_setup.exe#/autohotkey-installer.exe"
+                "url": "https://github.com/Lexikos/AutoHotkey_L/releases/download/v$version/AutoHotkey_$version_setup.exe#/dl.7z"
             },
             "32bit": {
-                "url": "https://github.com/Lexikos/AutoHotkey_L/releases/download/v$version/AutoHotkey_$version_setup.exe#/autohotkey-installer.exe"
+                "url": "https://github.com/Lexikos/AutoHotkey_L/releases/download/v$version/AutoHotkey_$version_setup.exe#/dl.7z"
             }
         }
     }
