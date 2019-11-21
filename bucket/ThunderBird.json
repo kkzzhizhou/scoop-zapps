@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://download.mozilla.org/?product=thunderbird-68.2.2-SSL&os=win64&lang=zh-CN#/dl.7z",
-            "hash": "sha512:6d3f3b76710aa6f0eda0e88b1c75ffb02c3d564658b227bc4bc7c254b426287ef7914645cc6a9fa79d224ee2c103e879e81d80b3fbd5e1b7c3b8cc5231f33784"
+            "hash": "sha512:9b24d37cdfb2979a99c0ba01f84f495ab46d53bb003c7b38da1d6451f4f882a387ade6b51d525bf0b54cbdc366b45486809113badb8ebc103f78994482729dd6"
         },
         "32bit": {
             "url": "https://download.mozilla.org/?product=thunderbird-68.2.2-SSL&os=win&lang=zh-CN#/dl.7z",
