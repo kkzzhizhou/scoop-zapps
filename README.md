@@ -7,7 +7,7 @@
 - 软件仓库定时自动更新
 - 优先采用便携软件，其次绿色软件，最后是安装软件。
 - 收录的软件没有弹窗，后台以及绑定主页的流氓行为，有的话就剔除，使用去广告绿色版。
-- 不采用sudo scoop install方式安装软件（使用默认的scoop install安装所有软件，请关闭UAC提示）
+- 自己制作的json默认不采用sudo scoop install方式安装软件（请关闭UAC提示）
 - 合并多个私人仓库（仅保留Main,extras,versions,games），减轻记忆负担的同时，加快scoop update的速度
 
 ## 遗留问题
