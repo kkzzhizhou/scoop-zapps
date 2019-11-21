@@ -11,8 +11,11 @@
             "extract_dir": "BaiduPCS-Go-3.6.8-windows-86"
         }
     },
-    "bin": [
-        "BaiduPCS-Go.exe"
+    "shortcuts": [
+        [
+            "BaiduPCS-Go.exe",
+            "BaiduPCS-Go"
+        ]
     ],
     "checkver": {
         "github": "https://github.com/liuzhuoling2011/baidupcs-web"
