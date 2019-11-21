@@ -1,0 +1,39 @@
+{
+    "version": "2019.2-192.5728.70-RC",
+    "description": "CLion Release Candidate. Cross-Platform IDE for C and C++ by JetBrains.",
+    "homepage": "https://www.jetbrains.com/cpp/",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://www.jetbrains.com/store/license.html"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://download.jetbrains.com/cpp/CLion-2019.2-RC.win.zip",
+            "hash": "9aec6099efb0b2b0d82ee598b3bc07837127a97564db8807facba3ef8ba2a0e4",
+            "shortcuts": [
+                [
+                    "IDE\\bin\\clion64.exe",
+                    "JetBrains\\CLion (Release Candidate)"
+                ]
+            ]
+        }
+    },
+    "extract_to": "IDE",
+    "pre_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
+    "persist": "IDE\\bin\\idea.properties",
+    "checkver": {
+        "url": "https://data.services.jetbrains.com/products/releases?code=CL&latest=true&platform=zip&type=rc",
+        "regex": "RC(?<RC>\\d+)?\\.win\\.zip.*version\":\"(?<ver>[\\d.]+)\".*\"build\":\"(?<build>[\\d.]+)\"",
+        "replace": "${ver}-${build}-RC${RC}"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://download.jetbrains.com/cpp/CLion-$matchHead-RC$matchRC.win.zip"
+            }
+        },
+        "hash": {
+            "url": "$url.sha256"
+        }
+    }
+}
