@@ -1,0 +1,42 @@
+{
+	"homepage": "https://www.sordum.org/10124/folder-painter-v1-2/",
+    "description": "Folder Painter is an easy to use Portable Freeware program, which allows you to change the color of the icon representing a chosen folder to any color you like.",
+    "version": "1.2",
+	"license": "Freeware",
+	"url": "https://www.sordum.org/files/download/folder-painter/FolderPainter.zip",
+	"hash": "9D1B5162335FCACFDD6A3C093585E9B7E5938C6E47E10E45EF7C10FBF3C204D2",
+    "extract_dir": "FolderPainter",
+    "architecture": {
+        "64bit": {
+            "bin": [
+                [
+                    "FolderPainter_x64.exe",
+                    "FolderPainter"
+                ]
+            ],
+            "shortcuts": [
+                [
+                    "FolderPainter_x64.exe",
+                    "FolderPainter"
+                ]
+            ]
+        },
+        "32bit": {
+            "bin": [
+                [
+                    "FolderPainter.exe",
+                    "FolderPainter"
+                ]
+            ],
+            "shortcuts": [
+                [
+                    "FolderPainter.exe",
+                    "FolderPainter"
+                ]
+            ]
+        }
+    },
+	"persist": [
+		"Icons"
+	]
+}

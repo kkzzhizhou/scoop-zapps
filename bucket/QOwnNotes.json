@@ -1,0 +1,22 @@
+{
+    "homepage": "https://www.qownnotes.org/",
+    "version": "4915",
+    "license": "GPL-2.0-only",
+    "url": "https://github.com/pbek/QOwnNotes/releases/download/windows-b4915/QOwnNotes.zip",
+    "hash": "e571c34a68112ff8dbbd3a52331c3cb5d664b34076f4ab5818c02e11394cecb1",
+    "bin": "QOwnNotes.exe",
+    "shortcuts": [
+        [
+            "QOwnNotes.exe",
+            "QOwnNotes",
+            "--portable"
+        ]
+    ],
+    "checkver": {
+        "url": "https://github.com/pbek/QOwnNotes/releases",
+        "regex": "windows-b(\\d+)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/pbek/QOwnNotes/releases/download/windows-b$version/QOwnNotes.zip"
+    }
+}

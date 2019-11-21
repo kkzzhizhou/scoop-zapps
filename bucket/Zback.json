@@ -1,0 +1,22 @@
+{
+    "homepage": "http://titan.fsb.hr/~dzorc/zback.html",
+    "version": "2.89.0.a",
+    "license": "freeware",
+    "url": "http://titan.fsb.hr/~dzorc/zback289.zip",
+    "hash": "b5c6b04981e7f3357a99a2ae8f20de79ddab60ef554301732ffc94242f3a50ed",
+    "bin": "zback.exe",
+    "persist": [
+        "Zback.ini",
+        "checkver.ini"
+    ],
+    "shortcuts": [
+        [
+            "zback.exe",
+            "Zback"
+        ]
+    ],
+    "checkver": "-version ([\\d.\\w]+)<br>",
+    "autoupdate": {
+        "url": "http://titan.fsb.hr/~dzorc/zback$majorVersion$minorVersion.zip"
+    }
+}

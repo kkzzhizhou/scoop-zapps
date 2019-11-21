@@ -1,0 +1,40 @@
+{
+    "homepage": "https://aimp.ru",
+    "version": "4.60.2156",
+    "description": "A music player and library manager.",
+    "license": "LGPL-2.1-only",
+    "url": "http://aimp.su/storage/c469ab9a1c3ff87029ddff91cca68327/aimp_4.60.2156_no-installer.zip",
+    "hash": "d9dd5ca01ceac14ddc4eb44dfb081386db95f57c14d9f005335495552b5116bd",
+    "extract_dir": "AIMP",
+    "persist": [
+        "Profile",
+        "!Backup"
+    ],
+    "bin": "aimp.exe",
+    "shortcuts": [
+        [
+            "aimp.exe",
+            "AIMP"
+        ],
+        [
+            "AIMPate.exe",
+            "AIMP Advanced Tag Editer"
+        ],
+        [
+            "AIMPac.exe",
+            "AIMP Audio Converter"
+        ]
+    ],
+    "checkver": {
+        "url": "http://www.aimp.ru/?do=download&os=windows",
+        "regex": "<h1>AIMP v(?<ver>[\\d.]+), build (?<build>\\d+) \\(No Installer\\)</h1>[\\w\\W]+?<nobr>SHA256:[\\w\\W]+?(?<hash>[a-fA-F0-9]{64})</nobr>",
+        "replace": "${ver}.${build}"
+    },
+    "autoupdate": {
+        "url": "http://aimp.su/storage/$matchHash/aimp_$version_no-installer.zip",
+        "hash": {
+            "url": "https://www.aimp.ru/?do=download&os=windows",
+            "find": "No Installer.*?SHA256: $sha256"
+        }
+    }
+}
