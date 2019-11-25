@@ -8,6 +8,16 @@
     },
     "url": "https://downloads.sourceforge.net/project/zapps/WPSOffice.7z",
     "hash": "BDBFF061FC39F408AB35578AD09CF73DC0F1A1C7A8E01388E9CE3F0B042D4DD1",
+    "installer":{
+        "script": [
+            "Invoke-ExternalCommand -FilePath \"$dir\\WPSOffice.Install.exe\"  -RunAs | Out-Null"
+        ]
+    },
+    "uninstaller":{
+        "script": [
+            "Invoke-ExternalCommand -FilePath \"$dir\\WPSOffice.Uninstall.exe\"  -RunAs | Out-Null"
+        ]
+    },
     "shortcuts": [
         [
             "office6/wps.exe",
