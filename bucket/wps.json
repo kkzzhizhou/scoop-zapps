@@ -11,15 +11,15 @@
     "shortcuts": [
         [
             "office6/wps.exe",
-            "WPS Word"
+            "WPS 文字"
         ],
         [
             "office6/wpp.exe",
-            "WPS Presentation"
+            "WPS 演示"
         ],
         [
             "office6/et.exe",
-            "WPS Spreadsheets"
+            "WPS 表格"
         ]
     ]
 }
