@@ -17,7 +17,7 @@
     },
     "uninstaller": {
         "script": [
-            "Invoke-ExternalCommand \"$dir\\uninstall.exe\" -ArgumentList @('/S') -RunAs | Out-Null"
+            "Invoke-ExternalCommand \"$dir\\uninst.exe\" -ArgumentList @('/S') -RunAs | Out-Null"
         ]
     }
 }
