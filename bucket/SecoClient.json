@@ -12,7 +12,12 @@
     },
     "installer": {
         "script": [
-            "Invoke-ExternalCommand \"$dir\\setup.exe\" -ArgumentList @('/S', \"/D=$dir\") -RunAs | Out-Null"
+            "Start-Process -Wait \"$dir\\setup.exe\" \"/S /D=$dir\" -Verb RunAs"
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "Invoke-ExternalCommand \"$dir\\uninstall.exe\" -ArgumentList @('/S') -RunAs | Out-Null"
         ]
     }
 }
