@@ -2,11 +2,11 @@
     "version": "3.0.3.21",
     "architecture": {
         "64bit": {
-            "url": "https://downloads.sourceforge.net/project/zapps/secoclient-win-64-3.0.3.21.exe#/setup.exe",
+            "url": "https://downloads.sourceforge.net/project/zapps/secoclient-win-64-3.0.3.21.exe#/dl.7z",
             "hash": "546D17DE9E3DA38AA1EA7DA89B288138BAFBDB7553E35487F296B818E0320120"
         },
         "32bit": {
-            "url": "https://downloads.sourceforge.net/project/zapps/secoclient-win-64-3.0.3.21.exe#/setup.exe",
+            "url": "https://downloads.sourceforge.net/project/zapps/secoclient-win-64-3.0.3.21.exe#/dl.7z",
             "hash": "0901C8CD03B7A97E1B92CB11DFCAD44BDAAF51CEB7996A4CB9C0C08066BD9363"
         }
     },
