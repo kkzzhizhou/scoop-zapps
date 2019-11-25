@@ -18,8 +18,8 @@
     "post_install": "Remove-Item \"$env:PUBLIC\\Desktop\\SecoClient.lnk\"",
     "uninstaller": {
         "script": [
-            "Start-Process -Wait \"$env:ProgramFiles(x86)\\SecoClient\\uninst.exe\" \"/S\" -Verb RunAs",
-            "Remove-Item \"$env:ProgramFiles(x86)\\SecoClient\" -Recurse"
+            "Start-Process -Wait \"${env:ProgramFiles(x86)}\\SecoClient\\uninst.exe\" \"/S\" -Verb RunAs",
+            "Remove-Item \"${env:ProgramFiles(x86)}\\SecoClient\" -Recurse"
         ]
     }
 }
