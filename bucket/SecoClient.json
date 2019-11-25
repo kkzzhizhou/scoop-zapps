@@ -1,5 +1,6 @@
 {
     "version": "3.0.3.21",
+    "depends": "sudo",
     "architecture": {
         "64bit": {
             "url": "https://downloads.sourceforge.net/project/zapps/secoclient-win-64-3.0.3.21.exe#/setup.exe",
