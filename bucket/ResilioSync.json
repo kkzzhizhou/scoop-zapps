@@ -4,13 +4,14 @@
     "url": "https://download-cdn.resilio.com/stable/windows64/Resilio-Sync_x64.exe#/setup.exe",
     "installer": {
         "script": [
-            "Invoke-ExternalCommand \"$dir\\setup.exe\" -ArgumentList @('/PERFORMINSTALL','/S') -RunAs | Out-Null"
+            "Start-Process -Wait \"$dir\\setup.exe\" \"/PERFORMINSTALL /S\" -Verb RunAs"
         ],
         "keep": "true"
     },
+    "post_install": "Remove-Item \"$env:PUBLIC\\Desktop\\Resilio` Sync.lnk\"",
     "uninstaller": {
         "script": [
-            "Invoke-ExternalCommand \"$dir\\setup.exe\" -ArgumentList @('/UNINSTALL','/S','/REMSETTINGS') -RunAs | Out-Null"
+            "Start-Process -Wait \"$dir\\setup.exe\" \"/UNINSTALL /S /REMSETTINGS\" -Verb RunAs"
         ]
     }
 }
