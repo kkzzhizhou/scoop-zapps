@@ -1,7 +1,7 @@
 {
     "version": "2.6.3.1340",
     "homepage": "https://www.resilio.com/individuals/",
-    "url": "https://download-cdn.resilio.com/stable/windows64/Resilio-Sync_x64.exe#/setup.exe",
+    "url": "http://www2.aomeisoftware.com/download/abcn/EasyBackup.zip",
     "installer": {
         "script": [
             "Start-Process -Wait \"$dir\\setup.exe\" \"/PERFORMINSTALL /S\" -Verb RunAs"
