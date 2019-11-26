@@ -4,6 +4,7 @@
     "version": "9.12.07C",
     "url": "https://downloads.sourceforge.net/project/zapps/AliWangWang.7z",
     "hash": "CC8230FC00FFD867A0BF88FD098234656F14721F430F8E98987EC6061CD7478D",
+    "persist": "profiles",
     "bin": "AliIM.exe",
     "shortcuts": [
         [
