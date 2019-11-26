@@ -1,8 +1,9 @@
 {
     "homepage": "https://alimarket.taobao.com/markets/qnww/portal-group/ww/",
     "description": "阿里旺旺是是淘宝和阿里巴巴为商人量身定做的免费网上商务沟通软件/聊天工具",
-    "version": "9.12.10C",
-    "url": "https://download.alicdn.com/wangwang/AliIM_taobao_(9.12.10C).exe#dl.7z",
+    "version": "9.12.07C",
+    "url": "https://downloads.sourceforge.net/project/zapps/AliWangWang.7z",
+    "hash": "CC8230FC00FFD867A0BF88FD098234656F14721F430F8E98987EC6061CD7478D",
     "bin": "AliIM.exe",
     "shortcuts": [
         [
