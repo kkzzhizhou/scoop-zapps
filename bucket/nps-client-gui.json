@@ -1,0 +1,13 @@
+{
+    "homepage": "https://sourceforge.net/projects/zapps/",
+    "version": "1.0.0.0",
+    "depends": "nps-client",
+    "url": "https://downloads.sourceforge.net/project/zapps/nps-client-gui.exe",
+    "hash": "48EC13FDBF0088DAFDBF75D2C4038FBEDE34E4DFF352D40BBEA9EE30E6B5F337",
+    "shortcuts": [
+        [
+            "nps-client-gui.exe",
+            "Nps Client GUI"
+        ]
+    ]
+}
