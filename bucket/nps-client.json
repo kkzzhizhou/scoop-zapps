@@ -1,6 +1,13 @@
 {
     "homepage": "https://github.com/cnlh/nps",
     "version": "0.24.0",
-    "url": "https://github.com/cnlh/nps/releases/download/v0.24.0/nps_windows_386.exe",
+    "architecture": {
+        "64bit":{
+            "url": "https://github.com/cnlh/nps/releases/download/v0.24.0/win_amd64_client.tar.gz"
+        },
+        "32bit":{
+            "url": "https://github.com/cnlh/nps/releases/download/v0.24.0/win_386_client.tar.gz"
+        }
+    },
     "bin": "npc.exe"
 }
