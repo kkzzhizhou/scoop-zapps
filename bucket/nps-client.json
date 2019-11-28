@@ -1,13 +1,13 @@
 {
     "homepage": "https://github.com/cnlh/nps",
-    "version": "0.24.0",
+    "version": "0.23.2",
     "architecture": {
         "64bit":{
-            "url": "https://github.com/cnlh/nps/releases/download/v0.24.0/win_amd64_client.tar.gz",
+            "url": "https://github.com/cnlh/nps/releases/download/v0.23.2/win_amd64_client.tar.gz",
             "extract_dir": "nps"
         },
         "32bit":{
-            "url": "https://github.com/cnlh/nps/releases/download/v0.24.0/win_386_client.tar.gz",
+            "url": "https://github.com/cnlh/nps/releases/download/v0.23.2/win_386_client.tar.gz",
             "extract_dir": "nps"
         }
     },
