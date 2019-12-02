@@ -18,7 +18,7 @@
                 "48161DB2D14EA582043E40F1CA768FAFB8918927C9E13485F8DA3BBB9259F994"
             ],
             "pre_install": [
-                "Expand-7zipArchive \"$dir\\Compile\" \"$dir\\Compiler\" $false",
+                "Expand-7zipArchive \"$dir\\Compile\" \"$dir\\Compiler\"",
                 "Remove-Item -Recurse \"$dir\\Compile\""
             ],
             "post_install": [ 
