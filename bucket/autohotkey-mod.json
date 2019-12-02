@@ -7,11 +7,13 @@
         "64bit": {
             "url": [
                 "https://github.com/Lexikos/AutoHotkey_L/releases/download/v1.1.31.01/AutoHotkey_1.1.31.01_setup.exe#/dl.7z",
+                "https://github.com/mercury233/compile-ahk/releases/download/v0.9.2/Compile_AHK.7z",
                 "https://raw.githubusercontent.com/kkzzhizhou/scoop-zapps/master/script/autohotkey/assoc.reg",
                 "https://raw.githubusercontent.com/kkzzhizhou/scoop-zapps/master/script/autohotkey/unassoc.reg"
             ],
             "hash": [
                 "02d8d06690bdf036d8bb022c07dbde5d64ba2f05964dc888d9549f09917ee8ad",
+                "C51206D1EAE5EECAF7B478905D87751CA86CDE565DD5D70CF122EEDE2B0CB1C8",
                 "E6157E1A35B3A50C4D1444EFBBC8DC0F9DF32060432A27A207295273A2186DAF",
                 "48161DB2D14EA582043E40F1CA768FAFB8918927C9E13485F8DA3BBB9259F994"
             ],
@@ -43,11 +45,13 @@
         "32bit": {
             "url": [
                 "https://github.com/Lexikos/AutoHotkey_L/releases/download/v1.1.31.01/AutoHotkey_1.1.31.01_setup.exe#/dl.7z",
+                "https://github.com/mercury233/compile-ahk/releases/download/v0.9.2/Compile_AHK.7z",
                 "https://raw.githubusercontent.com/kkzzhizhou/scoop-zapps/master/script/autohotkey/assoc.reg",
                 "https://raw.githubusercontent.com/kkzzhizhou/scoop-zapps/master/script/autohotkey/unassoc.reg"
             ],
             "hash": [
                 "02d8d06690bdf036d8bb022c07dbde5d64ba2f05964dc888d9549f09917ee8ad",
+                "C51206D1EAE5EECAF7B478905D87751CA86CDE565DD5D70CF122EEDE2B0CB1C8",
                 "E6157E1A35B3A50C4D1444EFBBC8DC0F9DF32060432A27A207295273A2186DAF",
                 "48161DB2D14EA582043E40F1CA768FAFB8918927C9E13485F8DA3BBB9259F994"
             ],
