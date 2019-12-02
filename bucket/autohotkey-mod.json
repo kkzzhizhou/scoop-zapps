@@ -17,6 +17,10 @@
                 "E6157E1A35B3A50C4D1444EFBBC8DC0F9DF32060432A27A207295273A2186DAF",
                 "48161DB2D14EA582043E40F1CA768FAFB8918927C9E13485F8DA3BBB9259F994"
             ],
+            "pre_install": [
+                "Expand-7zipArchive \"$dir\\Compile_AHK.7z\" \"$dir\\Compiler\" $false",
+                "Remove-Item -Recurse \"$dir\\Compile_AHK.7z\""
+            ],
             "post_install": [ 
                 "if (Test-Path(\"$dir\\assoc.reg\")) {",
                 "    $path = \"$dir\" -Replace '\\\\', '\\\\'",
@@ -54,6 +58,10 @@
                 "C51206D1EAE5EECAF7B478905D87751CA86CDE565DD5D70CF122EEDE2B0CB1C8",
                 "E6157E1A35B3A50C4D1444EFBBC8DC0F9DF32060432A27A207295273A2186DAF",
                 "48161DB2D14EA582043E40F1CA768FAFB8918927C9E13485F8DA3BBB9259F994"
+            ],
+            "pre_install": [
+                "Expand-7zipArchive \"$dir\\Compile_AHK.7z\" \"$dir\\Compiler\" $false",
+                "Remove-Item -Recurse \"$dir\\Compile_AHK.7z\""
             ],
             "uninstaller":{
                 "script": [
