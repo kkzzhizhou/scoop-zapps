@@ -1,6 +1,7 @@
 {
-    "version": "1.0.0.0",
-    "url": "https://downloads.sourceforge.net/project/zapps/Zkey.7z",
+    "version": "1.0.0.1",
+    "url": "https://downloads.sourceforge.net/project/zapps/ZKey.exe",
+    "hash": "496C999515595E5A2D2D4F60B24CA5269CE7F474C0CD364920F246379996538D",
     "shortcuts": [
         [
             "ZKey.exe",
