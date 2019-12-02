@@ -1,11 +1,11 @@
 {
     "homepage": "https://sourceforge.net/projects/zapps/",
-    "version": "1.0.0.3",
+    "version": "1.0.0.4",
     "depends": "nps-client",
     "url": "https://downloads.sourceforge.net/project/zapps/nps-client-gui.exe",
     "pre_install": "if (-not (Test-Path \"$persist_dir\\npc.conf\")) { New-Item \"$dir\\npc.conf\" | Out-Null }",
     "persist": "npc.conf",
-    "hash": "79F8CCA74E92B6A68EF9E581BA5BEEC34AB57E883FFD7F159D6621B665528C4C",
+    "hash": "567CAF09F77D8E9B18E6B00533F563CEC8F817E93425A881496E63CA1B3DFFFF",
     "shortcuts": [
         [
             "nps-client-gui.exe",
