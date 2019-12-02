@@ -7,7 +7,7 @@
         "64bit": {
             "url": [
                 "https://github.com/Lexikos/AutoHotkey_L/releases/download/v1.1.31.01/AutoHotkey_1.1.31.01_setup.exe#/dl.7z",
-                "https://github.com/mercury233/compile-ahk/releases/download/v0.9.2/Compile_AHK.7z",
+                "https://github.com/mercury233/compile-ahk/releases/download/v0.9.2/Compile_AHK.7z#/Compile",
                 "https://raw.githubusercontent.com/kkzzhizhou/scoop-zapps/master/script/autohotkey/assoc.reg",
                 "https://raw.githubusercontent.com/kkzzhizhou/scoop-zapps/master/script/autohotkey/unassoc.reg"
             ],
@@ -18,8 +18,8 @@
                 "48161DB2D14EA582043E40F1CA768FAFB8918927C9E13485F8DA3BBB9259F994"
             ],
             "pre_install": [
-                "Expand-7zipArchive \"$dir\\Compile_AHK.7z\" \"$dir\\Compiler\" $false",
-                "Remove-Item -Recurse \"$dir\\Compile_AHK.7z\""
+                "Expand-7zipArchive \"$dir\\Compile\" \"$dir\\Compiler\" $false",
+                "Remove-Item -Recurse \"$dir\\Compile\""
             ],
             "post_install": [ 
                 "if (Test-Path(\"$dir\\assoc.reg\")) {",
