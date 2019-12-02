@@ -2,11 +2,12 @@
     "version": "1.1.31.01",
     "description": "The ultimate automation scripting language for Windows.",
     "homepage": "https://www.autohotkey.com/",
+    "depends": "sudo",
     "license": "GPL-2.0-or-later",
     "architecture": {
         "64bit": {
             "url": [
-                "https://github.com/Lexikos/AutoHotkey_L/releases/download/v1.1.31.01/AutoHotkey_1.1.31.01_setup.exe#/dl.7z",
+                "https://github.com/Lexikos/AutoHotkey_L/releases/download/v1.1.31.01/AutoHotkey_1.1.31.01_setup.exe#/setup.exe",
                 "https://github.com/mercury233/compile-ahk/releases/download/v0.9.2/Compile_AHK.7z#/Compile",
                 "https://raw.githubusercontent.com/kkzzhizhou/scoop-zapps/master/script/autohotkey/assoc.reg",
                 "https://raw.githubusercontent.com/kkzzhizhou/scoop-zapps/master/script/autohotkey/unassoc.reg"
@@ -17,11 +18,13 @@
                 "4044671277BA66111FC7899345ED7C6203C1C6D0355E4FA08C29F3DA0ED3A21F",
                 "48161DB2D14EA582043E40F1CA768FAFB8918927C9E13485F8DA3BBB9259F994"
             ],
-            "pre_install": [
-                "Expand-7zipArchive \"$dir\\Compile\" \"$dir\\Compiler\"",
-                "Remove-Item -Recurse \"$dir\\Compile\""
-            ],
+            "installer": {
+                "script": "Start-Process -Wait \"$dir\\setup.exe\" \"/S /x64 /uiAccess=0 /IsHostApp=1 /D=$dir\" -Verb RunAs",
+                "keep": "true"
+            },
             "post_install": [ 
+                "Expand-7zipArchive \"$dir\\Compile\" \"$dir\\Compiler\"",
+                "Remove-Item -Recurse \"$dir\\Compile\"",
                 "if (Test-Path(\"$dir\\assoc.reg\")) {",
                 "    $path = \"$dir\" -Replace '\\\\', '\\\\'",
                 "    $content = Get-Content \"$dir\\assoc.reg\"",
@@ -34,6 +37,7 @@
              ],
             "uninstaller":{
                 "script": [
+                    "Start-Process -Wait \"$dir\\setup.exe\" \"/Uninstall\" -Verb RunAs",
                     "sudo regedit /s $dir\\unassoc.reg",
                     "ie4uinit.exe -show"
                 ]
