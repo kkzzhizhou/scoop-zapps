@@ -5,11 +5,11 @@
     "extract_dir": "Adobe Illustrator CS6",
     "installer": {
         "script": [
-            "Start-Process -Wait $dir\\QuickInstall.exe i"
+            "Start-Process -Wait $dir\\QuickSetup.exe i"
         ]
     },
     "post_install": "Remove-Item \"$env:PUBLIC\\Desktop\\Adobe` Illustrator` CS6.lnk\"",
     "uninstaller": {
-        "script": "Start-Process -Wait $dir\\QuickInstall.exe u"
+        "script": "Start-Process -Wait $dir\\QuickSetup.exe u"
     }
 }
