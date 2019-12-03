@@ -1,14 +1,27 @@
 {
     "homepage": "https://github.com/cnlh/nps",
-    "version": "0.23.2",
+    "version": "0.24.0",
     "architecture": {
-        "64bit":{
-            "url": "https://github.com/cnlh/nps/releases/download/v0.23.2/win_amd64_client.tar.gz",
+        "64bit": {
+            "url": "https://github.com/cnlh/nps/releases/download/v0.24.0/win_amd64_client.tar.gz",
+            "hash": "40385d743112ea95cdf0370a84cd06638e9dc21d237f7ef861e663cac360d7c0",
             "extract_dir": "nps"
         },
-        "32bit":{
-            "url": "https://github.com/cnlh/nps/releases/download/v0.23.2/win_386_client.tar.gz",
+        "32bit": {
+            "url": "https://github.com/cnlh/nps/releases/download/v0.24.0/win_386_client.tar.gz",
+            "hash": "9246108c7c0a54dc16baf3ee87488c625482d656e78716fe97761eaae798f058",
             "extract_dir": "nps"
+        }
+    },
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/cnlh/nps/releases/download/v$version/win_amd64_client.tar.gz"
+            },
+            "32bit": {
+                "url": "https://github.com/cnlh/nps/releases/download/v$version/win_386_client.tar.gz"
+            }
         }
     },
     "bin": "npc.exe"
