@@ -1,6 +1,6 @@
 {
-    "version": "1.0.0.5",
-    "url": "https://downloads.sourceforge.net/project/zapps/HefuGen.7z",
+    "version": "2.0",
+    "url": "https://downloads.sourceforge.net/project/zapps/HefuGen-2.0.7z",
     "bin": "HefuGen.exe",
     "post_install": [
         "if (Test-Path \"$dir\\add-context.reg\") {",
