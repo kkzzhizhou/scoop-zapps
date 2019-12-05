@@ -1,15 +1,15 @@
 {
     "homepage": "https://github.com/cnlh/nps",
-    "version": "0.24.0",
+    "version": "0.25.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/cnlh/nps/releases/download/v0.24.0/win_amd64_client.tar.gz",
-            "hash": "40385d743112ea95cdf0370a84cd06638e9dc21d237f7ef861e663cac360d7c0",
+            "url": "https://github.com/cnlh/nps/releases/download/v0.25.0/win_amd64_client.tar.gz",
+            "hash": "d2a6519925eac7e616f036fa92e70673d8e7bdf79e5e74768767d110d1c9802e",
             "extract_dir": "nps"
         },
         "32bit": {
-            "url": "https://github.com/cnlh/nps/releases/download/v0.24.0/win_386_client.tar.gz",
-            "hash": "9246108c7c0a54dc16baf3ee87488c625482d656e78716fe97761eaae798f058",
+            "url": "https://github.com/cnlh/nps/releases/download/v0.25.0/win_386_client.tar.gz",
+            "hash": "beceac1b244c789c609c2a5110e5b3ffc91a86a93dc25cd3fa75b8cc8db2af00",
             "extract_dir": "nps"
         }
     },
