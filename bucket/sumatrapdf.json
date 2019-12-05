@@ -1,6 +1,0 @@
-{
-    "version": "3.2.11105",
-    "url": "https://kjkpub.s3.amazonaws.com/sumatrapdf/prerel/SumatraPDF-prerelease-11105-64.exe#/SumatraPDF.exe",
-    "shortcuts": [["SumatraPDF.exe", "SumatraPDF"]],
-    "persist": ["SumatraPDF-settings.txt"]
-}
