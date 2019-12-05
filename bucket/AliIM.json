@@ -4,7 +4,7 @@
     "version": "9.12.10C",
     "url": "https://download.alicdn.com/wangwang/AliIM_taobao_(9.12.10C).exe",
     "innosetup": true,
-    "hash": "00C1D53E869028B74C11971FD5A36CC6A121A089C06480CB7A466D42C94F82C0",
+    "hash": "1b11b19a2c2ced01a0b6681e353e8a1d2c2948f1c9aeafd88c2a84d571cc4154",
     "persist": "profiles",
     "bin": "AliIM.exe",
     "checkver": {
