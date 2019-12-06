@@ -1,7 +1,7 @@
 {
     "homepage": "https://www.foxmail.com/",
     "description": "你的邮件，现在有了新看法。",
-    "version": "7.2.14",
+    "version": "7.2.14.409",
     "url": "http://www.foxmail.com/win/download#/dl.7z",
     "hash": "993ed3abab3d02cbf81b1effbaaf10c308127f7eec8f896061c50d1a6d40f8eb",
     "pre_install": [
@@ -19,8 +19,8 @@
         "FMStorage.list"
     ],
     "checkver": {
-        "url": "https://pc.qq.com/detail/14/detail_14.html",
-        "regex": "版本：(\\d+\\.\\d+\\.\\d+\\.\\d+)"
+        "url": "https://dl.pconline.com.cn/download/85059.html",
+        "regex": "Foxmail (\\d+\\.\\d+\\.\\d+\\.\\d+)"
     },
     "autoupdate": {
         "url": "http://www.foxmail.com/win/download#/dl.7z"
