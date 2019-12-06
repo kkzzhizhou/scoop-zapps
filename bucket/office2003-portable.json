@@ -1,13 +1,13 @@
 {
-    "version": "2003",
-    "url": "https://downloads.sourceforge.net/project/zapps/OfficePortable/Office2003Portable.zip",
+    "version": "1.0",
+    "url": "https://downloads.sourceforge.net/project/zapps/OfficePortable/Office2003Portable-1.0.zip",
     "hash": "sha1:3db0547d1d509bdfc2afcef5c5b198281219e60a",
     "checkver": {
         "url": "https://sourceforge.net/projects/zapps/rss?path=/OfficePortable",
-        "re": "/OfficePortable/Office(.*)Portable.zip"
+        "re": "/OfficePortable/Office2003Portable-(.*).zip"
     },
     "autoupdate": {
-        "url": "https://downloads.sourceforge.net/project/zapps/OfficePortable/Office2003Portable.zip"
+        "url": "https://downloads.sourceforge.net/project/zapps/OfficePortable/Office2003Portable-$version.zip"
     },
     "extract_dir": "Office2003Portable",
     "shortcuts": [
