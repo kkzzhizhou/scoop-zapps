@@ -19,8 +19,8 @@
         "FMStorage.list"
     ],
     "checkver": {
-        "url": "https://dl.pconline.com.cn/download/85059.html",
-        "regex": "Foxmail (\\d+\\.\\d+\\.\\d+\\.\\d+)"
+        "url": "https://pc.qq.com/detail/14/detail_14.html",
+        "regex": "FoxmailSetup_(\\d+\\.\\d+\\.\\d+\\.\\d+).exe"
     },
     "autoupdate": {
         "url": "http://www.foxmail.com/win/download#/dl.7z"
