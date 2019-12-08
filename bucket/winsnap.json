@@ -3,8 +3,8 @@
     "description": "WinSnap is a fast and user-friendly utility for taking and editing screenshots.",
     "homepage": "https://www.ntwind.com/software/winsnap.html",
     "url": "https://www.ntwind.com/files/WinSnap_5.1.6-setup.exe#/dl.7z",
-    "hash": "",
-    "checkver":{
+    "hash": "425a17ca99c85ee4f341de500718de91ef63b2aa91599812591958cd76054967",
+    "checkver": {
         "url": "https://www.ntwind.com/software/winsnap.html",
         "regex": "WinSnap_(\\d+.\\d+.\\d+)-setup.exe"
     },
