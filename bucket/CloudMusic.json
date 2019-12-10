@@ -7,7 +7,7 @@
         "url": "https://music.163.com/html/web2/service.html"
     },
     "url": [
-        "https://d1.music.126.net/dmusic/obj/w5zCg8OCw6fCn2vDicOl/586346057/3e98/201911319853/cloudmusicsetup2.7.0.198230.exe",
+        "https://d1.music.126.net/dmusic/obj/w5zCg8OCw6fCn2vDicOl/586346057/3e98/201911319853/cloudmusicsetup2.7.0.198230.exe#/dl.7z",
         "https://raw.githubusercontent.com/kkzzhizhou/scoop-zapps/master/script/neteasemusic/assoc.reg",
         "https://raw.githubusercontent.com/kkzzhizhou/scoop-zapps/master/script/neteasemusic/unassoc.reg"
     ],
@@ -42,10 +42,10 @@
     ],
     "checkver": {
         "url": "https://h404bi.azurewebsites.net/ncmversion.php",
-        "regex": "(?<2>[\\w]+)/(?<3>[\\w]+)/(?<4>[\\w]+)/(?<5>[\\w]+)/cloudmusicsetup([\\d.]+).exe"
+        "regex": "dmusic/(?<randompath>[\\w/]+)/cloudmusicsetup(?<version>[\\d.]+).exe"
     },
     "autoupdate": {
-        "url": "https://d1.music.126.net/dmusic/obj/$match2/$match3/$match4/$match5/cloudmusicsetup$version.exe",
+        "url": "https://d1.music.126.net/dmusic/$matchRandompath/cloudmusicsetup$version.exe#/dl.7z",
         "hash": {
             "url": "https://h404bi.azurewebsites.net/ncmversion.php",
             "regex": "$md5"
