@@ -2,14 +2,23 @@
     "homepage": "https://www.netsarang.com/zh/xshell/",
     "description": "业界最强大的SSH客户机",
     "version": "6.0.0181",
-    "url": "https://downloads.sourceforge.net/project/zapps/Xshell/Xshell-6.0.0181r.exe",
-    "hash": "sha1:e2f70ecce718d6e05b6ed0fa73129f329beea057",
+    "depends": "bluelifehostseditor",
+    "url": "https://downloads.sourceforge.net/project/zapps/Xshell/Xshell-1.0.0.4.exe",
+    "hash": "sha1:131a618bee08ce490e6c2d0b48566687669c057a",
+    "pre_install": [
+        "sudo hostseditor.exe /a transact.netsarang.com",
+        "sudo hostseditor.exe /a update.netsarang.com",
+        "sudo hostseditor.exe /a www.netsarang.com",
+        "sudo hostseditor.exe /a www.netsarang.co.kr",
+        "sudo hostseditor.exe /a sales.netsarang.com",
+        "sudo hostseditor.exe /a active.netsarang.com"
+    ],
     "checkver": {
         "url": "https://sourceforge.net/projects/zapps/rss?path=/Xshell",
         "re": "/Xshell/Xshell-(.*)r.exe"
     },
     "autoupdate": {
-        "url": "https://downloads.sourceforge.net/project/zapps/Xshell/Xshell-$versionr.exe",
+        "url": "https://downloads.sourceforge.net/project/zapps/Xshell/Xshell-$versionf.exe",
         "hash": {
             "mode": "sourceforge"
         }
