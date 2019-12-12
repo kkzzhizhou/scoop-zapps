@@ -6,12 +6,12 @@
     "url": "https://downloads.sourceforge.net/project/zapps/Xshell/Xshell-6.0.0181r.exe#/setup.exe",
     "hash": "sha1:e2f70ecce718d6e05b6ed0fa73129f329beea057",
     "pre_install": [
-        "sudo hostseditor.exe /a transact.netsarang.com",
-        "sudo hostseditor.exe /a update.netsarang.com",
-        "sudo hostseditor.exe /a www.netsarang.com",
-        "sudo hostseditor.exe /a www.netsarang.co.kr",
-        "sudo hostseditor.exe /a sales.netsarang.com",
-        "sudo hostseditor.exe /a active.netsarang.com"
+        "sudo hostseditor.exe \/a transact.netsarang.com",
+        "sudo hostseditor.exe \/a update.netsarang.com",
+        "sudo hostseditor.exe \/a www.netsarang.com",
+        "sudo hostseditor.exe \/a www.netsarang.co.kr",
+        "sudo hostseditor.exe \/a sales.netsarang.com",
+        "sudo hostseditor.exe \/a active.netsarang.com"
     ],
     "checkver": {
         "url": "https://sourceforge.net/projects/zapps/rss?path=/Xshell",
