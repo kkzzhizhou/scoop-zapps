@@ -2,14 +2,13 @@
     "homepage": "https://www.eassos.cn/onekeyrestore/",
     "description": "易数一键还原，是易数科技自主研发的系统备份与还原软件",
     "version": "4.2.2.760",
-    "depends": "sudo",
     "url": "http://download.eassos.cn/OKRSetup422760.exe#/setup.exe",
     "hash": "434bd163ae351f2174171605792142e7e906979b09eb10aa1a0d7b68d42c0f3b",
     "installer": {
         "script": "Start-Process -Wait \"$dir\\setup.exe\" \"/VERYSILENT /DIR=$dir /NORESTART\" -Verb RunAs"
     },
     "uninstaller": {
-        "script": "sudo Start-Process \"$dir\\unins000.exe\" \"/SILENT /NORESTART\" -PassThru -NoNewWindow | Wait-Process"
+        "script": "Start-Process -Wait \"$dir\\unins000.exe\" \"/SILENT /NORESTART\" -Verb RunAs"
     },
     "checkver": {
         "url": "https://www.eassos.cn/onekeyrestore/download.php",
