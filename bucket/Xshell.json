@@ -3,7 +3,7 @@
     "description": "业界最强大的SSH客户机",
     "version": "6.0.0181",
     "depends": "bluelifehostseditor",
-    "url": "https://downloads.sourceforge.net/project/zapps/Xshell/Xshell-6.0.0181r.exe",
+    "url": "https://downloads.sourceforge.net/project/zapps/Xshell/Xshell-6.0.0181r.exe#/setup.exe",
     "hash": "sha1:e2f70ecce718d6e05b6ed0fa73129f329beea057",
     "pre_install": [
         "sudo hostseditor.exe /a transact.netsarang.com",
@@ -18,7 +18,7 @@
         "re": "/Xshell/Xshell-(.*)r.exe"
     },
     "autoupdate": {
-        "url": "https://downloads.sourceforge.net/project/zapps/Xshell/Xshell-$versionr.exe",
+        "url": "https://downloads.sourceforge.net/project/zapps/Xshell/Xshell-$versionr.exe#/setup.exe",
         "hash": {
             "mode": "sourceforge"
         }
