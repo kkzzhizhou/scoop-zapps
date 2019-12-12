@@ -13,9 +13,12 @@
     "installer": {
         "script": "Start-Process -Wait \"$dir\\setup.exe\" \"/VERYSILENT /DIR=$dir /NORESTART\" -Verb RunAs"
     },
+    "post_install": [
+        "Remove-Item \"$env:PUBLIC\\Desktop\\易数一键还原.lnk\""
+    ],
     "uninstaller": {
         "script": [
-            "Start-Process \"$dir\\unins000.exe\"",
+            "Start-Process \"$dir\\AutoComfirm.exe\"",
             "Start-Process -Wait \"$dir\\unins000.exe\" \"/SILENT\" -Verb RunAs"
         ]
     },
