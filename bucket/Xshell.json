@@ -15,7 +15,7 @@
     ],
     "installer": {
         "script": [
-            "Start-Process -Wait \"$dir\\setup.exe\" \"/S /v/qn\" -Verb RunAs"
+            "Start-Process -Wait \"$dir\\setup.exe\" \"/S /v/qb\" -Verb RunAs"
         ],
         "keep": true
     },
