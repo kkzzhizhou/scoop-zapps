@@ -5,7 +5,7 @@
     "depends": "bluelifehostseditor",
     "url": "https://downloads.sourceforge.net/project/zapps/Xshell/Xshell-6.0.0181r.exe#/setup.exe",
     "hash": "sha1:e2f70ecce718d6e05b6ed0fa73129f329beea057",
-    "post_install": [
+    "pre_install": [
         "sudo hostseditor.exe /a transact.netsarang.com",
         "sudo hostseditor.exe /a update.netsarang.com",
         "sudo hostseditor.exe /a www.netsarang.com",
