@@ -9,7 +9,7 @@
         "script": "Start-Process -Wait \"$dir\\setup.exe\" \"/VERYSILENT /DIR=$dir /NORESTART\" -Verb RunAs"
     },
     "uninstaller": {
-        "script": "sudo Start-Process -Wait \"$dir\\unins000.exe\" \"/SILENT /NORESTART\" -PassThru -NoNewWindow"
+        "script": "sudo Start-Process \"$dir\\unins000.exe\" \"/SILENT /NORESTART\" -PassThru -NoNewWindow | Wait-Process"
     },
     "checkver": {
         "url": "https://www.eassos.cn/onekeyrestore/download.php",
