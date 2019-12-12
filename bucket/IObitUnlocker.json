@@ -4,7 +4,7 @@
     "url": "http://update.iobit.com/dl/unlocker-setup.exe#/setup.exe",
     "installer": {
         "script": [
-            "Start-Process -Wait \"$dir\\setup.exe\" \"/VERYSILENT /DIR=$dir /NORESTART\" -Verb RunAs"
+            "Start-Process -Wait \"$dir\\setup.exe\" \"/VERYSILENT /DIR=$dir /NORESTART\" -Verb RunAs -PassThru -NoNewWindow"
         ]
     },
     "post_install": [
@@ -13,7 +13,7 @@
     ],
     "uninstaller": {
         "script": [
-            "Start-Process -Wait \"$dir\\unins000.exe\" \"/VERYSILENT /NORESTART\" -Verb RunAs"
+            "Start-Process -Wait \"$dir\\unins000.exe\" \"/VERYSILENT /NORESTART\" -Verb RunAs -PassThru -NoNewWindow"
         ]
     }
 }
