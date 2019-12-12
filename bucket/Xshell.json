@@ -13,6 +13,17 @@
         "sudo hostseditor.exe /a sales.netsarang.com",
         "sudo hostseditor.exe /a active.netsarang.com"
     ],
+    "installer": {
+        "script": [
+            "Start-Process -Wait \"$dir\\setup.exe\" \"/S /v/qn\" -Verb RunAs"
+        ],
+        "keep": true
+    },
+    "uninstaller": {
+        "script":[
+            "Start-Process -Wait \"$dir\\setup.exe\" \"/x\" -Verb RunAs"
+        ]
+    },
     "checkver": {
         "url": "https://sourceforge.net/projects/zapps/rss?path=/Xshell",
         "re": "/Xshell/Xshell-(.*)r.exe"
