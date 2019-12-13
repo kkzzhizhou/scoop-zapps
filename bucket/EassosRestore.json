@@ -13,7 +13,7 @@
     ],
     "uninstaller": {
         "script": [
-            "autoconfirm.exe 卸载易数一键还原",
+            "Start-Process autoconfirm.exe 卸载易数一键还原",
             "Start-Process -Wait \"$dir\\unins000.exe\" \"/SILENT\" -Verb RunAs"
         ]
     },
