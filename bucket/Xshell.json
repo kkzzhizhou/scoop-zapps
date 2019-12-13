@@ -28,13 +28,25 @@
         "keep": true
     },
     "post_install":[
-        "sudo regedit /s $dir\\register.reg"
+        "sudo regedit /s $dir\\register.reg",
+        "Remove-Item \"$env:PUBLIC\\Desktop\\Xmanager` Power` Suite` 6\" -Recurse",
+        "sudo Remove-Item \"$env:ProgramData\\Microsoft\\Windows\\Start` Menu\\Programs\\SHELL_OBJECT_FOLDER -Recurse"
     ],
     "uninstaller": {
         "script":[
             "Start-Process -Wait msiexec \"/x `\"$dir\\Xshell` 6.msi`\" /qb\" -Verb RunAs"
         ]
     },
+    "shortcuts": [
+        [
+            "Xshell.exe",
+            "Xshell"
+        ],
+        [
+            "Xagent.exe",
+            "Xagent"
+        ]
+    ],
     "checkver": {
         "url": "https://sourceforge.net/projects/zapps/rss?path=/Xshell",
         "re": "/Xshell/Xshell-(.*)r.exe"
