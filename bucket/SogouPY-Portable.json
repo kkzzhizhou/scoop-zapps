@@ -1,14 +1,14 @@
 {
     "version": "0.3",
     "homepage": "https://portableappk.com/portable-sogoupy/",
-    "url": "https://downloads.sourceforge.net/project/zapps/SogouPY-Portable/SogouPY-Portable-0.3.exe",
+    "url": "https://downloads.sourceforge.net/project/zapps/SogouPY-Portable/SogouPY-Portable-0.3.exe#/dl.7z",
     "hash": "sha1:4eece584e3d52f50e385724d62dbe5dd5c27fdf1",
     "checkver": {
         "url": "https://sourceforge.net/projects/zapps/rss?path=/SogouPY-Portable",
         "re": "/SogouPY-Portable/SogouPY-Portable-(.*).exe"
     },
     "autoupdate": {
-        "url": "https://downloads.sourceforge.net/project/zapps/SogouPY-Portable/SogouPY-Portable-$version.exe",
+        "url": "https://downloads.sourceforge.net/project/zapps/SogouPY-Portable/SogouPY-Portable-$version.exe#/dl.7z",
         "hash": {
             "mode": "sourceforge"
         }
