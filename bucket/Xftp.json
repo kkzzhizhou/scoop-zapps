@@ -13,7 +13,7 @@
     ],
     "hash": [
         "4dfa8c4872c8c40e52c7032c25f63c9ad6fb4008a11acd4d02ed8a5461f9eb33",
-        "E7DA680B2C9F99A1B042EF96D621C3E85E1C2867D07BF0FB42E764D2543F75C1"
+        "d5eaeb4f6efcd29e984eb9fc885e619d2f03c8ff8bfbd67a5c5a3a1a309ae5fc"
     ],
     "pre_install": [
         "sudo hostseditor.exe /a transact.netsarang.com",
