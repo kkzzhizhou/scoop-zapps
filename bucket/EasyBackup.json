@@ -4,9 +4,9 @@
     "version": "4.0.2",
     "url": "http://www2.aomeisoftware.com/download/abcn/EasyBackup.zip",
     "hash": "1977d476c13cad3075119fd80f011be55730c8ee9a20a655fc48ab2660bb9fff",
-    "post_install": [
-        "Expand-InnoArchive -Path \"$dir\\EasyBackup.exe\""
-    ],
+    "installer": {
+        "script": "Expand-InnoArchive -Path \"$dir\\EasyBackup.exe\""
+    },
     "checkver": {
         "url": "https://www.disktool.cn/backup/changelogs.html",
         "regex": "(\\d+\\.\\d+\\.\\d+)"
