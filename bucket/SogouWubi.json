@@ -16,11 +16,13 @@
     },
     "installer": {
         "script": [
+            "Start-Process autoconfirm.exe '搜狗五笔输入法 Portable'",
             "Start-Process -Wait $dir\\SogouWBPortable.exe /i"
         ]
     },
     "uninstaller": {
         "script": [
+            "Start-Process autoconfirm.exe '搜狗五笔输入法 Portable'",
             "Start-Process -Wait $dir\\SogouWBPortable.exe /u"
         ]
     }
