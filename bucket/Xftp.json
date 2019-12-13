@@ -1,14 +1,18 @@
 {
     "homepage": "https://www.netsarang.com/zh/Xftp/",
     "description": "业界最强大的SSH客户机",
-    "version": "6.0.0181",
-    "depends": "bluelifehostseditor",
+    "version": "6.0.0175",
+    "depends": [
+        "bluelifehostseditor",
+        "vcredist2008",
+        "vcredist2012"
+    ],
     "url": [
-        "https://downloads.sourceforge.net/project/zapps/Xftp/Xftp-6.0.0181r.exe#/setup.exe",
-        "https://raw.githubusercontent.com/kkzzhizhou/scoop-zapps/master/script/Xftp/register.reg"
+        "https://downloads.sourceforge.net/project/zapps/Xftp/Xftp-6.0.0175r.exe#/setup.exe",
+        "https://raw.githubusercontent.com/kkzzhizhou/scoop-zapps/master/script/xftp/register.reg"
     ],
     "hash": [
-        "sha1:e2f70ecce718d6e05b6ed0fa73129f329beea057",
+        "4dfa8c4872c8c40e52c7032c25f63c9ad6fb4008a11acd4d02ed8a5461f9eb33",
         "E7DA680B2C9F99A1B042EF96D621C3E85E1C2867D07BF0FB42E764D2543F75C1"
     ],
     "pre_install": [
@@ -27,14 +31,25 @@
         ],
         "keep": true
     },
-    "post_install":[
-        "sudo regedit /s $dir\\register.reg"
+    "post_install": [
+        "sudo regedit /s $dir\\register.reg",
+        "Remove-Item \"$env:PUBLIC\\Desktop\\Xmanager` Power` Suite` 6\" -Recurse",
+        "sudo Remove-Item \"$env:ProgramData\\Microsoft\\Windows\\Start` Menu\\Programs\\SHELL_OBJECT_FOLDER\" -Recurse",
+        "ie4uinit.exe -show"
     ],
     "uninstaller": {
-        "script":[
-            "Start-Process -Wait msiexec \"/x `\"$dir\\Xftp` 6.msi`\" /qb\" -Verb RunAs"
-        ]
+        "script": "Start-Process -Wait msiexec \"/x `\"$dir\\Xftp` 6.msi`\" /qb\" -Verb RunAs"
     },
+    "shortcuts": [
+        [
+            "Xftp.exe",
+            "Xftp"
+        ],
+        [
+            "Xagent.exe",
+            "Xagent"
+        ]
+    ],
     "checkver": {
         "url": "https://sourceforge.net/projects/zapps/rss?path=/Xftp",
         "re": "/Xftp/Xftp-(.*)r.exe"
