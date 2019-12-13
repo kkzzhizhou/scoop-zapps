@@ -20,6 +20,11 @@
         ],
         "keep": true
     },
+    "uninstaller": {
+        "script":[
+            "Start-Process -Wait msiexec \"/x `\"$dir\\Xshell` 6.msi`\" /qb\" -Verb RunAs"
+        ]
+    },
     "checkver": {
         "url": "https://sourceforge.net/projects/zapps/rss?path=/Xshell",
         "re": "/Xshell/Xshell-(.*)r.exe"
