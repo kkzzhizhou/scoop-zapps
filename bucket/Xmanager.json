@@ -1,0 +1,63 @@
+{
+    "homepage": "https://www.netsarang.com/zh/Xmanager/",
+    "description": "业界最强大的SSH客户机",
+    "version": "6.0.0175",
+    "depends": [
+        "bluelifehostseditor",
+        "vcredist2008",
+        "vcredist2012"
+    ],
+    "url": [
+        "https://downloads.sourceforge.net/project/zapps/Xmanager/Xmanager-6.0.0175r.exe#/setup.exe",
+        "https://raw.githubusercontent.com/kkzzhizhou/scoop-zapps/master/script/Xmanager/register.reg"
+    ],
+    "hash": [
+        "sha1:5a5bb57ef2787b137a0c01ca7b0655828c588561",
+        "C0F1B23987536A093230EED879FF2BB397450FA46744F15C31EE4DED3ADD86BE"
+    ],
+    "pre_install": [
+        "sudo hostseditor.exe /a transact.netsarang.com",
+        "sudo hostseditor.exe /a update.netsarang.com",
+        "sudo hostseditor.exe /a www.netsarang.com",
+        "sudo hostseditor.exe /a www.netsarang.co.kr",
+        "sudo hostseditor.exe /a sales.netsarang.com",
+        "sudo hostseditor.exe /a active.netsarang.com",
+        "sudo hostseditor.exe /a up.netsarang.com"
+    ],
+    "installer": {
+        "script": [
+            "Start-Process -Wait \"$dir\\setup.exe\" \"/b$dir /S /v/qn\" -Verb RunAs",
+            "Start-Process -Wait msiexec \"/i `\"$dir\\Xmanager` 6.msi`\" INSTALLDIR=`\"$dir`\" /qb\" -Verb RunAs"
+        ],
+        "keep": true
+    },
+    "post_install": [
+        "sudo regedit /s $dir\\register.reg",
+        "Remove-Item \"$env:PUBLIC\\Desktop\\Xmanager` Power` Suite` 6\" -Recurse",
+        "sudo Remove-Item \"$env:ProgramData\\Microsoft\\Windows\\Start` Menu\\Programs\\SHELL_OBJECT_FOLDER\" -Recurse",
+        "ie4uinit.exe -show"
+    ],
+    "uninstaller": {
+        "script": "Start-Process -Wait msiexec \"/x `\"$dir\\Xmanager` 6.msi`\" /qb\" -Verb RunAs"
+    },
+    "shortcuts": [
+        [
+            "Xmanager.exe",
+            "Xmanager"
+        ],
+        [
+            "Xagent.exe",
+            "Xagent"
+        ]
+    ],
+    "checkver": {
+        "url": "https://sourceforge.net/projects/zapps/rss?path=/Xmanager",
+        "re": "/Xmanager/Xmanager-(.*)r.exe"
+    },
+    "autoupdate": {
+        "url": "https://downloads.sourceforge.net/project/zapps/Xmanager/Xmanager-$versionr.exe#/setup.exe",
+        "hash": {
+            "mode": "sourceforge"
+        }
+    }
+}
