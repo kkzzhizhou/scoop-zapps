@@ -9,7 +9,7 @@
     ],
     "url": [
         "https://downloads.sourceforge.net/project/zapps/Xmanager/Xmanager-6.0.0175r.exe#/setup.exe",
-        "https://raw.githubusercontent.com/kkzzhizhou/scoop-zapps/master/script/Xmanager/register.reg"
+        "https://raw.githubusercontent.com/kkzzhizhou/scoop-zapps/master/script/xmanager/register.reg"
     ],
     "hash": [
         "sha1:5a5bb57ef2787b137a0c01ca7b0655828c588561",
