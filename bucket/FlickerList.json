@@ -6,8 +6,8 @@
     "hash": "7f96c7731549c61de4e523749e9418d096a1acf500c701d02737dbb5121a5318",
     "installer": {
         "script": [
-            "Expand-7zipArchive \"$dir\\dl.7z\" \"$dir\"",
-            "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-32.7z\" \"$dir\""
+            "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-32.7z\" \"$dir\"",
+            "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninstall*\" -Force -Recurse"
         ]
     },
     "checkver": {
@@ -16,5 +16,11 @@
     },
     "autoupdate": {
         "url": "https://static.vifird.com/flicker/download/stable/$version/win32_x32/%E9%97%AA%E7%82%B9%E6%B8%85%E5%8D%95_Setup_$version.exe#dl.7z"
-    }
+    },
+    "shortcuts": [
+        [
+            "闪点清单.exe",
+            "闪点清单"
+        ]
+    ]
 }
