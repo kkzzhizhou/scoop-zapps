@@ -1,9 +1,9 @@
 {
     "homepage": "https://www.zhornsoftware.co.uk/stickies/",
     "description": "Stickies is a PC utility I wrote to try to cut down on the number of yellow notes I was leaving stuck to my monitor. ",
-    "version": "10.0a",
+    "version": "9.0e",
     "url": [
-        "https://www.zhornsoftware.co.uk/stickies/stickies_setup_10.0a.exe#dl.7z",
+        "https://www.zhornsoftware.co.uk/stickies/stickies_setup_9.0e.exe#dl.7z",
         "https://www.zhornsoftware.co.uk/stickies/xl/chn.zip"
     ],
     "hash": [
