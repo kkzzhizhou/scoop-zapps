@@ -52,7 +52,7 @@
             }
         }
     },
-    "bin": "bin\\typora.exe",
+    "bin": "typora.exe",
     "shortcuts": [
         [
             "Typora.exe",
