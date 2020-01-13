@@ -1,0 +1,18 @@
+{
+    "homepage": "https://github.com/YerongAI/Office-Tool",
+    "version": "7.4.2.0",
+    "extract_dir": "Office Tool",
+    "url": "https://download.coolhub.top/Office%20Tool%20v7.4.zip",
+    "hash": "2f56688755e0c8fbf127279a7b39c7b80fe2bcdefe0c60d9744cd6bdad4313b3",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://download.coolhub.top/Office%20Tool%20v$majorVersion.$minorVersion.zip"
+    },
+    "bin": "Office Tool Plus.exe",
+    "shortcuts": [
+        [
+            "Office Tool Plus.exe",
+            "Office Tool Plus"
+        ]
+    ]
+}
