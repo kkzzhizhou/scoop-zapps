@@ -1,15 +1,15 @@
 {
     "homepage": "https://sourceforge.net/projects/zapps/",
-    "version": "1.0.0.0",
+    "version": "2.0.0.2",
     "depends": "frp",
-    "url": "https://downloads.sourceforge.net/project/zapps/Frpc-GUI/Frpc-GUI-1.0.0.0.exe",
-    "hash": "aeda6ec7811409cdcb77e4008a060003cc11f9ef60637133dd6fa6980b2b5dea",
+    "url": "https://downloads.sourceforge.net/project/zapps/FrpcGUI/FrpcGUI-2.0.0.2.exe",
+    "hash": "sha1:30bff17699059688a0583028550e33883f10239e",
     "checkver": {
-        "url": "https://sourceforge.net/projects/zapps/rss?path=/Frpc-GUI",
-        "re": "/Frpc-GUI/Frpc-GUI-(.*).exe"
+        "url": "https://sourceforge.net/projects/zapps/rss?path=/FrpcGUI",
+        "re": "/FrpcGUI/FrpcGUI-(.*).exe"
     },
     "autoupdate": {
-        "url": "https://downloads.sourceforge.net/project/zapps/Frpc-GUI/Frpc-GUI-$version.exe",
+        "url": "https://downloads.sourceforge.net/project/zapps/FrpcGUI/FrpcGUI-$version.exe",
         "hash": {
             "mode": "sourceforge"
         }
