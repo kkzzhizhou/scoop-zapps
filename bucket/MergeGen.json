@@ -1,15 +1,16 @@
 {
-    "version": "2.4.0.0",
-    "url": "https://downloads.sourceforge.net/project/zapps/HefuGen/HefuGen-2.4.0.0.7z",
-    "hash": "sha1:e64162fd1cef03455310897c71f0ae8612a63a1c",
+    "version": "3.0.0.0",
+    "url": "https://zapps.ziiyc.com/MergeGen/MergeGen-3.0.0.0.7z",
+    "hash": "714159c2866718efe3f844be5c42b33b2f5568ec201466c2e19fddcf124ff74b",
     "checkver": {
-        "url": "https://sourceforge.net/projects/zapps/rss?path=/HefuGen",
-        "re": "/HefuGen/HefuGen-(.*).7z"
+        "url": "https://zapps.ziiyc.com/MergeGen/MergeGen.latest",
+        "regex": "([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://downloads.sourceforge.net/project/zapps/HefuGen/HefuGen-$version.7z",
+        "url": "https://zapps.ziiyc.com/MergeGen/MergeGen-$version.7z",
         "hash": {
-            "mode": "sourceforge"
+            "url": "$url.sha256",
+            "regex": "$sha256"
         }
     },
     "bin": "HefuGen.exe",
