@@ -11,21 +11,23 @@
         }
     },
     "checkver": {
-        "url": "https://sourceforge.net/projects/zapps/rss?path=/PhotoZoomPro",
-        "re": "/PhotoZoomPro/PhotoZoomPro-(\\d+\\.\\d+\\.\\d+).*.exe"
+        "url": "https://zapps.ziiyc.com/PhotoZoomPro/PhotoZoomPro.latest",
+        "regex": "([\\w.]+)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://downloads.sourceforge.net/project/zapps/PhotoZoomPro/PhotoZoomPro-$version-64bit.exe#/PhotoZoom.exe",
+                "url": "https://zapps.ziiyc.com/PhotoZoomPro/PhotoZoomPro-$version-64bit.exe#/PhotoZoom.exe",
                 "hash": {
-                    "mode": "sourceforge"
+                    "url": "$url.sha256",
+                    "regex": "$sha256"
                 }
             },
             "32bit": {
-                "url": "https://downloads.sourceforge.net/project/zapps/PhotoZoomPro/PhotoZoomPro-$version-32bit.exe#/PhotoZoom.exe",
+                "url": "https://zapps.ziiyc.com/PhotoZoomPro/PhotoZoomPro-$version-32bit.exe#/PhotoZoom.exe",
                 "hash": {
-                    "mode": "sourceforge"
+                    "url": "$url.sha256",
+                    "regex": "$sha256"
                 }
             }
         }

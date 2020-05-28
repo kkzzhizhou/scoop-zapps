@@ -1,7 +1,7 @@
 {
     "version": "0.1",
-    "url": "https://downloads.sourceforge.net/project/zapps/Azw3ToMobi/Azw3ToMobi-0.1.7z",
-    "hash": "sha1:6a7a1f14d6de785670a51e28d6fad99647d47bfb",
+    "url": "https://zapps.ziiyc.com/Azw3ToMobi/Azw3ToMobi-0.1.7z",
+    "hash": "cb023c52faaee79dc719b60c9b1477d2c5939ad4b24d0d4627cb9c7260a329d7",
     "bin": "azw3_to_mobi.exe",
     "depends": [
         "kindlegen",
@@ -17,13 +17,14 @@
         "regedit /s $dir\\add-context.reg"
     ],
     "checkver": {
-        "url": "https://sourceforge.net/projects/zapps/rss?path=/Azw3ToMobi",
-        "re": "/Azw3ToMobi/Azw3ToMobi-(.*).7z"
+        "url": "https://zapps.ziiyc.com/Azw3ToMobi/Azw3ToMobi.latest",
+        "regex": "([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://downloads.sourceforge.net/project/zapps/Azw3ToMobi/Azw3ToMobi-$version.7z",
+        "url": "https://zapps.ziiyc.com/Azw3ToMobi/Azw3ToMobi-$version.7z",
         "hash": {
-            "mode": "sourceforge"
+            "url": "$url.sha256",
+            "regex": "$sha256"
         }
     },
     "uninstaller": {
