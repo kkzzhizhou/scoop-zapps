@@ -1,8 +1,8 @@
 {
     "homepage": "https://www.r-studio.com/zhcn/data-recovery-software/",
     "version": "8.10.173981",
-    "url": "https://downloads.sourceforge.net/project/zapps/R-Studio/R-Studio-8.10.173981.7z#/dl.7z",
-    "hash": "sha1:b9431e20c98feb051a5da3714354d022d5d2dd10",
+    "url": "https://zapps.ziiyc.com/R-Studio/R-Studio-8.10.173981.7z#/dl.7z",
+    "hash": "103887465930813fc271afea1fdeeb5ccfbe67fa7fdefc2e6693332f2ead6ced",
     "checkver": {
         "url": "https://zapps.ziiyc.com/R-Studio/R-Studio.latest",
         "regex": "([\\d.]+)"

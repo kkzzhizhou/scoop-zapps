@@ -3,8 +3,8 @@
     "depends": "sudo",
     "architecture": {
         "64bit": {
-            "url": "https://downloads.sourceforge.net/project/zapps/SecoClient/SecoClient-Win64-3.0.3.21.exe#/setup.exe",
-            "hash": "sha1:31e947bda12189a3ffd9efa9751a4765c84c84ec",
+            "url": "https://zapps.ziiyc.com/SecoClient/SecoClient-Win64-3.0.3.21.exe#/setup.exe",
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
             "installer": {
                 "script": "Start-Process -Wait \"$dir\\setup.exe\" \"/S\" -Verb RunAs"
             },
@@ -17,8 +17,8 @@
             }
         },
         "32bit": {
-            "url": "https://downloads.sourceforge.net/project/zapps/SecoClient/SecoClient-Win32-3.0.3.21.exe#/setup.exe",
-            "hash": "sha1:c7ef893d14ad0185299ec101f3bca731a7879fe2",
+            "url": "https://zapps.ziiyc.com/SecoClient/SecoClient-Win32-3.0.3.21.exe#/setup.exe",
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
             "installer": {
                 "script": "Start-Process -Wait \"$dir\\setup.exe\" \"/S\" -Verb RunAs"
             },
@@ -32,21 +32,23 @@
         }
     },
     "checkver": {
-        "url": "https://sourceforge.net/projects/zapps/rss?path=/SecoClient",
-        "re": "/SecoClient/SecoClient-Win.*-(.*).exe"
+        "url": "https://zapps.ziiyc.com/SecoClient/SecoClient.latest",
+        "regex": "([\\w.]+)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://downloads.sourceforge.net/project/zapps/SecoClient/SecoClient-Win64-$version.exe#/setup.exe",
+                "url": "https://zapps.ziiyc.com/SecoClient/SecoClient-Win64-$version.exe#/setup.exe",
                 "hash": {
-                    "mode": "sourceforge"
+                    "url": "$url.sha256",
+                    "regex": "$sha256"
                 }
             },
             "32bit": {
-                "url": "https://downloads.sourceforge.net/project/zapps/SecoClient/SecoClient-Win32-$version.exe#/setup.exe",
+                "url": "https://zapps.ziiyc.com/SecoClient/SecoClient-Win32-$version.exe#/setup.exe",
                 "hash": {
-                    "mode": "sourceforge"
+                    "url": "$url.sha256",
+                    "regex": "$sha256"
                 }
             }
         }
