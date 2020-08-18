@@ -11,7 +11,7 @@
     "uninstaller": {
         "script": [
             "$ID = (Get-CimInstance Win32_Product -Filter \"Name = 'Acronis True Image'\").IdentifyingNumber",
-            "msiexec.exe /x $ID /qb NL_CLEAN_SETTINGS=1",
+            "Start-Process -Wait msiexec.exe \"/x $ID /qb NL_CLEAN_SETTINGS=1\" -Verb RunAs",
             "    # Prevent failed installation",
             "Start-Sleep -Seconds 3"
             ]
