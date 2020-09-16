@@ -34,7 +34,7 @@
     "post_install": [
         "$null, $bucket = find_manifest($app)",
         "$bucketdir = Find-BucketDirectory($bucket)",
-        "$userdir = $env:USERPROFILE -replace '\\' '\\\\'",
+        "$userdir = $env:USERPROFILE.Replace('\\', '\\\\')",
         "$escdir = $dir -replace \"\\\\\",\"\\\\\"",
         "(gc \"$bucketdir\\..\\scripts\\xmanager\\register.reg.templ\") | % { $_ -replace 'USERPROFILE', \"$userdir\" } | out-file -enc oem \"$dir\\register.reg\"",
         "sudo regedit /s $dir\\register.reg",
