@@ -1,7 +1,6 @@
 ﻿{
     "version": "21.2.4.323",
-    "homepage": "https://www.ghpym.com/ps2020green.html",
-    "description": "Photoshop精简版本",
+    "description": "zdBryan Photoshop精简版本",
     "depends": "sudo",
     "url": "https://zapps.ziiyc.com/AdobePhotoshopCC/AdobePhotoshopCC-21.2.4.323.exe#/dl.7z",
     "hash": "4393a93999056bdd4067ab6b7e1f8f7132d1f6ed9dd19fa949516043867c0538",
