@@ -1,0 +1,17 @@
+﻿{
+    "homepage": "https://clipber.com/",
+    "description": "真正的云剪贴板工具",
+    "version": "2.1.13",
+    "url": "https://clipweb.oss-cn-qingdao.aliyuncs.com/windows/copies_2_1_13.zip",
+    "hash": "",
+    "persist": "",
+    "checkver": {
+        "url": "",
+        "regex": ""
+    },
+    "autoupdate": {
+        "url": ""
+    },
+    "bin": [],
+    "shortcuts": []
+}
