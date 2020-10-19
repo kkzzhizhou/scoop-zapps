@@ -1,17 +1,17 @@
-#.github\workflows\schedule.yml
+name: Excavator
+
 on:
     schedule:
-      - cron: "*/30 * * * *"
-  name: Excavator
-  jobs:
+        - cron: '0 */1 * * *'
+
+jobs:
     excavate:
-      name: Excavate
-      runs-on: ubuntu-latest
-      steps:
-        - uses: actions/checkout@master
-        - name: Excavate
-          uses: kidonng/Scoop-GithubActions@stable
-          env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-            SKIP_UPDATED: "1"
-  
+        name: Excavate
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - name: Excavate
+              uses: kidonng/Scoop-GithubActions@stable
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                  SKIP_UPDATED: '1'
