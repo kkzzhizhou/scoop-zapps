@@ -1,18 +1,17 @@
-on:
-  repository_dispatch:
-  schedule:
-  - cron: '* */1 * * *'
-    
 name: Excavator
+
+on:
+    schedule:
+        - cron: '0 */1 * * *'
+
 jobs:
-  excavate:
-    name: Excavate
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@master
-    - name: Excavate
-      uses: Ash258/Scoop-GithubActions@stable
-      env:
-        GITH_EMAIL: 806508401@qq.com
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        SKIP_UPDATED: '1'
+    excavate:
+        name: Excavate
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - name: Excavate
+              uses: kidonng/Scoop-GithubActions@stable
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                  SKIP_UPDATED: '1'
