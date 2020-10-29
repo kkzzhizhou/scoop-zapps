@@ -232,6 +232,4 @@ echo f|xcopy /c/e/i/h/r/y "Data\CommonProgramFiles(x86)\Adobe" "%CommonProgramFi
 Rundll32 setupapi.dll,InstallHinfSection DefaultInstall 132 .\ProductsRegInfo.inf
 ASSOC .=. >NUL 2>NUL
 
-::创建根目录下和桌面的快捷方式
-
 ECHO.&ECHO 完成 &TIMEOUT /t 2 >NUL&EXIT
