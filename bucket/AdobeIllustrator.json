@@ -7,8 +7,8 @@
     "pre_install":[
         "$null, $bucket = find_manifest($app)",
         "$bucketdir = Find-BucketDirectory($bucket)",
-        "(gc \"$bucketdir\\..\\scripts\\illustrator\\Install.bat\") | out-file -enc oem \"$dir\\Install.bat\"",
-        "(gc \"$bucketdir\\..\\scripts\\illustrator\\Uninstall.bat\") | out-file -enc oem \"$dir\\Uninstall.bat\""
+        "(gc \"$bucketdir\\..\\scripts\\AdobeIllustrator\\Install.bat\") | out-file -enc oem \"$dir\\Install.bat\"",
+        "(gc \"$bucketdir\\..\\scripts\\AdobeIllustrator\\Uninstall.bat\") | out-file -enc oem \"$dir\\Uninstall.bat\""
     ],
     "installer": {
         "script": "sudo cmd /c \"$dir\\Install.bat\""
