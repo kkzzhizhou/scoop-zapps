@@ -17,6 +17,6 @@
         "regex": "([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://dl.softmgr.qq.com/original/Office/WXWork_$matchVersion_$matchShort.exe#/wechat.7z"
+        "url": "https://dldir1.qq.com/wework/work_weixin/WeCom_$version.exe#/wechat.7z"
     }
 }
