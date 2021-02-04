@@ -1,8 +1,8 @@
 {
     "homepage": "https://www.bignox.com/",
-    "version": "7.0.0.8",
-    "url": "https://res06.bignox.com/full/20201229/6ede117d24b949878cdc101e0b68e19c.exe?filename=nox_setup_v7.0.0.8_full_intl.exe#/dl.7z",
-    "hash": "24a58ba4cc6903e7f319ec4bbe32b06254baeecb41833af2bfd6da0e58bf32c5",
+    "version": "7.0.0.9",
+    "url": "https://res06.bignox.com/full/20210202/04a4c31f96dd4f7687fb616560190935.exe?filename=nox_setup_v7.0.0.9_full_intl.exe#/dl.7z",
+    "hash": "355435034dbdb2906df634584703e84be42763b0f43439c3897dc0bbac393cf3",
     "persist": "bin/BignoxVMS",
     "checkver": {
         "url": "https://api.ziiyc.com/get_url_v2?url=https://www.bignox.com/en/download/fullPackage",
