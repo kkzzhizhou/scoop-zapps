@@ -1,9 +1,9 @@
 {
     "homepage": "https://github.com/YerongAI/Office-Tool",
-    "version": "8.1.2.7",
+    "version": "8.1.3.2",
     "extract_dir": "Office Tool",
-    "url": "https://github.com/YerongAI/Office-Tool/releases/download/8.1.2.7/Office-Tool-v8.1.zip",
-    "hash": "00065bc7fea1c9ef2abbb9ecc59b82325cb6f5d81528b59f52ba515b870ab066",
+    "url": "https://github.com/YerongAI/Office-Tool/releases/download/8.1.3.2/Office-Tool-v8.1.zip",
+    "hash": "b28aad9fc7af61cb9191ac7387b36677056f72f2639a72feaedf45e7bfd8d0a6",
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/YerongAI/Office-Tool/releases/download/$version/Office-Tool-v$majorVersion.$minorVersion.zip"
