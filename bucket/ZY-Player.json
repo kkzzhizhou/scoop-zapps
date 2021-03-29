@@ -1,9 +1,9 @@
 {
     "homepage": "http://zyplayer.fun/",
     "description": "跨平台视频资源播放器, 简洁免费无广告",
-    "version": "2.7.8",
-    "url": "https://github.com/Hunlongyu/ZY-Player/releases/download/v2.7.8/ZY-Player-Setup-2.7.8.exe#/dl.7z",
-    "hash": "sha512:f39443c8801bee79cdcb4953fcf6bf0ae7d4969dc8d36169ae284566de0e5ffce4f32d2e7060ea6dc215cec577c27bc30235def4942615057f5b7580c5fe9fd2",
+    "version": "2.7.9",
+    "url": "https://github.com/Hunlongyu/ZY-Player/releases/download/v2.7.9/ZY-Player-Setup-2.7.9.exe#/dl.7z",
+    "hash": "sha512:517796dda02bd108b698733e4d4d2b0fb394cbd63b51babccb0edb1415003f507fcb9502e90424e11623e010fb1b8d2c227b611992ee06a5868c1de00cad1921",
     "installer": {
         "script": [
             "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
