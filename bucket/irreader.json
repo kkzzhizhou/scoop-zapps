@@ -1,8 +1,8 @@
 {
     "homepage": "http://irreader.fatecore.com/",
-    "version": "1.6.2",
-    "url": "http://irreader.fatecore.com/download/irreader-1.6.2.zip",
-    "hash": "fd6011ae1e18dc2eb12adbc08494d66a5978c7d23fc72f4fb02cb3ef3db7e64f",
+    "version": "1.6.3",
+    "url": "http://irreader.fatecore.com/download/irreader-1.6.3.zip",
+    "hash": "edba1a9aeeeb312ea4c443ba397b5e40976764aaa1338d9dde6ff509d9347aef",
     "installer": {
         "script": [
             "Expand-7zipArchive \"$dir\\irreader` $version.exe\" \"$dir\"",
