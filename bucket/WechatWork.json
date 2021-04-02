@@ -1,10 +1,10 @@
 {
     "homepage": "https://work.weixin.qq.com/",
     "description": "企业微信",
-    "version": "3.1.2.2211",
+    "version": "3.1.6.3605",
     "license": "Freeware",
-    "url": "https://dldir1.qq.com/wework/work_weixin/WeCom_3.1.2.2211.exe#/wechat.7z",
-    "hash": "ccace1b922c2f231fa6045bd9b4f6cb60c3277e9e60812f0809922f7e43438db",
+    "url": "https://dldir1.qq.com/wework/work_weixin/WeCom_3.1.6.3605.exe#/wechat.7z",
+    "hash": "c37e6f95ed189ba717ebd6b9295467a209aafb3b915f020811c7a96af6ff6f57",
     "post_install": "Start-Process -Wait \"$dir\\$version\\wxdriveinstaller.exe\" -Verb RunAs",
     "shortcuts": [
         [
