@@ -1,4 +1,4 @@
-name: Excavator
+name: 'Excavator'
 
 on:
   workflow_dispatch:
