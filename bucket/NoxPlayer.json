@@ -5,7 +5,7 @@
     "hash": "4a81a9462c0b8073895e8e14718a4d46c080f9584e21f62f7a4780d4b6065fd1",
     "persist": "bin/BignoxVMS",
     "checkver": {
-        "url": "https://api.ziiyc.com/get_url_v2?url=https://www.bignox.com/en/download/fullPackage",
+        "url": "http://scoop-zapps.oss-cn-hangzhou.aliyuncs.com/Noxplayer/Noxplayer.latest",
         "regex": ".*nox_setup_v([\\d.]+)_full_intl.exe (?<url>.*)"
     },
     "autoupdate": {
