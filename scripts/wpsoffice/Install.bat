@@ -1,15 +1,11 @@
-@ECHO OFF&PUSHD %~DP0 &TITLE 安装
-mode con cols=36 lines=20
+@ECHO OFF&PUSHD %~DP0 &TITLE WPSOffice绿化程序
 color 2F
 SetLocal EnableDelayedExpansion
-@ echo.
-@ echo.
-ECHO 　　　正在安装中..请稍等..
+ECHO 停止相关进程
 taskkill /f /im et*>NUL 2>NUL
 taskkill /f /im wpp*>NUL 2>NUL
 taskkill /f /im wps*>NUL 2>NUL
 taskkill /f /im wpscloudsvr*>NUL 2>NUL
-cd office6
 ksomisc.exe -setlng $CUR_LANG_STR$
 ksomisc.exe -setservers
 ksomisc.exe -register

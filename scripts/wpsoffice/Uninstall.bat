@@ -1,14 +1,11 @@
-@ECHO OFF&PUSHD %~DP0 &TITLE Ð¶ÔØ
-mode con cols=36 lines=20
+@ECHO OFF&PUSHD %~DP0 &TITLE WPSOfficeÐ¶ÔØ³ÌÐò
 color 2F
 SetLocal EnableDelayedExpansion
-@ echo.
 echo ¡¡¡¡¡¡ÕýÔÚÐ¶ÔØÖÐ..ÇëÉÔµÈ..
 taskkill /f /im et*>NUL 2>NUL
 taskkill /f /im wpp*>NUL 2>NUL
 taskkill /f /im wps*>NUL 2>NUL
 taskkill /f /im wpscloudsvr*>NUL 2>NUL
-cd office6
 ksomisc.exe -rename 2052 uninstall
 ksomisc.exe -externaltask delete
 ksomisc.exe -uncompatiblemso
