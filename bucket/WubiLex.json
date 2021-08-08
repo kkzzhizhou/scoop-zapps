@@ -1,9 +1,9 @@
 {
     "homepage": "http://wubi.aardio.com/",
     "description": "解决微软五笔小问题",
-    "version": "10.6",
+    "version": "10.6.01",
     "url": "http://wubi.aardio.com/update/wubiLex.7z",
-    "hash": "6d399a6c8edd193f2b2eb399fd6bd324152a11ab3a07f961e966068033f24ae9",
+    "hash": "79b1badad539fac46547ed66e5a841b818fa69d67eb0e5b388dfddbfb95c914b",
     "checkver": {
         "url": "http://wubi.aardio.com/update/",
         "regex": "\"version\":\"([\\d.]+)\""
