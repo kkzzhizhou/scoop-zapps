@@ -26,13 +26,13 @@
     "architecture": {
         "64bit": {
             "bin": [
-                "autorunsc64.exe",
+                "autoruns64.exe",
                 [
-                    "autorunsc64.exe",
+                    "autoruns64.exe",
                     "autoruns64"
                 ],
                 [
-                    "autorunsc64.exe",
+                    "autoruns64.exe",
                     "autoruns"
                 ]
             ],
@@ -45,9 +45,9 @@
         },
         "32bit": {
             "bin": [
-                "autorunsc.exe",
+                "autoruns.exe",
                 [
-                    "autorunsc.exe",
+                    "autoruns.exe",
                     "autoruns"
                 ]
             ],
