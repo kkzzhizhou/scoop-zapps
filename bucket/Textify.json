@@ -1,7 +1,7 @@
 {
     "homepage": "https://rammichael.com/textify",
     "license": "GPL-3.0-only",
-    "version": "1.8.5",
+    "version": "1.8.6",
     "url": "https://rammichael.com/downloads/textify_setup.exe#dl.7z",
     "hash": "ecd8cc8975c96bd01e4bbf75f20be970787906268a608c6cda7858ed16609256",
     "checkver": {
