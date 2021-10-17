@@ -1,6 +1,6 @@
 {
     "homepage": "https://www.zerotier.com/",
-    "version": "1.6.6",
+    "version": "bump.",
     "description": "ZeroTier is a smart programmable Ethernet switch for planet Earth",
     "url": "https://download.zerotier.com/dist/ZeroTier%20One.msi#/setup.msi_",
     "hash": "098c55c9477914f68d327073c0b58ef9fae230fe6592ff60eaaa15765dd57683",
