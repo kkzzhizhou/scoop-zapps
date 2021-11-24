@@ -1,9 +1,9 @@
 {
     "homepage": "https://www.qownnotes.org/",
-    "version": "21.11.9",
+    "version": "21.11.10",
     "license": "GPL-2.0-only",
-    "url": "https://github.com/pbek/QOwnNotes/releases/download/v21.11.9/QOwnNotes.zip",
-    "hash": "41196008e739530c6720c3d00eb7cc5054e925dd6df314bd36b431ce20270baf",
+    "url": "https://github.com/pbek/QOwnNotes/releases/download/v21.11.10/QOwnNotes.zip",
+    "hash": "5429d002622d4347674ef6300621421c3303d042a20d358e98d523f84cbe9012",
     "bin": "QOwnNotes.exe",
     "shortcuts": [
         [
