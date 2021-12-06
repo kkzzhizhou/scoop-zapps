@@ -8,7 +8,7 @@
     "bin": "CooDesker-x64.exe",
     "checkver": {
         "url": "https://www.coodesker.com/coodesker-desktop/release.json",
-        "jsonpath": ".ver"
+        "jsonpath": "$.ver"
     },
     "shortcuts": [
         [
