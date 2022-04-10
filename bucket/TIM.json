@@ -16,6 +16,7 @@
             "regex": "$sha256"
         }
     },
+    "license": "MIT",
     "shortcuts": [
         [
             "Bin/TIM.exe",
