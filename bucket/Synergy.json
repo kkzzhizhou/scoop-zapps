@@ -8,7 +8,7 @@
         "script": "Start-Process -Wait msiexec \"/i `\"$dir\\setup.msi_`\" /qn INSTALLFOLDER=`\"$dir`\"\" -Verb RunAs"
     },
     "checkver": {
-        "url": "https://scoop-zapps.ziiyc.com/d/Synergy/Synergy.latest",
+        "url": "https://raw.githubusercontent.com/kkzzhizhou/scoop-zapps-version/main/Synergy.latest",
         "regex": "([\\d.]+)"
     },
     "autoupdate": {

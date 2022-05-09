@@ -11,7 +11,7 @@
         }
     },
     "checkver": {
-        "url": "https://scoop-zapps.ziiyc.com/d/PhotoZoomPro/PhotoZoomPro.latest",
+        "url": "https://raw.githubusercontent.com/kkzzhizhou/scoop-zapps-version/main/PhotoZoomPro.latest",
         "regex": "([\\w.]+)"
     },
     "autoupdate": {

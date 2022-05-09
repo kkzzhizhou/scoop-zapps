@@ -42,7 +42,7 @@
         ]
     ],
     "checkver": {
-        "url": "https://scoop-zapps.ziiyc.com/d/Xshell/Xshell.latest",
+        "url": "https://raw.githubusercontent.com/kkzzhizhou/scoop-zapps-version/main/Xshell.latest",
         "regex": "([\\d.]+)"
     },
     "autoupdate": {

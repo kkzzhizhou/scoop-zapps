@@ -17,7 +17,7 @@
         ]
     },
     "checkver": {
-        "url": "https://scoop-zapps.ziiyc.com/d/AcronisTrueImage/AcronisTrueImage.latest",
+        "url": "https://raw.githubusercontent.com/kkzzhizhou/scoop-zapps-version/main/AcronisTrueImage.latest",
         "regex": "([\\d.]+)"
     },
     "autoupdate": {

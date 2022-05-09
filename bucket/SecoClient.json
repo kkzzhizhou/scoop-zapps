@@ -32,7 +32,7 @@
         }
     },
     "checkver": {
-        "url": "https://scoop-zapps.ziiyc.com/d/SecoClient/SecoClient.latest",
+        "url": "https://raw.githubusercontent.com/kkzzhizhou/scoop-zapps-version/main/SecoClient.latest",
         "regex": "([\\w.]+)"
     },
     "autoupdate": {

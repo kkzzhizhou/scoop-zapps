@@ -6,7 +6,7 @@
     "depends": "calibre",
     "persist": "config.ini",
     "checkver": {
-        "url": "https://scoop-zapps.ziiyc.com/d/KindleSend/KindleSend.latest",
+        "url": "https://raw.githubusercontent.com/kkzzhizhou/scoop-zapps-version/main/KindleSend.latest",
         "regex": "([\\d.]+)"
     },
     "autoupdate": {

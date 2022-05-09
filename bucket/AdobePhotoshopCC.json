@@ -24,7 +24,7 @@
         ]
     ],
     "checkver": {
-        "url": "https://scoop-zapps.ziiyc.com/d/AdobePhotoshopCC/AdobePhotoshopCC.latest",
+        "url": "https://raw.githubusercontent.com/kkzzhizhou/scoop-zapps-version/main/AdobePhotoshopCC.latest",
         "regex": "([\\d.]+)"
     },
     "autoupdate": {
