@@ -15,7 +15,7 @@
         "regex": "tag/v([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://github.com/nukeop/nuclear/releases/download/v$version/nuclear-$version.exe#/dl.7z"
+        "url": "https://github.com/nukeop/nuclear/releases/download/v$version/nuclear-v$version.exe#/dl.7z"
     },
     "shortcuts": [
         [

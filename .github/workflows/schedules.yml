@@ -1,10 +1,10 @@
 name: 'Excavator'
 
-on:
-  repository_dispatch:
-  workflow_dispatch:
-  schedule:
-    - cron: '0 */1 * * *'
+# on:
+#   repository_dispatch:
+#   workflow_dispatch:
+#   schedule:
+#     - cron: '0 */1 * * *'
 
 jobs:
   excavate:
