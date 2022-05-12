@@ -17,7 +17,7 @@
         }
     },
     "checkver": {
-        "url": "https://raw.githubusercontent.com/kkzzhizhou/scoop-zapps-version/main/anki-with-sync.latest",
+        "url": "https://raw.githubusercontent.com/kkzzhizhou/scoop-zapps/main/versions/anki-with-sync.latest",
         "regex": "([\\d.]+)"
     },
     "autoupdate": {

@@ -1,0 +1,29 @@
+name: Version-Updater
+on:
+  repository_dispatch:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 22 * * *'
+  push:
+    branches:
+      - master
+jobs:
+  version-updater:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: pip install
+      run: pip install -r .github/workflows/requirements.txt
+    - name: Update
+      run: python .github/workflows/update.py
+    - name: Commit files
+      run: |
+        git config --local user.email "kkzzhizhou@gmail.com"
+        git config --local user.name "github-actions[bot]"
+        git commit -m "Auto Update" -a
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: ${{ github.ref }}
