@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: update ca-certificate
-        run: sudo apt -y update ca-certificate
+        run: sudo apt-get -y update && sudo apt-get -y update ca-certificate
       - name: Excavate
         uses: kidonng/Scoop-GithubActions@stable
         env:
