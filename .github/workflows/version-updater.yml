@@ -1,4 +1,4 @@
-name: Version-Updater
+name: VersionUpdater
 on:
   repository_dispatch:
   workflow_dispatch:

@@ -76,6 +76,8 @@ def update_app(name,content):
     else:
         print("%s:无需更新" % name)
 
+def fix_noting_update():
+    os.system("date > versions/latest")
 
 if __name__ == '__main__':
     get_update_multimarkdown()
@@ -85,3 +87,4 @@ if __name__ == '__main__':
     get_update_v2('http://www.easynlight.com/el-library/eldownload.php?product=Twomon_Windows','TwomonUSB')
     get_update_v2('https://www.bignox.com/en/download/fullPackage','Noxplayer')
     get_update_v3('Charles','https://www.charlesproxy.com/','Charles ([\d.]+) released')
+    fix_noting_update()
