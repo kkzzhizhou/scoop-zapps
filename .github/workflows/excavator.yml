@@ -8,14 +8,14 @@ on:
 
 jobs:
   excavate:
-    name: Excavate
-    runs-on: ubuntu-latest
+    name: Excavator
+    runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: update ca-certificate
-        run: sudo update-ca-certificates
-      - name: Excavate
-        uses: kidonng/Scoop-GithubActions@stable
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SKIP_UPDATED: '1'
+    - uses: actions/checkout@main
+    - name: Excavator
+      uses: ScoopInstaller/Scoop-GithubActions@main
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        SKIP_UPDATED: '1'
+        THROW_ERROR: '0'
+
