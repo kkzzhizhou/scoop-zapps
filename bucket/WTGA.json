@@ -6,6 +6,13 @@
     "hash": "a281684f11ff851e8a74a55b0c2f901539ae1e01657838563b068b84ce8b495d",
     "bin": "wintogo.exe",
     "extract_dir": "WTGA",
+    "checkver": {
+        "url": "https://raw.githubusercontent.com/kkzzhizhou/scoop-zapps/master/versions/WTGA.latest",
+        "regex": "([\\d.]+) (?<url>.*)"
+    },
+    "autoupdate": {
+        "url": "$matchUrl"
+    },
     "shortcuts": [
         [
             "wintogo.exe",
