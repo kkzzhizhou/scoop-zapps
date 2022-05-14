@@ -12,14 +12,24 @@
             "hash": "FDA19D9D42C7976397C59251061C0E329D01E2B9900AE68280E534B3F07D0926"
         }
     },
+    "checkver": {
+        "url": "https://raw.githubusercontent.com/kkzzhizhou/scoop-zapps/master/versions/SpacedeskDriver.latest",
+        "regex": "v(.*).msi"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://spacedesk.net/downloads/spacedesk_driver_Win_10_64_v$version.msi#/setup.msi_"
+            },
+            "32bit": {
+                "url": "https://spacedesk.net/downloads/spacedesk_driver_Win_10_32_v$version.msi#/setup.msi_"
+            }
+        }
+    },
     "installer": {
-        "script": [
-            "Start-Process -Wait msiexec \"/i `\"$dir\\setup.msi_`\" /qn INSTALLFOLDER=`\"$dir`\"\" -Verb RunAs"
-        ]
+        "script": "Start-Process -Wait msiexec \"/i `\"$dir\\setup.msi_`\" /qn INSTALLFOLDER=`\"$dir`\"\" -Verb RunAs"
     },
     "uninstaller": {
-        "script": [
-            "Start-Process -Wait msiexec \"/x `\"$dir\\setup.msi_`\" /qn\" -Verb RunAs"
-        ]
+        "script": "Start-Process -Wait msiexec \"/x `\"$dir\\setup.msi_`\" /qn\" -Verb RunAs"
     }
 }
