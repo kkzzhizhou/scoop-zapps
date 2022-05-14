@@ -81,6 +81,8 @@ def fix_noting_update():
 
 if __name__ == '__main__':
     os.chdir(os.path.split(os.path.realpath(__file__))[0])
+    os.chdir(os.pardir)
+    os.chdir(os.pardir)
     get_update_multimarkdown()
     get_update_v1('https://clipber.com/getzip','Copies')
     get_update_v1('https://www.foxmail.com/win/download','Foxmail')
