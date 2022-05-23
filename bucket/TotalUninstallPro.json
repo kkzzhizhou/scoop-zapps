@@ -3,7 +3,7 @@
     "description": "Total Uninstall easily removes any program. ",
     "version": "7.3.1.641",
     "url": "https://scoop-zapps.ziiyc.com/d/TotalUninstallPro/TotalUninstallPro-7.3.1.641.7z",
-    "hash": "0d7fcf5c49cb5c94aec12ed4d5433f24fdad5fa6f4171169665e6a586ac3d172",
+    "hash": "e51df2929a29b7d1e7e5b359f4dee5ace49ac28d3a03c46c9318315ff6b145e4",
     "persist": "Data",
     "checkver": {
         "url": "https://raw.githubusercontent.com/kkzzhizhou/scoop-zapps/master/versions/TotalUninstallPro.latest",
