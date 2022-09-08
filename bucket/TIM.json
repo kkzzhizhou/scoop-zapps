@@ -2,7 +2,7 @@
     "homepage": "https://www.ghpym.com/pctim.html",
     "description": "绿色精简版",
     "version": "3.3.9.22051",
-    "url": "https://scoop-zapps.ziiyc.com/d/TIM/TIM-3.3.9.22051.7z",
+    "url": "https://scoop-zapps.ziiyc.com/d/scoop-zapps/TIM/TIM-3.3.9.22051.7z",
     "hash": "10e033cf7e55d8ba13480b5cb3f53156b1374569fda4572489f49e84255e9f17",
     "extract_dir": "TIM",
     "checkver": {
@@ -10,7 +10,7 @@
         "regex": "([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://scoop-zapps.ziiyc.com/d/TIM/TIM-$version.7z",
+        "url": "https://scoop-zapps.ziiyc.com/d/scoop-zapps/TIM/TIM-$version.7z",
         "hash": {
             "url": "$url.sha256",
             "regex": "$sha256"

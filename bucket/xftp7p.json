@@ -7,7 +7,7 @@
         "vcredist2012",
         "vcredist2019"
     ],
-    "url": "https://scoop-zapps.ziiyc.com/d/Xftp7p/Xftp-7.0.0106p.exe#/setup.exe",
+    "url": "https://scoop-zapps.ziiyc.com/d/scoop-zapps/Xftp7p/Xftp-7.0.0106p.exe#/setup.exe",
     "hash": "fe9586c0cc6f25866df73ac255d71eae10cd9abf952aa8209b0a3b028bc264ab",
     "installer": {
         "script": [
@@ -38,7 +38,7 @@
         "regex": "([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://scoop-zapps.ziiyc.com/d/Xftp7p/Xftp-$versionp.exe#/setup.exe",
+        "url": "https://scoop-zapps.ziiyc.com/d/scoop-zapps/Xftp7p/Xftp-$versionp.exe#/setup.exe",
         "hash": {
             "url": "$url.sha256",
             "regex": "$sha256"

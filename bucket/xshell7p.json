@@ -7,7 +7,7 @@
         "vcredist2012",
         "vcredist2019"
     ],
-    "url": "https://scoop-zapps.ziiyc.com/d/Xshell7p/Xshell-7.0.0108p.exe#/setup.exe",
+    "url": "https://scoop-zapps.ziiyc.com/d/scoop-zapps/Xshell7p/Xshell-7.0.0108p.exe#/setup.exe",
     "hash": "e26e1d97a99df042990a14b045151284707b24a30a550445282485c140483940",
     "installer": {
         "script": [
@@ -38,7 +38,7 @@
         "regex": "([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://scoop-zapps.ziiyc.com/d/Xshell7p/Xshell-$versionp.exe#/setup.exe",
+        "url": "https://scoop-zapps.ziiyc.com/d/scoop-zapps/Xshell7p/Xshell-$versionp.exe#/setup.exe",
         "hash": {
             "url": "$url.sha256",
             "regex": "$sha256"

@@ -2,7 +2,7 @@
     "version": "2022.01",
     "homepage": "https://github.com/kkzzhizhou/scoop-zapps",
     "description": "图吧工具箱",
-    "url": "https://scoop-zapps.ziiyc.com/d/TuBaTool/TuBaTool-2022.01.exe#/TuBaTool.7z",
+    "url": "https://scoop-zapps.ziiyc.com/d/scoop-zapps/TuBaTool/TuBaTool-2022.01.exe#/TuBaTool.7z",
     "hash": "af97e520b16d7bb19b4ddf03ebe931395ac61bdf73e31a80cace7c75a7e1b75c",
     "license": "MIT",
     "shortcuts": [
@@ -16,7 +16,7 @@
         "regex": "([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://scoop-zapps.ziiyc.com/d/TuBaTool/TuBaTool-$version.exe#/TuBaTool.7z",
+        "url": "https://scoop-zapps.ziiyc.com/d/scoop-zapps/TuBaTool/TuBaTool-$version.exe#/TuBaTool.7z",
         "hash": {
             "url": "$url.sha256",
             "regex": "$sha256"
