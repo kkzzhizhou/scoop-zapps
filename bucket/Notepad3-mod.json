@@ -77,10 +77,10 @@
         "sudo regedit /s $dir\\add-open-with-notepad3.reg"
     ],
     "checkver": {
-        "github": "https://github.com/rizonesoft/Notepad3",
-        "regex": "Notepad3 Release ([\\d.]+)"
+        "url": "https://github.com/rizonesoft/Notepad3/releases",
+        "regex": "tag/RELEASE_([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://github.com/rizonesoft/Notepad3/releases/download/RELEASE_$version/Notepad3_$version_x64.zip"
+        "url": "https://github.com/rizonesoft/Notepad3/releases/download/RELEASE_$version/Notepad3_$version_x64_Portable.zip"
     }
 }
