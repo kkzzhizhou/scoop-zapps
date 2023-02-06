@@ -9,5 +9,12 @@
     },
     "autoupdate": {
         "url": "https://download.voicecloud.cn/200ime/iFlyIME_Setup_$version.exe#/setup.exe"
-    }
+    },
+    "installer": {
+        "script": "Start-Process -Wait \"$dir\\setup.exe\" \"/S\" -Verb RunAs"
+    },
+    "uninstaller": {
+        "script": "Start-Process -Wait \"$dir\\setup.exe\" \"/U\" -Verb RunAs"
+    },
+    "note": "The program can't uninstall successfully,please reboot and uninstall it"
 }
