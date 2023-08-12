@@ -12,8 +12,9 @@
     "hash": "0fe94feb4018970b5b78ef502239992ad0eb1ef1fdd06062031db5bf3924555b",
     "pre_install": [
         "if(!(test-path $persist_dir)) { mkdir $persist_dir > $null }",
-        "sudo Add-AppxPackage $dir\\xaml.appx",
-        "sudo Add-AppxPackage $dir\\vclibs.appx"
+        "sudo Add-AppxPackage $dir\\Microsoft.UI.Xaml.2.8_x64.appx",
+        "sudo Add-AppxPackage $dir\\Microsoft.VCLibs.140.00_x64.appx",
+        "sudo Add-AppxPackage $dir\\Microsoft.VCLibs.140.00.UWPDesktop_x64.appx"
     ],
     "installer": {
         "script": "sudo Add-AppxPackage -Register $dir\\AppxManifest.xml"
