@@ -3,7 +3,7 @@
     "homepage": "https://github.com/LSPosed/MagiskOnWSALocal",
     "description": "Integrate Magisk root and Google Apps (OpenGApps) into WSA (Windows Subsystem for Android)",
     "version": "2306.40000.4.0",
-    "extract_dir": "x64",
+    "extract_dir": "WSA_2306.40000.4.0_x64_Release-Nightly-with-magisk-26.1(26100)-stable-MindTheGapps-13.0",
     "depends": [
         "sudo",
         "winget"
