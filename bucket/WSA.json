@@ -12,6 +12,7 @@
     "hash": "0fe94feb4018970b5b78ef502239992ad0eb1ef1fdd06062031db5bf3924555b",
     "pre_install": [
         "if(!(test-path $persist_dir)) { mkdir $persist_dir > $null }",
+        "sudo Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform",
         "sudo Add-AppxPackage $dir\\Microsoft.UI.Xaml.2.8_x64.appx -ForceApplicationShutdown",
         "sudo Add-AppxPackage $dir\\Microsoft.VCLibs.140.00_x64.appx -ForceApplicationShutdown",
         "sudo Add-AppxPackage $dir\\Microsoft.VCLibs.140.00.UWPDesktop_x64.appx -ForceApplicationShutdown"
