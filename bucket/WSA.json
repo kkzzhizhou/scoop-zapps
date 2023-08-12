@@ -1,0 +1,26 @@
+﻿{
+    "license": "Apache-2.0",
+    "homepage": "https://github.com/LSPosed/MagiskOnWSALocal",
+    "description": "Integrate Magisk root and Google Apps (OpenGApps) into WSA (Windows Subsystem for Android)",
+    "version": "2306.40000.4.0",
+    "extract_dir": "x64",
+    "depends": [
+        "sudo",
+        "winget"
+    ],
+    "url": "https://scoop-zapps.ziiyc.com/d/MagiskOnWSALocal/WSA_2306.40000.4.0_x64_Release-Nightly-with-magisk-26.1(26100)-stable-MindTheGapps-13.0.7z",
+    "hash": "0fe94feb4018970b5b78ef502239992ad0eb1ef1fdd06062031db5bf3924555b",
+    "pre_install": [
+        "if(!(test-path $persist_dir)) { mkdir $persist_dir > $null }",
+        "sudo Add-AppxPackage $dir\\xaml.appx",
+        "sudo Add-AppxPackage $dir\\vclibs.appx"
+    ],
+    "installer": {
+        "script": "sudo Add-AppxPackage -Register $dir\\AppxManifest.xml"
+    },
+    "uninstaller": {
+        "script": [
+            "winget uninstall \"Windows Subsystem for AndroidTM\""
+        ]
+    }
+}
