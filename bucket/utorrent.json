@@ -1,0 +1,12 @@
+{
+    "license": "Apache-2.0",
+    "homepage": "https://github.com/kkzzhizhou/scoop-zaps",
+    "description": "utorrent pro",
+    "version": "3.5.5.46020",
+    "depends": "sudo",
+    "url": "https://scoop-zapps.ziiyc.com/d/uTorrent/µTorrent-3.5.5.46020.7z",
+    "hash": "588b82245d56cabf5de5513b15a9d7dc9b9ecda8e6c6cb5c96eb93bba22425cf",
+    "pre_install": [
+        "sudo cmd /c \"$dir\\clean_utorrent.bat\""
+    ]
+}
