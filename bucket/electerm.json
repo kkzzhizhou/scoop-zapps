@@ -1,10 +1,10 @@
 {
     "homepage": "https://electerm.html5beta.com/",
     "description": "electerm is a terminal/ssh/sftp client(linux, mac, win) based on electron/ssh2/node-pty/xterm/antd and many other libs.",
-    "version": "5.3.15",
+    "version": "5.3.26",
     "license": "MIT",
-    "url": "https://github.com/electerm/electerm/releases/download/v5.3.15/electerm-5.3.15-win-x64.tar.gz",
-    "hash": "a12cdaa8f5b06893662e3cd5369c0508d28f157a53f85322a63e2e2c21b58e28",
+    "url": "https://github.com/electerm/electerm/releases/download/v5.3.26/electerm-5.3.26-win-x64.tar.gz",
+    "hash": "a1409cb617026d6dae6d501bce44fbfbcc1ba1b656fecbe2dc942693ff0fc396",
     "bin": "electerm.exe",
     "shortcuts": [
         [
@@ -12,7 +12,7 @@
             "Electerm"
         ]
     ],
-    "extract_dir": "electerm-5.3.15-win-x64",
+    "extract_dir": "electerm-5.3.26-win-x64",
     "checkver": {
         "github": "https://github.com/electerm/electerm/"
     },
